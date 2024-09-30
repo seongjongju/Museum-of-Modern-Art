@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+/* intro */
+#intro {
+    padding-top: 18rem;
+}
+#intro .main_img {
+    background: url(../index_img/2024081304560356317128.png) no-repeat center/cover;
+    width: 100%;
+    height: 41.5rem;
+    margin-bottom: 2rem;
+}
+#intro .intro_text_area {
+    display: flex;
+    justify-content: space-between;
+}
+#intro .intro_text_area .intro_title > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.68rem;
+}
+#intro .intro_text_area .intro_title > p {
+    font-size: 0.93rem;
+    font-weight: 600;
+}
+#intro .intro_text_area .shortcut {
+    display: block;
+    height: 3rem;
+    padding: 0 1.87rem;
+    border: 1px solid #000;
+    border-radius: 3rem;
+    line-height: 3rem;
+}
+/* //intro */
+
+/* art_gallery */
+#art_gallery .art_gallery_area {
+    display: flex;
+    justify-content: space-between;
+}
+#art_gallery .art_gallery_area .art_gallery_card {
+    width: 23.5%;
+    height: 29.18rem;
+}
+/* 이미지 */
+#art_gallery .art_gallery_area .art_gallery_card .art_gallery_img  {
+    display: block;
+    background: no-repeat center/cover;
+    width: 100%;
+    height: 50%;
+    margin: 1.56rem 0 1.25rem;
+}
+#art_gallery .art_gallery_area .art_gallery_card .art_gallery_img01 {
+   background-image: url(../index_img/img_place02_off.jpg);
+}
+#art_gallery .art_gallery_area .art_gallery_card .art_gallery_img02 {
+   background-image: url(../index_img/img_place01_off.jpg);
+}
+#art_gallery .art_gallery_area .art_gallery_card .art_gallery_img03 {
+   background-image: url(../index_img/img_place03_off.jpg);
+}
+#art_gallery .art_gallery_area .art_gallery_card .art_gallery_img04 {
+   background-image: url(../index_img/img_place04_off.jpg);
+}
+/* 이미지 */
+#art_gallery .art_gallery_area .art_gallery_card .section_title {
+    margin-bottom: 1rem;
+}
+#art_gallery .art_gallery_area .art_gallery_card .section_text {
+    margin-bottom: 1rem;
+}
+/* //art_gallery */
+
+/* display */
+/* display_title_area */
+#display .title_area .tap_title_area .section_title { 
+    /* 공통부분이 있어 h2로 작업 */
+    cursor: pointer;
+}
+/* display_title_area */
+
+/* display_tap_swiper */
+/* 슬라이드 크기 */
+#display .display_swiper {
+    width: 100%;
+    max-height: 41.43rem;
+}
+#display .display_swiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+#display .display_swiper .swiper-wrapper .swiper-slide {
+    width: 25rem;
+    height: 100%;
+}
+/* 슬라이드 크기 */
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item {
+    display: block;
+}
+/* 이미지 크기 */
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox {
+    width: 100%;
+    max-height: 25rem;
+    margin-bottom: 1.56rem;
+}
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox .display_img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+/* 이미지 크기 */
+
+/* 텍스트 */
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_title {
+    letter-spacing: -0.8px;
+}
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_text:nth-of-type(1),
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_text:nth-of-type(3) {
+    font-weight: 600;
+}
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_text:nth-of-type(3) {
+    color: #949494;
+}
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_text,
+#display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_link {
+    margin-bottom: 0.8rem;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#display .display_swiper .swiper-button-next,
+#display .display_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+}
+#display .display_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#display .display_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* display_tap_swiper */
+
+.title_area { /* section title 정렬 */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.tap_title_area { /* tap메뉴 타이틀 */
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+/* Tap 메뉴 */
+.TapTitle {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.TapTitle.on {
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    opacity: 1;
+}
+.Tap {
+    display: none;
+}
+.Tap.on {
+    display: block;
+}
+/* Tap 메뉴 */
+/* display */
+
+/* collection */
+/* collection_swiper */
+/* 슬라이드 크기 */
+#collection .collection_swiper {
+    width: 100%;
+    max-height: 30rem;
+}
+#collection .collection_swiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+#collection .collection_swiper .swiper-wrapper .swiper-slide {
+    width: 25rem;
+    height: 100%;
+}
+/* 슬라이드 크기 */
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item {
+    display: block;
+}
+
+/* 이미지 크기 */
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .collection_item_imgbox {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.56rem;
+}
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .box01 { /* 국립현대미술관 이건희컬렉션 */
+    height: 40%;
+}
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .box02 { /* 국립현대미술관 소장품300 */
+    height: 80%;
+}
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .box03 { /* 국립현대미술관 소장품300 */
+    height: 60%;
+}
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .box04 { /* 국립현대미술관 소장품300 */
+    height: 38%;
+}
+#collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .collection_item_imgbox .collection_img {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 크기 */
+
+/* 스와이퍼 버튼 */
+#collection .collection_swiper .swiper-button-next,
+#collection .collection_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+}
+#collection .collection_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#collection .collection_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* collection_swiper */
+/* collection */
+
+/* newsletter */
+/* newsletter_swiper */
+/* 슬라이드 크기 */
+#newsletter .newsletter_swiper {
+    width: 100%;
+    max-height: 27rem;
+}
+#newsletter .newsletter_swiper .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+#newsletter .newsletter_swiper .swiper-wrapper .swiper-slide {
+    width: 25rem;
+    height: 100%;
+}
+/* 슬라이드 크기 */
+#newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item {
+    display: block;
+}
+/* 이미지크기 */
+#newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item .newsletter_item_imgbox {
+    width: 100%;
+    max-height: 23rem;
+    overflow: hidden;
+    margin-bottom: 1.56rem;
+}
+#newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item .newsletter_item_imgbox .newsletter_img {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지크기 */
+/* 텍스트 */
+#newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item .section_text {
+    font-weight: 600;
+}
+#newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item .section_text:nth-of-type(2) {
+    color: #949494;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#newsletter .newsletter_swiper .swiper-button-next,
+#newsletter .newsletter_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+}
+#newsletter .newsletter_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#newsletter .newsletter_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* newsletter_swiper */
+/* newsletter */
+
+/* learn_more */
+#learn_more {
+    padding-top: 0;
+}
+/* 멤버쉽 배너 */
+#learn_more .membership {
+    display: block;
+    width: 100%;
+    max-height: 11.68rem;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+#learn_more .membership > img {
+    width: 100%;
+    height: 100%;
+}
+#learn_more .learn_more_area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#learn_more .learn_more_area .learn_more_card {
+    width: 23.5%;
+    max-height: 19.43rem;
+}
+/* 이미지 */
+#learn_more .learn_more_area .learn_more_card figure {
+    background: no-repeat center/cover;
+    width: 100%;
+    height: 80%;
+    margin: 1.56rem 0 1.25rem;
+}
+#learn_more .learn_more_area .learn_more_card .learn_more_img01 {
+    background-image: url(../index_img/img_link01.jpg);
+}
+#learn_more .learn_more_area .learn_more_card .learn_more_img02 {
+    background-image: url(../index_img/img_link02.jpg);
+}
+#learn_more .learn_more_area .learn_more_card .learn_more_img03 {
+    background-image: url(../index_img/img_link03.jpg);
+}
+#learn_more .learn_more_area .learn_more_card .learn_more_img04 {
+    background-image: url(../index_img/img_link04.jpg);
+}
+/* 이미지 */
+/* 텍스트 */
+#learn_more .learn_more_area .learn_more_card .learn_more_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#learn_more .learn_more_area .learn_more_card .learn_more_title .view_all {
+    background: none;
+    padding: 0;
+    border-bottom: 1px solid #000;
+}
+/* 텍스트 */
+/* //learn_more */
+
+/* news */
+#news {
+    padding: 0;
+}
+#news .news_banner {
+    display: block;
+    padding: 0.62rem 0 0.3rem 0;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+#news .news_banner > img {
+    width: 100%;
+    height: 100%;
+}
+#news .news_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+}
+#news .news_area .announcement_area {
+    width: 50%;
+}
+#news .news_area .announcement_area > a {
+    display: block;
+    font-size: 1.75rem;
+}
+/* //news */
+
+/* 모달창 */
+.modal_area {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    display: none;
+}
+.modal_area .subscribe_modal_area {
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45rem;
+    padding: 1.87rem 1.87rem 1rem 1.87rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+/* 텍스트 */
+.modal_area .section_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.93rem;
+}
+.modal_area .section_text {
+    margin-bottom: 0.93rem;
+}
+.modal_area .modal_text {
+    display: block;
+    font-size: 0.81rem;
+    color: #949494;
+    margin-bottom: 0.93rem;
+}
+/* 텍스트 */
+
+/* 버튼 */
+.modal_area .modal_btn_area {
+    text-align: center;
+}
+.modal_area .close {
+    position: absolute;
+    top: 8%; right: 2%;
+    display: block;
+    background: url(../index_img/icon_dialog_closeL.png) no-repeat center / 20px;
+    width: 3.12rem;
+    height: 3.12rem;
+}
+/* 버튼 */
+/* 모달창 */

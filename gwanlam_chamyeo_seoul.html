@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립현대미술관 서울</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/commonness.css">
+    <link rel="stylesheet" href="css/gwanlam_chamyeo.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="pan"></div>
+        <div id="pan2"></div>
+        <!-- header -->
+        <div id="gwanlam_chamyeo_header">
+            <nav class="gwanlam_chamyeo_nav_box inner">
+                <!-- gwanlam_chamyeo_header_top -->
+                <div id="gwanlam_chamyeo_header_top">
+                    <!-- 로고 -->
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="index_img/bg_logo_full.svg" alt="로고 이미지">
+                        </a>
+                    </h1>
+                    <!-- 로고 -->
+
+                    <!-- header_top_title -->
+                    <div class="header_top_title">
+                        <a href="gwanlam_chamyeo_seoul.html" class="section_title on">관람·참여</a>
+                        <a href="#" class="section_title on">전시</a>
+                        <a href="#" class="section_title on">교육</a>
+                        <a href="#" class="section_title on">소장품</a>
+                        <a href="#" class="section_title on">미술연구</a>
+                        <a href="#" class="section_title on">디지털미술관</a>
+                    </div>
+                    <!-- header_top_title -->
+
+                    <a href="#" class="search">
+                        <!-- 백그라운드 이미지 btn_totalSearch -->
+                    </a>
+                    <a href="#" class="search_close">
+                        <!-- 백그라운드 이미지 icon_dialog_closeL.png -->
+                    </a>
+                </div>
+                <!-- gwanlam_chamyeo_header_top -->
+
+                <!-- gwanlam_chamyeo_header_bottom -->
+                <div id="gwanlam_chamyeo_header_bottom">
+                    <!-- 검색창 -->
+                    <div class="search_box">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button class="search_btn btn2 section_text">검색</button>
+                    </div>
+                    <!-- 검색창 -->
+
+                    <!-- 관람참여 하위메뉴 -->
+                    <div class="sub_menu">
+                        <a href="gwanlam_chamyeo_seoul.html" class="section_title">서울</a>
+                        <a href="#" class="section_title">과천</a>
+                        <a href="#" class="section_title">덕수궁</a>
+                        <a href="#" class="section_title">청주</a>
+                        <a href="#" class="section_title">어린이미술관</a>
+                        <a href="#" class="section_title">이벤트</a>
+                        <a href="#" class="section_title">통합예약</a>
+                        <a href="#" class="section_title" style="font-weight: 400;">전시해설</a>
+                        <a href="#" class="section_title" style="font-weight: 400;">레지던시</a>
+                        <a href="#" class="section_title" style="font-weight: 400;">미술은행</a>
+                    </div>
+                    <!-- 관람참여 하위메뉴 -->
+
+                    <!-- 전시 하위메뉴 -->
+                    <div class="sub_menu">
+                        <a href="#" class="section_title">현재전시</a>
+                        <a href="#" class="section_title">예정전시</a>
+                        <a href="#" class="section_title">과거전시</a>
+                    </div>
+                    <!-- 전시 하위메뉴 -->
+
+                    <!-- 교육 하위메뉴 -->
+                    <div class="sub_menu">
+                        <a href="#" class="section_title">미술관교육소개</a>
+                        <a href="#" class="section_title">어린이</a>
+                        <a href="#" class="section_title">청소년</a>
+                        <a href="#" class="section_title">교사</a>
+                        <a href="#" class="section_title">성인</a>
+                        <a href="#" class="section_title">교육자료실</a>
+                        <a href="#" class="section_title">참여신청</a>
+                    </div>
+                    <!-- 교육 하위메뉴 -->
+
+                    <!-- 소장품 하위메뉴 -->
+                    <div class="sub_menu">
+                        <a href="#" class="section_title">소장품 검색</a>
+                        <a href="#" class="section_title">소장품 탐색</a>
+                        <a href="#" class="section_title">소장품 대여</a>
+                        <a href="#" class="section_title">보존과학</a>
+                    </div>
+                    <!-- 소장품 하위메뉴 -->
+
+                    <!-- 미술연구 하위메뉴 -->
+                    <div class="sub_menu">
+                        <a href="#" class="section_title">도서와 아카이브</a>
+                        <a href="#" class="section_title">연구</a>
+                        <a href="#" class="section_title">발간자료</a>
+                        <a href="#" class="section_title">MMCA 리서치랩</a>
+                    </div>
+                    <!-- 미술연구 하위메뉴 -->
+
+                    <!-- 디지털미술관 하위메뉴 -->
+                    <div class="sub_menu">
+                        <a href="#" class="section_title">메인</a>
+                        <a href="#" class="section_title">맞춤검색</a>
+                        <a href="#" class="section_title">오디오가이드</a>
+                        <a href="#" class="section_title">이용자갤러리</a>
+                    </div>
+                    <!-- 디지털미술관 하위메뉴 -->
+                </div>
+            </nav>
+        </div>
+        <!-- header -->
+
+        <!-- intro -->
+        <section id="intro">
+            <!-- 백그라운드 이미지 seoul_day.png -->
+            <!-- 메인 타이틀 -->
+            <p class="intro_text">
+                도시와 역사와 동시대미술이 호흡하는 <br>
+                열린 미술관
+            </p>
+            <h2 class="section_title">국립현대미술관 서울</h2>
+            <!-- 메인 타이틀 -->
+
+            <!-- 안내창 -->
+            <div class="guide_box_area">
+                <div class="guide_box">
+                    <p class="guide_title">관람 시간</p>
+                    <p class="guide_text">월, 화, 목, 금, 일요일</p>
+                    <p class="section_title">10:00-18:00</p>
+                    <p class="guide_text">수,토요일</p>
+                    <p class="section_title">10:00-21:00</p>
+                    <p class="guide_text">(18:00-21:00 야간개장)</p>
+                    <p class="guide_text">※ 휴관일: 1월1일, 설날, 추석</p>
+                </div>
+                <a href="#" class="guide_arrow_left">
+                    <!-- 백그라운드 이미지 icon_arrow_b.png -->
+                </a>
+                <a href="#" class="guide_arrow_right">
+                    <!-- 백그라운드 이미지 icon_arrow_b.png -->
+                </a>
+            </div>
+            <!-- 안내창 -->
+        </section>
+        <!-- //intro -->
+
+        <!-- guide_header -->
+        <div class="guide_header">
+            <nav class="guide_header_nav_box section_sub_title">
+                <a href="#intro">메인</a>
+                <a href="#display">전시</a>
+                <a href="#education">교육</a>
+                <a href="#event">이벤트</a>
+                <a href="#viewing">관람정보</a>
+                <a href="#floor_guide">층별안내</a>
+                <a href="#amenities">편의시설</a>
+                <a href="#cultural">문화시설</a>
+                <a href="#directions">오시는길</a>
+            </nav>
+        </div>
+        <!-- //guide_header -->
+
+        <!-- display -->
+        <section id="display" class="inner">
+            <h2 class="section_title">전시</h2>
+            <!-- display_swiper -->
+            <div class="swiper displays_swiper">
+                <div class="swiper-wrapper">
+                    <!-- 접속하는 몸 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="display_item">
+                            <figure class="display_item_imgbox">
+                                <img src="index_img/2024080801170738411017.gif" class="display_img" alt="접속하는 몸">
+                            </figure>
+                            <p class="section_text">전시</p>
+                            <p class="section_sub_text">접속하는 몸: 아시아 여성 미술가들</p>
+                            <p class="section_text">
+                                2024-09-13~2024-10-12
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 접속하는 몸 -->
+
+                    <!-- 국립현대미술관 다원예술2 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="display_item">
+                            <figure class="display_item_imgbox">
+                                <img src="index_img/2024041604402793013445.png" class="display_img" alt="우주 엘리베이터">
+                            </figure>
+                            <p class="section_text">다원예술</p>
+                            <p class="section_sub_text">국립현대미술관 다원예술 2024: <br> 우주 엘리베이터</p>
+                            <p class="section_text">
+                                2024-05-25~2025-04-06
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 국립현대미술관 다원예술2 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- display_swiper -->
+
+            <!-- 페이지 번호 -->
+            <p class="page_num section_text">1</p>
+            <!-- 페이지 번호 -->
+        </section>
+        <!-- //display -->
+
+        <!-- education -->
+        <section id="education" class="inner">
+            <h2 class="section_title">교육</h2>
+            <!-- education_swiper -->
+            <div class="swiper education_swiper">
+                <div class="swiper-wrapper">
+                    <!-- 학교관리자 대상 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="education_item">
+                            <figure class="education_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/2024042502421130113068.jpg" alt="학교관리자대상"
+                                    class="education_img">
+                            </figure>
+                            <p class="section_text">교사</p>
+                            <p class="section_sub_text">2024 학교관리자 대상 작품감상 교육프로그램</p>
+                            <p class="section_text">
+                                2024.04.08 ~ 2024.11.29
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 학교관리자 대상 -->
+
+                    <!-- 예비교사 대상 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="education_item">
+                            <figure class="education_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/202403070548119091289.png" alt="예비교사대상"
+                                    class="education_img">
+                            </figure>
+                            <p class="section_text">교사</p>
+                            <p class="section_sub_text">2024 예비 교사 대상 작품감상 교육프로그램</p>
+                            <p class="section_text">
+                                2024.04.08 ~ 2024.11.29
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 예비교사 대상 -->
+
+                    <!-- 중등교사 대상 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="education_item">
+                            <figure class="education_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/2024030705491657519919.png" alt="중등교사대상"
+                                    class="education_img">
+                            </figure>
+                            <p class="section_text">교사</p>
+                            <p class="section_sub_text">2024 중등 교사 대상 작품감상 교육프로그램</p>
+                            <p class="section_text">
+                                2024.04.08 ~ 2024.11.29
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 중등교사 대상 -->
+
+                    <!-- 어린이 대상 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="education_item">
+                            <figure class="education_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/2024061803552179914000.png" alt="모바일 활동지 프로그램"
+                                    class="education_img">
+                            </figure>
+                            <p class="section_text">어린이</p>
+                            <p class="section_sub_text">[서울] 모바일 활동지 교육프로그램 ‹오늘의 미술관 기록›</p>
+                            <p class="section_text">
+                                2024.05.04 ~ 2024.12.31
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 어린이 대상 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- education_swiper -->
+
+            <!-- 페이지 번호 -->
+            <p class="page_num section_text">1</p>
+            <!-- 페이지 번호 -->
+        </section>
+        <!-- //education -->
+
+        <!-- event -->
+        <section id="event" class="inner">
+            <h2 class="section_title">이벤트</h2>
+            <!-- event_swiper -->
+            <div class="swiper event_swiper">
+                <div class="swiper-wrapper">
+                    <!-- 전시연계 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="event_item">
+                            <figure class="event_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/2024031501570244711487.jpg" alt="전시연계"
+                                    class="event_img">
+                            </figure>
+                            <p class="section_text">전시연계</p>
+                            <p class="section_sub_text">[영어] Welcome to MMCA: Guided Tour</p>
+                            <p class="section_text">
+                                2024.03.20 ~ 2024.11.27
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 전시연계 -->
+
+                    <!-- 문화행사 -->
+                    <div class="swiper-slide">
+                        <a href="#" class="event_item">
+                            <figure class="event_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/2024092703010781814168.jpg" alt="문화행사"
+                                    class="event_img">
+                            </figure>
+                            <p class="section_text">문화행사</p>
+                            <p class="section_sub_text">MMCA 서울 디지털도서관 ‹북 토크›_02</p>
+                            <p class="section_text">
+                                2024.10.16 ~ 2024.10.16
+                            </p>
+                        </a>
+                    </div>
+                    <!-- 문화행사 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- event_swiper -->
+
+            <!-- 페이지 번호 -->
+            <p class="page_num section_text">1</p>
+            <!-- 페이지 번호 -->
+        </section>
+        <!-- event -->
+
+        <!-- viewing -->
+        <section id="viewing" class="inner">
+            <h2 class="section_title">관람정보</h2>
+            <div class="viewing_scroll_box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>할인대상</th>
+                            <th colspan="3">관람료 책정 기준</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 관람권(기획전) -->
+                        <tr>
+                            <td>관람권(기획전)</td>
+                            <td colspan="3" class="td_inner" style="color: #000;"> <!-- 관람료 책정 기준과 비고 열을 병합 -->
+                                - 개별관람권: 전시별 별도<br>
+                                - 통합관람권: 7,000원 ※ 기획전시 3개 이상 운영 시<br>
+                                - 수,토 야간개장 시 무료관람 (오후 6시~9시)<br>
+                                - 무료관람일: 매월 마지막 수요일, 문화가 있는 날
+                            </td>
+                        </tr>
+
+                        <!-- 할인대상 -->
+                        <tr>
+                            <td>할인대상</td>
+                            <td>제휴사</td>
+                            <td class="td_inner">
+                                - 아시아나클럽 일반회원: 20% 할인 (카드 제시 회원)<br>
+                                - 다둥이카드 소지자: 20% 할인
+                            </td>
+                        </tr>
+
+                        <!-- 무료대상 -->
+                        <tr>
+                            <td rowspan="2">무료대상</td>
+                            <td>일반</td>
+                            <td class="td_inner">
+                                - 만 24세 이하, 만 65세 이상<br>
+                                - 대학생 (학부생)<br>
+                                - 국가유공자 및 독립유공자 (유공자증 소지자 본인 및 가족)<br>
+                                - 5.18 민주유공자, 특수임무수행자, 국가보훈보상대상자 (증빙 서류 소지자)<br>
+                                - 고엽제후유증환자, 참전유공자 (국가보훈등록증 소지자)<br>
+                                - 의상자증 소지자 및 동행 활동보조자<br>
+                                - 의사자 유족증 소지자<br>
+                                - 장애인 및 동행보호자<br>
+                                - 문화누리카드 소지자<br>
+                                - 미술관에 미술작품 기증자 (기증자 카드 소지자 본인 및 동반 가족)<br>
+                                - 박물관·미술관 학예사 자격 취득자 (자격증 소지자)<br>
+                                - 예술인패스 소지자<br>
+                                - ICOM(국제박물관협의회) 카드 소지자<br>
+                                - CIMAM(국제근현대미술관위원회) 카드 소지자<br>
+                                - 패트론/파트너 카드 소지자<br>
+                                - 학교폭력 대응 과정 이수증 소지자 (학부모 On누리 사이트)<br>
+                                ※ 문의: 02-3701-9500
+                            </td>
+                            <td>※ 신분증 또는 증명서류 제시자에 한함</td>
+                        </tr>
+
+                        <!-- 제휴사 -->
+                        <tr>
+                            <td>제휴사</td>
+                            <td class="td_inner">- 아시아나클럽 우수회원 카드 (카드 제시 회원)</td>
+                            <td>※ 아시아나클럽 회원 할인 및 무료관람은 2024년 12월 31일까지 적용합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- //viewing -->
+
+        <!-- floor_guide -->
+        <section id="floor_guide" class="inner">
+            <h2 class="section_title">층별안내</h2>
+            <div class="floor_area">
+                <!-- TapTitle -->
+                <ul class="section_title">
+                    <li><a href="#" class="TapTitle on">3F</a></li>
+                    <li><a href="#" class="TapTitle">2F</a></li>
+                    <li><a href="#" class="TapTitle">1F</a></li>
+                    <li><a href="#" class="TapTitle">B1F</a></li>
+                </ul>
+                <!-- TapTitle -->
+
+                <!-- Tap1 -->
+                <div class="Tap on">
+                    <div class="floor_img">
+                        <img src="gwanlam_chamyeo_img/seoul/3f_img_pc.png" alt="3층">
+                        <img src="gwanlam_chamyeo_img/seoul/3f_text_pc.png" alt="3층 안내">
+                    </div>
+                </div>
+                <!-- Tap1 -->
+
+                <!-- Tap2 -->
+                <div class="Tap">
+                    <div class="floor_img">
+                        <img src="gwanlam_chamyeo_img/seoul/2f_img_pc.png" alt="2층">
+                        <img src="gwanlam_chamyeo_img/seoul/2f_text_pc.png" alt="2층 안내">
+                    </div>
+                </div>
+                <!-- Tap2 -->
+
+                <!-- Tap3 -->
+                <div class="Tap">
+                    <div class="floor_img">
+                        <img src="gwanlam_chamyeo_img/seoul/1f_img_pc.png" alt="1층">
+                        <img src="gwanlam_chamyeo_img/seoul/1f_text_pc.png" alt="1층 안내">
+                    </div>
+                </div>
+                <!-- Tap3 -->
+
+                <!-- Tap4 -->
+                <div class="Tap">
+                    <div class="floor_img">
+                        <img src="gwanlam_chamyeo_img/seoul/b1f_img_pc.png" alt="지하1층">
+                        <img src="gwanlam_chamyeo_img/seoul/b1f_text_pc.png" alt="지하1층 안내">
+                    </div>
+                </div>
+                <!-- Tap4 -->
+            </div>
+        </section>
+        <!-- //floor_guide -->
+
+        <!-- amenities -->
+        <section id="amenities" class="inner">
+            <h2 class="section_title">편의시설</h2>
+            <!-- amenities_swiper -->
+            <div class="swiper amenities_swiper">
+                <div class="swiper-wrapper">
+                    <!-- 미술가게 서울 -->
+                    <div class="swiper-slide">
+                        <div class="amenities_item">
+                            <figure class="amenities_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/mmcaShopSeoul.png" class="amenities_img"
+                                    alt="미술가게 서울">
+                            </figure>
+                            <p class="section_sub_title">미술가게 서울(MMCA Shop)</p>
+                            <p class="section_text">
+                                미술가게 서울의 정체성을 보여주며 MI, 전시, 교육 등과 <br>
+                                연계된 다양한 아트상품을 선보입니다.
+                            </p>
+                            <ul class="section_text">
+                                <li>위치 : 로비 1층</li>
+                                <li>문의전화 : 02-3701-9871</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 미술가게 서울 -->
+
+                    <!-- 미술책방 -->
+                    <div class="swiper-slide">
+                        <div class="amenities_item">
+                            <figure class="amenities_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/artbook_img.png" class="amenities_img" alt="미술책방">
+                            </figure>
+                            <p class="section_sub_title">미술책방(Art Book Shop)</p>
+                            <p class="section_text">
+                                각종 전시도록을 포함한 국립현대미술관 출판물과 <br>
+                                국내/외 다양한 예술서적을 만나볼 수 있는 공간입니다.
+                            </p>
+                            <ul class="section_text">
+                                <li>위치 : 로비 1층 1개 구역</li>
+                                <li>문의전화 : 02-3701-9872</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 미술책방 -->
+
+                    <!-- 티하우스 오설록 -->
+                    <div class="swiper-slide">
+                        <div class="amenities_item">
+                            <figure class="amenities_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/teahouse_img3.jpg" class="amenities_img"
+                                    alt="티하우스 오설록">
+                            </figure>
+                            <p class="section_sub_title">티하우스 오설록 (Tea House OSULLOC)</p>
+                            <p class="section_text">
+                                티하우스 오설록(Tea House OSULLOC)은 국립현대미술관 서울에 위치하여 미술관 외부 마당과 아름다운 삼청동 길이 훤히 보이는 탁 트인 전망을
+                                자랑하는 복합 차 문화 공간입니다.
+                            </p>
+                            <ul class="section_text">
+                                <li>위치 : 국립현대미술관 서울 디지털 도서관 옆</li>
+                                <li>문의전화 : 070-4483-5999</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 티하우스 오설록 -->
+
+                    <!-- 테라로사 커피 -->
+                    <div class="swiper-slide">
+                        <div class="amenities_item">
+                            <figure class="amenities_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/terarosa_img.png" class="amenities_img"
+                                    alt="테라로사 커피">
+                            </figure>
+                            <p class="section_sub_title">테라로사 커피 (TERAROSA COFFEE)</p>
+                            <p class="section_text">
+                                테라로사의 공간에서는 일상 속 여유를 즐기러 온 이들에게 편안한 휴식을 제공합니다. 산지 별 드립 커피, 에스프레소 베리에이션, 하우스 음료와 제빵류를
+                                즐기실 수 있습니다.
+                            </p>
+                            <ul class="section_text">
+                                <li>위치 : 전시동 1층 로비 옆</li>
+                                <li>문의전화 : 033-648-2760</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 테라로사 커피 -->
+
+                    <!-- 두레 -->
+                    <div class="swiper-slide">
+                        <div class="amenities_item">
+                            <figure class="amenities_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/doore_img.png" class="amenities_img" alt="두레">
+                            </figure>
+                            <p class="section_sub_title">두레(DOORE)</p>
+                            <p class="section_text">
+                                한식의 맛과 전통이 있는 두레는 가벼운 식사메뉴부터 일품요리, <br>
+                                코스메뉴까지 즐길수 있는 공간 입니다.
+                            </p>
+                            <ul class="section_text">
+                                <li>위치 : 교육동 1층</li>
+                                <li>문의전화 : 02-732-2919</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 두레 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- amenities_swiper -->
+        </section>
+        <!-- //amenities -->
+
+        <!-- cultural -->
+        <section id="cultural" class="inner">
+            <h2 class="section_title">문화시설</h2>
+            <!-- cultural_swiper -->
+            <div class="swiper cultural_swiper">
+                <div class="swiper-wrapper">
+                    <!-- 다원공간 -->
+                    <div class="swiper-slide">
+                        <div class="cultural_item">
+                            <figure class="cultural_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/multi_projecthall_img.png" class="cultural_img"
+                                    alt="다원공간">
+                            </figure>
+                            <div class="cultural_item_textbox">
+                                <p class="section_sub_title">
+                                    MMCA다원공간 <br> (Multi-project Hall)
+                                </p>
+                                <p class="section_text">
+                                    전시동 지하 1층에 위치한 멀티 MMCA다원공간은 다원예술, 전시,퍼포먼스, 교육 등 다채로운 문화예술 행사가 펼쳐지는 공간입니다. 여러 장르가
+                                    융복합 되는현대미술의 다양한 예술적 표현이 가능하도록 하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 다원공간 -->
+
+                    <!-- MMCA영상관 -->
+                    <div class="swiper-slide">
+                        <div class="cultural_item">
+                            <figure class="cultural_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/mmca_filmandvideo_img.png" class="cultural_img"
+                                    alt="MMCA영상관">
+                            </figure>
+                            <div class="cultural_item_textbox">
+                                <p class="section_sub_title">
+                                    MMCA영상관 <br> (MMCA Film and Video)
+                                </p>
+                                <p class="section_text">
+                                    전시동 지하 1층에 위치한 국립현대미술관 서울 MMCA영상관에서는 예술영화, 실험영화, 국제영화제 등 다양한 프로그램이 진행되고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MMCA영상관 -->
+
+                    <!-- 다원공간 -->
+                    <div class="swiper-slide">
+                        <div class="cultural_item">
+                            <figure class="cultural_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/multi_projecthall_img.png" class="cultural_img"
+                                    alt="다원공간">
+                            </figure>
+                            <div class="cultural_item_textbox">
+                                <p class="section_sub_title">
+                                    MMCA다원공간 <br> (Multi-project Hall)
+                                </p>
+                                <p class="section_text">
+                                    전시동 지하 1층에 위치한 멀티 MMCA다원공간은 다원예술, 전시,퍼포먼스, 교육 등 다채로운 문화예술 행사가 펼쳐지는 공간입니다. 여러 장르가
+                                    융복합 되는현대미술의 다양한 예술적 표현이 가능하도록 하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 다원공간 -->
+
+                    <!-- MMCA영상관 -->
+                    <div class="swiper-slide">
+                        <div class="cultural_item">
+                            <figure class="cultural_item_imgbox">
+                                <img src="gwanlam_chamyeo_img/seoul/mmca_filmandvideo_img.png" class="cultural_img"
+                                    alt="MMCA영상관">
+                            </figure>
+                            <div class="cultural_item_textbox">
+                                <p class="section_sub_title">
+                                    MMCA영상관 <br> (MMCA Film and Video)
+                                </p>
+                                <p class="section_text">
+                                    전시동 지하 1층에 위치한 국립현대미술관 서울 MMCA영상관에서는 예술영화, 실험영화, 국제영화제 등 다양한 프로그램이 진행되고 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MMCA영상관 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- cultural_swiper -->
+        </section>
+        <!-- //cultural -->
+
+        <!-- directions -->
+        <section id="directions" class="inner">
+            <h2 class="section_title">오시는 길</h2>
+            <div class="directions_area">
+                <!-- TapTitle -->
+                <ul class="section_text">
+                    <li>
+                        <a href="#" class="TapTitle on">
+                            <img src="gwanlam_chamyeo_img/seoul/icon_three.png" alt="3호선">
+                            3호선 안국역 1번 출구
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="TapTitle">
+                            <img src="gwanlam_chamyeo_img/seoul/icon_three.png" alt="3호선">
+                            3호선 경복궁역 4번 출구
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="TapTitle">
+                            <img src="gwanlam_chamyeo_img/seoul/icon_five.png" alt="5호선">
+                            5호선 광화문역 2번 출구
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="TapTitle">
+                            <img src="gwanlam_chamyeo_img/seoul/icon_bus.png" alt="버스">
+                            버스
+                        </a>
+                    </li>
+                </ul>
+                <!-- TapTitle -->
+
+                <!-- Tap1 -->
+                <div class="Tap on">
+                    <img src="gwanlam_chamyeo_img/seoul/map_anguk_pc.jpg" alt="안국역">
+                </div>
+                <!-- Tap1 -->
+                 
+                 <!-- Tap2 -->
+                 <div class="Tap">
+                    <img src="gwanlam_chamyeo_img/seoul/map_gyeongbokgung_pc.jpg" alt="경복궁역">
+                </div>
+                <!-- Tap2 -->
+
+                <!-- Tap3 -->
+                <div class="Tap">
+                    <img src="gwanlam_chamyeo_img/seoul/map_gwanghwamun_pc.jpg" alt="광화문역">
+                </div>
+                <!-- Tap3 -->
+
+                <!-- Tap4 -->
+                <div class="Tap">
+                    <img src="gwanlam_chamyeo_img/seoul/map_bus_pc.jpg" alt="버스">
+                </div>
+                <!-- Tap4 -->
+            </div>
+
+            <!-- map_link -->
+            <div class="map_link">
+                <!-- 네이버 지도 -->
+                <a href="#">
+                    <img src="gwanlam_chamyeo_img/seoul/icon_naver.png" alt="네이버 지도">
+                    네이버 지도
+                </a>
+                 <!-- 네이버 지도 -->
+
+                 <!-- 카카오맵 -->
+                <a href="#">
+                    <img src="gwanlam_chamyeo_img/seoul/icon_kakao.png" alt="카카오 맵">
+                    카카오맵
+                </a>
+                 <!-- 카카오 맵 -->
+
+                 <!-- 주차안내 -->
+                <a href="#">
+                    <img src="gwanlam_chamyeo_img/seoul/icon_parking.png" alt="주차안내">
+                    주차안내
+                </a>
+                 <!-- 주차안내 -->
+
+                 <!-- 셔틀버스 -->
+                <a href="#">
+                    <img src="gwanlam_chamyeo_img/seoul/icon_shuttle.png" alt="셔틀버스">
+                    셔틀버스
+                </a>
+                 <!-- 셔틀버스 -->
+            </div>
+        </section>
+        <!-- //directions -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/gwanlam_chamyeo.js"></script>
+    <script src="js/tap.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+
+</html>

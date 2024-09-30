@@ -1,0 +1,784 @@
+@charset "utf-8";
+
+/* 공통 */
+section {
+    padding: 3.75rem 6.5rem;
+    border: none;
+}
+section > h2 {
+    margin-bottom: 1.25rem;
+}
+
+/* 섹션 서브 타이틀 */
+.section_sub_title { 
+    font-size: 1.31rem;
+    font-weight: 600;
+}
+/* 섹션 서브 타이틀 */
+
+/* 섹션 서브 텍스트 */
+.section_sub_text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+    letter-spacing: -0.8px;
+}
+/* 섹션 서브 텍스트 */
+
+/* 페이지 번호 */
+.page_num {
+    text-align: center;
+}
+/* 페이지 번호 */
+/* 공통 */
+
+/* -------------------------------------------------------------------- */
+
+/* header */
+#gwanlam_chamyeo_header {
+    position: fixed;
+    width: 100%;
+    height: 3.75rem;
+    z-index: 1000;
+    background: #fff;
+}
+
+/* gwanlam_chamyeo_header_top */
+#gwanlam_chamyeo_header_top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    align-items: center;
+}
+
+/* 로고 */
+#gwanlam_chamyeo_header_top .logo > a {
+    display:inline-block;
+    width: 2.93rem;
+    height: 3rem;
+    overflow: hidden;
+    padding-top: 1.25rem;
+}
+#gwanlam_chamyeo_header_top .logo > a > img {
+    height: 100%;
+}
+/* 로고 */
+
+/* header_top_title */
+#gwanlam_chamyeo_header_top .header_top_title > a {
+    display: inline-block;
+    margin-right: 1.5rem;
+    opacity: 0.5;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+#gwanlam_chamyeo_header_top .header_top_title > a.on {
+    opacity: 1;
+}
+#gwanlam_chamyeo_header_top .header_top_title > a:last-child {
+    margin-right: 0;
+}
+/* header_top_title */
+/* gwanlam_chamyeo_header_top */
+
+/* gwanlam_chamyeo_header_bottom */
+#gwanlam_chamyeo_header_bottom {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 3.75rem;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+}
+#gwanlam_chamyeo_header_bottom.on {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+/* sub_menu */
+#gwanlam_chamyeo_header_bottom .sub_menu {
+    display: none;
+    width: 100%;
+}
+#gwanlam_chamyeo_header_bottom .sub_menu > a {
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 1.5rem;
+}
+#gwanlam_chamyeo_header_bottom .sub_menu > a:last-child {
+    margin-right: 0;
+}
+#gwanlam_chamyeo_header_bottom .sub_menu.on {
+    display: block;
+}
+/* sub_menu */
+/* gwanlam_chamyeo_header_bottom */
+
+/* 검색창 */
+#gwanlam_chamyeo_header_top .search {
+    background: url(../index_img/btn_totalSearch.svg) no-repeat center/ contain;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+#gwanlam_chamyeo_header_top .search_close {
+    background: url(../index_img/icon_dialog_closeL.png) no-repeat center/ contain;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: none;
+}
+#gwanlam_chamyeo_header_bottom .search_box {
+    position: absolute;
+    width: 120rem;
+    background: #fff;
+    top: 100%; left: -10%;
+    /* border-top: 1px solid #000; */
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    display: none;
+}
+#gwanlam_chamyeo_header_bottom input::placeholder { /* 플레이스홀더 텍스트 */
+    font-size: 0.93rem;
+}
+#gwanlam_chamyeo_header_bottom .search_box input { /* 검색어 텍스트 */
+    padding: 0.62rem;
+    width: 86%;
+    font-size: 1.867rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+#gwanlam_chamyeo_header_bottom .search_box .search_btn {
+    width: 11.25rem;
+    vertical-align: 0.438rem;
+}
+/* 검색창 */
+
+/* intro */
+#intro {
+    background: url(../gwanlam_chamyeo_img/seoul/seoul_day.png) no-repeat center / cover;
+    border: none;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* 메인 타이틀 */
+#intro .intro_text {
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 1.25rem;
+    font-size: 1.31rem;
+}
+#intro .section_title:nth-of-type(1) {
+    text-align: center;
+}
+/* 메인 타이틀 */
+
+/* 안내창 */
+#intro .guide_box_area {
+    position: absolute;
+    left: 0.7%; bottom: 1.4%;
+    display: flex;
+    justify-content: space-between;
+}
+#intro .guide_box_area .guide_box {
+    background: #fff;
+    width: 19.37rem;
+    border: 1px solid #000;
+    border-radius: 1.5rem;
+    padding: 1.25rem;
+    box-sizing: border-box;
+}
+#intro .guide_box_area .guide_box .guide_title {
+    font-size: 1.06rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+#intro .guide_box_area .guide_box p:nth-child(3) {
+    margin-bottom: 1.25rem;
+}
+#intro .guide_box_area .guide_box .guide_text {
+    font-size: 0.81rem;
+    font-weight: 600;
+}
+#intro .guide_box_area .guide_arrow_left { /* 왼쪽 화살표 */
+    display: block;
+    background: #fff url(../gwanlam_chamyeo_img/seoul/icon_arrow_b.png) no-repeat center / 25% 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+#intro .guide_box_area .guide_arrow_right { /* 오른쪽 화살표 */
+    display: block;
+    background: #fff url(../gwanlam_chamyeo_img/seoul/icon_arrow_b.png) no-repeat center / 25% 50%;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: none;
+}
+/* 안내창 */
+
+/* guide_header */
+.guide_header {
+    width: 100%;
+    height: 3.75rem;
+    box-sizing: border-box;
+}
+.guide_header .guide_header_nav_box {
+    width: 73%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+}
+.guide_header .guide_header_nav_box > a {
+    display: inline-block;
+    text-align: center;
+    padding: 0 1.44rem;
+    line-height: 3.75rem;
+    color: #949494;
+    transition: color 0.5s;
+}
+.guide_header .guide_header_nav_box > a:hover {
+    color: #000;
+}
+.guide_header .guide_header_nav_box > a.on {
+    color: #000;
+}
+/* //guide_header */
+
+/* display */
+/* display_swiper */
+/* 슬라이드 크기 */
+#display .displays_swiper {
+    width: 100%;
+    margin-bottom: 6.25rem;
+}
+#display .displays_swiper .swiper-wrapper {
+    width: 100%;
+}
+#display .displays_swiper .swiper-wrapper .swiper-slide {
+    width: 16.875rem;
+    padding: 0 1.875rem;
+}
+#display .displays_swiper .swiper-wrapper .swiper-slide:first-child {
+    padding-left: 0;
+}
+/* 슬라이드 크기 */
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item {
+    display: block;
+}
+/* 이미지 크기 */
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox {
+    width: 100%;
+    max-height: 16.969rem;
+    margin-bottom: 1.56rem;
+}
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox .display_img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+/* 이미지 크기 */
+
+/* 텍스트 */
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_title {
+    letter-spacing: -0.8px;
+}
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_text:nth-of-type(1) {
+    font-weight: 600;
+}
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_text:nth-of-type(3) {
+    color: #949494;
+}
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_text,
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_link {
+    margin-bottom: 0.8rem;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#display .displays_swiper .swiper-button-next,
+#display .displays_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+}
+#display .displays_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#display .displays_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* display_swiper */
+/* //display */
+
+/* education */
+/* education_swiper */
+/* 슬라이드 크기 */
+#education .education_swiper {
+    width: 100%;
+    margin-bottom: 6.25rem;
+}
+#education .education_swiper .swiper-wrapper {
+    width: 100%;
+}
+#education .education_swiper .swiper-wrapper .swiper-slide {
+    width: 17.969rem;
+    padding: 0 1.875rem;
+}
+#education .education_swiper .swiper-wrapper .swiper-slide:first-child {
+    padding-left: 0;
+}
+/* 슬라이드 크기 */
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item {
+    display: block;
+}
+/* 이미지 크기 */
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .education_item_imgbox {
+    width: 100%;
+    max-height: 18rem;
+    margin-bottom: 1.56rem;
+}
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .education_item_imgbox .education_img {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 크기 */
+
+/* 텍스트 */
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_title {
+    letter-spacing: -0.8px;
+}
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_text:nth-of-type(1) {
+    font-weight: 600;
+}
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_text:nth-of-type(3) {
+    color: #949494;
+}
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_text,
+#education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_link {
+    margin-bottom: 0.8rem;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#education .education_swiper .swiper-button-next,
+#education .education_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+}
+#education .education_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#education .education_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* education_swiper */
+/* //education */
+
+/* education */
+/* education_swiper */
+#event {
+    margin-bottom: 4.375rem;
+}
+/* 슬라이드 크기 */
+#event .event_swiper {
+    width: 100%;
+    margin-bottom: 6.25rem;
+}
+#event .event_swiper .swiper-wrapper {
+    width: 100%;
+}
+#event .event_swiper .swiper-wrapper .swiper-slide {
+    width: 17.969rem;
+    padding: 0 1.875rem;
+}
+#event .event_swiper .swiper-wrapper .swiper-slide:first-child {
+    padding-left: 0;
+}
+/* 슬라이드 크기 */
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item {
+    display: block;
+}
+/* 이미지 크기 */
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .event_item_imgbox {
+    width: 100%;
+    max-height: 18rem;
+    margin-bottom: 1.56rem;
+}
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .event_item_imgbox .event_img {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 크기 */
+
+/* 텍스트 */
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_title {
+    letter-spacing: -0.8px;
+}
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_text:nth-of-type(1) {
+    font-weight: 600;
+}
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_text:nth-of-type(3) {
+    color: #949494;
+}
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_text,
+#event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_link {
+    margin-bottom: 0.8rem;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#event .event_swiper .swiper-button-next,
+#event .event_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+}
+#event .event_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#event .event_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* education_swiper */
+/* //event */
+
+/* viewing */
+#viewing .viewing_scroll_box {
+    width: 100%;
+}
+/* 테이블 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.938rem;
+    text-align: center;
+  }
+/* th */
+  th {
+    background: #000;
+    color: #fff;
+  }
+  th:first-child {
+    width: 13.75rem;
+  }
+/* th */
+
+/* td */
+ tbody tr:nth-child(2) td:nth-child(2) {
+    width: 5rem;
+ } 
+ .td_inner {
+    width: 37.5rem;
+    text-align: left;
+    color: #666666;
+    line-height: 1.6;
+ }
+/* td */
+thead > tr > th:first-child {
+    border-left: none;
+}
+thead > tr > th:last-child {
+    border-right: none;
+}
+tbody > tr > td:first-child {
+    border-left: none;
+}
+tbody > tr > td:last-child {
+    border-right: none;
+}
+/* 테이블 */
+/* //viewing */
+
+/* floor_guide */
+#floor_guide .floor_area {
+    width: 100%;
+    height: 35.438rem;
+    display: flex;
+    justify-content: space-between;
+}
+/* TapTitle */
+#floor_guide .floor_area ul {
+    width: 10%;
+    height: 100%;
+    margin-top: 8%;
+}
+#floor_guide .floor_area ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 15%;
+}
+#floor_guide .floor_area ul li > a {
+    display: block;
+    height: 100%;
+    line-height: 85px;
+    text-align: center;
+    color: #949494;
+    transition: all 0.3s;
+}
+#floor_guide .floor_area ul li > a:hover {
+    color: #000;
+}
+#floor_guide .floor_area ul li .TapTitle.on {
+    color: #000;
+}
+/* TapTitle */
+
+/* Tap */
+#floor_guide .floor_area .floor_img {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#floor_guide .floor_area .Tap {
+    display: none;
+}
+#floor_guide .floor_area .Tap.on {
+    display: block;
+}
+/* Tap */
+/* //floor_guide */
+
+/* amenities */
+/* amenities_swiper */
+#amenities .amenities_swiper {
+    width: 100%;
+    max-height: 34.938rem;
+}
+#amenities .amenities_swiper .swiper-slide {
+    width: 30%;
+    height: 100%;
+}
+#amenities .amenities_swiper .swiper-slide .amenities_item {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 사이즈 */
+#amenities .amenities_swiper .swiper-slide .amenities_item .amenities_item_imgbox {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1.25rem;
+}
+#amenities .amenities_swiper .swiper-slide .amenities_item .amenities_item_imgbox .amenities_img {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 사이즈 */
+
+/* 텍스트 */
+#amenities .amenities_swiper .swiper-slide .amenities_item p {
+    margin-bottom: 0.625rem;
+}
+#amenities .amenities_swiper .swiper-slide .amenities_item ul li {
+    position: relative;
+    padding-left: 0.625rem;
+    color: #666666;
+}
+#amenities .amenities_swiper .swiper-slide .amenities_item ul li:before {
+    position: absolute;
+    content: '';
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    width: 3px; height: 3px;
+    background: #666666;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#amenities .amenities_swiper .swiper-button-next,
+#amenities .amenities_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+    
+}
+#amenities .amenities_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#amenities .amenities_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* amenities_swiper */
+/* //amenities */
+
+/* cultural */
+/* cultural_swiper */
+#cultural .amenities_swiper {
+    width: 100%;
+    max-height: 31.375rem;
+}
+#cultural .cultural_swiper .swiper-slide {
+    width: 50%;
+    height: 100%;
+}
+#cultural .cultural_swiper .swiper-slide .cultural_item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 사이즈 */
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_imgbox {
+    width: 57%;
+}
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_imgbox .cultural_img {
+    width: 100%;
+    height: 100%;
+}
+/* 이미지 사이즈 */
+
+/* 텍스트 */
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_textbox {
+    width: 39%;
+}
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_textbox p {
+    margin-bottom: 0.625rem;
+    word-break: keep-all;
+}
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_textbox p:last-child {
+    line-height: 1.8;
+}
+/* 텍스트 */
+
+/* 스와이퍼 버튼 */
+#cultural .cultural_swiper .swiper-button-next,
+#cultural .cultural_swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #000;
+    border-radius: 50%;
+    
+}
+#cultural .cultural_swiper .swiper-button-next:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0 0 0.2rem;
+}
+#cultural .cultural_swiper .swiper-button-prev:after {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem 0 0;
+}
+/* 스와이퍼 버튼 */
+/* cultural_swiper */
+/* //cultural */
+
+/* directions */
+#directions {
+    height: 34.563rem;
+}
+#directions .directions_area {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 2.5rem;
+}
+/* TapTitle */
+#directions .directions_area ul {
+    width: 21.563rem;
+    height: 100%;
+}
+#directions .directions_area ul li {
+    width: 100%;
+    height: 25%;
+}
+#directions .directions_area ul li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 6.875rem;
+    transition: all 0.3s;
+}
+#directions .directions_area ul li > a:hover {
+    background: #000;
+    color: #fff;
+}
+#directions .directions_area ul li > a > img {
+    vertical-align: -0.75rem;
+    margin-right: 0.938rem;
+}
+#directions .directions_area ul li .TapTitle.on {
+    background: #000;
+    color: #fff;
+}
+/* TapTitle */
+
+/* Tap */
+#directions .directions_area .Tap > img {
+    width: 65.313rem;
+    height: 100%;
+}
+#directions .directions_area .Tap {
+    display: none;
+}
+#directions .directions_area .Tap.on {
+    display: block;
+}
+/* Tap */
+
+/* map_link */
+#directions .map_link {
+    text-align: right;
+}
+#directions .map_link > a {
+    display: inline-block;
+    background: url(../gwanlam_chamyeo_img/seoul/icon_arrow_bold.png)no-repeat right / 5px;
+    padding-right: 0.625rem;
+    font-weight: 600;
+    margin-left: 1.875rem;
+}
+#directions .map_link > a > img {
+    width: 1.125rem;
+    height: 0.938rem;
+    padding-right: 0.625rem;
+    vertical-align: -1px;
+}
+#directions .map_link > a:nth-child(2) > img {
+    width: 0.7rem;
+}
+#directions .map_link > a:nth-child(3) > img {
+    width: 0.9rem;
+}
+#directions .map_link > a:nth-child(4) > img {
+    width: 1.5rem;
+}
+/* map_link */
+
+
+
