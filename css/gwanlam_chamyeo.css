@@ -158,12 +158,21 @@ section > h2 {
 
 /* intro */
 #intro {
-    background: url(../gwanlam_chamyeo_img/seoul/seoul_day.png) no-repeat center / cover;
+    background: no-repeat center / cover;
     border: none;
     width: 100%;
     height: 100vh;
     position: relative;
 }
+/* 메인 이미지 */
+#intro.seoul { /* 서울 */
+    background-image: url(../gwanlam_chamyeo_img/seoul/seoul_day.png);
+}
+#intro.gwachun { /* 과천 */
+    background-image: url(../gwanlam_chamyeo_img/gwachun/gwacheon_day.png);
+}
+/* 메인 이미지 */
+
 /* 메인 타이틀 */
 #intro .intro_text {
     text-align: center;
@@ -828,15 +837,17 @@ tbody > tr > td:last-child {
 /* "modal_dl_box */
 .displayModal .modal_dl_box {
     display: flex;
-    justify-content: space-between;
 }
 .displayModal .modal_dl_box > dl:first-child {
-    width: 30%;
+    width: 20%;
 }
 .displayModal .modal_dl_box > dl > dt, 
 .displayModal .modal_dl_box > dl > dd {  
     margin-bottom: 0.938rem;
     font-weight: 400;
+}
+.displayModal .modal_dl_box > dl > dt {
+    font-weight: 600;
 }
 .displayModal .modal_dl_box > dl > dt:nth-child(3) {
     margin-bottom: 2.25rem;
