@@ -313,9 +313,62 @@ header {
     border-radius: 50%;
     text-align: center;
     line-height: 3.75rem;
+    background: #fff;
 }
 #top_button .top_button_img {
     width: 50%;
     height: 30%;
 }
 /* top_button */
+
+/* 모달창 */
+.modal_area {
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    display: none;
+}
+.modal_area .modal_area_box {
+    position: relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45rem;
+    padding: 1.87rem 1.87rem 1rem 1.87rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+/* 텍스트 */
+.modal_area .section_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.93rem;
+}
+.modal_area .section_sub_text {
+    margin-bottom: 0.93rem;
+}
+.modal_area .section_text {
+    margin-bottom: 0.93rem;
+}
+.modal_area .modal_text {
+    display: block;
+    font-size: 0.81rem;
+    color: #949494;
+    margin-bottom: 0.93rem;
+}
+/* 텍스트 */
+
+/* 버튼 */
+.modal_area .modal_btn_area {
+    text-align: center;
+}
+.modal_area .close {
+    position: absolute;
+    top: 8%; right: 2%;
+    display: block;
+    background: url(../index_img/icon_dialog_closeL.png) no-repeat center / 20px;
+    width: 3.12rem;
+    height: 3.12rem;
+}
+/* 버튼 */
+/* 모달창 */

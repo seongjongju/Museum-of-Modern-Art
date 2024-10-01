@@ -21,3 +21,28 @@ TapTitles.forEach(function(TapTitle, TapTitleIndex) {
         });
     });
 }); 
+
+/* 관람참여 -> 오시는 길 */
+const MapTapTitles = document.querySelectorAll(".MapTapTitle");
+const MapTaps = document.querySelectorAll(".MapTap");
+
+MapTapTitles.forEach(function(MapTapTitle, MapTapTitleIndex) {
+    MapTapTitle.addEventListener('click', function(e) {
+        e.preventDefault();
+        MapTaps[MapTapTitleIndex].classList.add('on')
+        MapTapTitles[MapTapTitleIndex].classList.add('on')
+        
+        MapTaps.forEach(function(MapTap, MapTapIndex) {
+            if(MapTapIndex !== MapTapTitleIndex) {
+                MapTap.classList.remove('on')
+            }
+
+            MapTapTitles.forEach(function(MapTitle, MapTitleIndex) {
+                if(MapTitleIndex !== MapTapTitleIndex) {
+                    MapTitle.classList.remove('on')
+                }
+            });
+        });
+    });
+}); 
+/* 관람참여 -> 오시는 길 */

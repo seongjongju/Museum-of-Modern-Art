@@ -72,7 +72,7 @@ section > h2 {
     margin-right: 1.5rem;
     opacity: 0.5;
     font-weight: 600;
-    transition: all 0.5s;
+    transition: opacity 0.5s;
 }
 #gwanlam_chamyeo_header_top .header_top_title > a.on {
     opacity: 1;
@@ -228,6 +228,12 @@ section > h2 {
     width: 100%;
     height: 3.75rem;
     box-sizing: border-box;
+    background: #fff;
+    z-index: 1100;
+}
+.guide_header.fixed { /* 스크롤 이벤트 */
+    position: fixed;
+    top: 0; left: 0;
 }
 .guide_header .guide_header_nav_box {
     width: 73%;
@@ -721,7 +727,6 @@ tbody > tr > td:last-child {
     display: block;
     width: 100%;
     height: 100%;
-    text-align: center;
     line-height: 6.875rem;
     transition: all 0.3s;
 }
@@ -731,23 +736,23 @@ tbody > tr > td:last-child {
 }
 #directions .directions_area ul li > a > img {
     vertical-align: -0.75rem;
-    margin-right: 0.938rem;
+    margin: 0 1.875rem 0 3.125rem;
 }
-#directions .directions_area ul li .TapTitle.on {
+#directions .directions_area ul li .MapTapTitle.on {
     background: #000;
     color: #fff;
 }
 /* TapTitle */
 
 /* Tap */
-#directions .directions_area .Tap > img {
+#directions .directions_area .MapTap > img {
     width: 65.313rem;
     height: 100%;
 }
-#directions .directions_area .Tap {
+#directions .directions_area .MapTap {
     display: none;
 }
-#directions .directions_area .Tap.on {
+#directions .directions_area .MapTap.on {
     display: block;
 }
 /* Tap */
@@ -755,6 +760,7 @@ tbody > tr > td:last-child {
 /* map_link */
 #directions .map_link {
     text-align: right;
+    padding-bottom: 2.5rem;
 }
 #directions .map_link > a {
     display: inline-block;
@@ -780,5 +786,61 @@ tbody > tr > td:last-child {
 }
 /* map_link */
 
+.manners {
+    font-weight: 600;
+    margin-left: -6.25rem;
+}
+.manners_btn {
+    margin-left: -6.25rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 12.5rem;
+}
+/* //directions */
 
+/* 모달창 */
+.displayModal .modal_area_box {
+    width: 35rem;
+}
+/* 텍스트 */
+.displayModal .section_sub_text {
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1.25rem;
+}
+/* 텍스트 */
+
+/* 버튼 */
+.displayModal .modal_btn_area {
+    text-align: right;
+    margin-bottom: 1.25rem;
+}
+.displayModal .close {
+    position: absolute;
+    top: 4%; right: 2%;
+    display: block;
+    background: url(../index_img/icon_x.png) no-repeat center / 10px;
+    width: 3.12rem;
+    height: 3.12rem;
+}
+/* 버튼 */
+
+/* "modal_dl_box */
+.displayModal .modal_dl_box {
+    display: flex;
+    justify-content: space-between;
+}
+.displayModal .modal_dl_box > dl:first-child {
+    width: 30%;
+}
+.displayModal .modal_dl_box > dl > dt, 
+.displayModal .modal_dl_box > dl > dd {  
+    margin-bottom: 0.938rem;
+    font-weight: 400;
+}
+.displayModal .modal_dl_box > dl > dt:nth-child(3) {
+    margin-bottom: 2.25rem;
+}
+/* "modal_dl_box */
+/* 모달창 */
 
