@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+/* 공통 */
+/* 화살표 아이콘 */
+i {
+    height: 20px;
+    position: relative;
+    margin-left: 8px;
+}
+.icon_arrow.on:before { /* 화살표 클래스 명 */
+    transform: rotate(-135deg);
+}
+.icon_arrow.on:after { /* 화살표 클래스 명 */
+    transform: rotate(135deg);
+}
+i:before {
+    position: absolute;
+    content: '';
+    width: 2px; height: 8px;
+    top: 35%; left: 10%;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+}
+i:after {
+    position: absolute;
+    content: '';
+    width: 2px; height: 8px;
+    top: 35%; right: 10%;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+.bg1:before, 
+.bg1:after {
+    background: #fff;
+}
+/* 화살표 아이콘 */
+/* 공통 */
+
+/* collection_search */
+#collection_search {
+    padding: 15rem 0 2.5rem;
+}
+#collection_search .collection_search_title {
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+#collection_search > input {
+    width: 30rem;
+    height: 3rem;
+    padding: 0 0.813rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    background: #eeeeee;
+    font-size: 1rem;
+    margin-right: 0.938rem;
+}
+
+/* 버튼 */
+#collection_search .collection_searchBtn,
+#collection_search .collection_DetailedSearch { 
+    width: 11.25rem;
+    font-size: 1rem;
+}
+#collection_search .collection_DetailedSearch { /* 상세검색 */
+    background: #666666;
+    color: #fff;
+    border: #666666;
+}
+
+/* 상세검색 영역 */
+#collection_search .DetailedSearch_container {
+    display: flex;
+    margin-top: 0.938rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2.5rem 0;
+}
+/* DetailedSearch_container_left */
+#collection_search .DetailedSearch_container .DetailedSearch_container_left {
+    width: 75rem;
+}
+/* 상세검색 버튼 */
+#collection_search .DetailedSearch_container .DetailedSearch_list {
+    margin-bottom: 1.563rem;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_list > a {
+    position: relative;
+    display: inline-block;
+    width: 9.063rem;
+    height: 3rem;
+    padding: 0 1.125rem;
+    border: 1px solid #777777;
+    color: #777777;
+    line-height: 3rem;
+    box-sizing: border-box;
+    margin-right: 0.938rem;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_list > a > i {
+    position: absolute;
+    top: 50%; right: 10%;
+    transform: translateY(-50%);
+}
+/* 상세검색 버튼 */
+
+/* DetailedSearch_check */
+#collection_search .DetailedSearch_container .DetailedSearch_check {
+    padding: 1.25rem 0 0;
+}
+/* 체크박스를 숨기기 */
+#collection_search .DetailedSearch_container .DetailedSearch_check input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* 체크박스 모양을 표시하는 라벨 스타일 */
+#collection_search .DetailedSearch_container .DetailedSearch_check label {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 8px;              
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  /* 체크박스를 대신할 가상 요소로 체크박스 스타일을 표시 */
+#collection_search .DetailedSearch_container .DetailedSearch_check label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;  
+    height: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff; 
+  }
+  
+  /* 체크박스가 체크되었을 때 이미지 적용 */
+#collection_search .DetailedSearch_container .DetailedSearch_check input[type="checkbox"]:checked + label:before {
+    background: url(../collections_search_img/check_on.svg) no-repeat center/cover;
+    border: none;  /* 테두리 없애기 */
+  }
+
+  /* DetailedSearch_check_input */
+#collection_search .DetailedSearch_container .DetailedSearch_check_input {
+    margin-top: 1.25rem;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_check_input > input {
+    width: 58.125rem;
+    height: 3rem;
+    padding: 0 0.813rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    background: #eeeeee;
+    font-size: 1rem;
+    margin-right: 0.938rem;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_check_input .inputBtn {
+    width: 11.25rem;
+    font-size: 1rem;
+}
+/* DetailedSearch_check_input */
+/* DetailedSearch_check */
+
+/* authors_check */
+#collection_search .DetailedSearch_container .authors_check {
+    padding: 1.5rem 0 3.5rem;
+}
+#collection_search .DetailedSearch_container .authors_check > a {
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #777777;
+    border-radius: 50%;
+    color: #777777;
+    margin-right: 0.625rem;
+    line-height: 2rem;
+}
+/* authors_check */
+
+/* year_check */
+#collection_search .DetailedSearch_container .year_check {
+    padding: 1.5rem 0 3.5rem;
+}
+#collection_search .DetailedSearch_container .year_check > select {
+    width: 10rem;
+    height: 3rem;
+    padding: 0 0.813rem;
+    font-size: 1rem;
+    outline: none;
+}
+/* year_check */
+
+/* ingredient_check */
+#collection_search .DetailedSearch_container .ingredient_check {
+    padding: 1.5rem 0 3.5rem;
+}
+#collection_search .DetailedSearch_container .ingredient_check input {
+    width: 58.125rem;
+    height: 3rem;
+    padding: 0 0.813rem;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    background: #eeeeee;
+    font-size: 1rem;
+    margin-right: 0.938rem;
+}
+#collection_search .DetailedSearch_container .ingredient_check .inputBtn {
+    width: 11.25rem;
+    font-size: 1rem;
+}
+/* ingredient_check */
+
+/* exhibition_location_check */
+#collection_search .DetailedSearch_container .exhibition_location_check {
+    padding: 2.5rem 0 4rem;
+}
+/* 체크박스를 숨기기 */
+#collection_search .DetailedSearch_container .exhibition_location_check input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* 체크박스 모양을 표시하는 라벨 스타일 */
+#collection_search .DetailedSearch_container .exhibition_location_check label {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 8px;              
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  /* 체크박스를 대신할 가상 요소로 체크박스 스타일을 표시 */
+#collection_search .DetailedSearch_container .exhibition_location_check label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;  
+    height: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff; 
+  }
+  
+  /* 체크박스가 체크되었을 때 이미지 적용 */
+#collection_search .DetailedSearch_container .exhibition_location_check input[type="checkbox"]:checked + label:before {
+    background: url(../collections_search_img/check_on.svg) no-repeat center/cover;
+    border: none;  /* 테두리 없애기 */
+  }
+/* exhibition_location_check */
+
+/* sector_check */
+#collection_search .DetailedSearch_container .sector_check {
+    padding: 2.5rem 0 4rem;
+}
+/* 체크박스를 숨기기 */
+#collection_search .DetailedSearch_container .sector_check input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* 체크박스 모양을 표시하는 라벨 스타일 */
+#collection_search .DetailedSearch_container .sector_check label {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 8px;              
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  /* 체크박스를 대신할 가상 요소로 체크박스 스타일을 표시 */
+#collection_search .DetailedSearch_container .sector_check label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;  
+    height: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff; 
+  }
+  
+  /* 체크박스가 체크되었을 때 이미지 적용 */
+#collection_search .DetailedSearch_container .sector_check input[type="checkbox"]:checked + label:before {
+    background: url(../collections_search_img/check_on.svg) no-repeat center/cover;
+    border: none;  /* 테두리 없애기 */
+  }
+/* sector_check */
+/* DetailedSearch_container_left */
+
+/* DetailedSearch_output */
+#collection_search .DetailedSearch_container .DetailedSearch_output {
+    width: 24rem;
+    padding: 0 1.25rem;
+    font-weight: 600;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output .DetailedSearch_outputBox {
+    height: 63%;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output > button {
+    width: 8.75rem;
+    font-size: 1rem;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output .btn2 {
+   margin: 0 0.3rem 0 1rem;
+}
+/* DetailedSearch_output */
+/* 상세검색 영역 */
+
+/* btn_area */
+#collection_search .btn_area {
+    margin: 1.5rem 0;
+}
+#collection_search .btn_area > button {
+    margin-right: 0.938rem;
+    width: 6.875rem;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+}
+/* 버튼 색상 */
+#collection_search .btn_area > button:nth-child(2) {
+    color: #827554;
+    border-color: #827554;
+}
+#collection_search .btn_area > button:nth-child(3) {
+    color: #707859;
+    border-color: #707859;
+}
+#collection_search .btn_area > button:nth-child(4) {
+    color: #5b766a;
+    border-color: #5b766a;
+}
+#collection_search .btn_area > button:nth-child(5) {
+    color: #5a807c;
+    border-color: #5a807c;
+}
+#collection_search .btn_area > button:nth-child(6) {
+    width: 7.5rem;
+    color: #657983;
+    border-color: #657983;
+}
+#collection_search .btn_area > button:nth-child(7) {
+    color: #67783c;
+    border-color: #67783c;
+}
+#collection_search .btn_area > button:nth-child(8) {
+    color: #746a8c;
+    border-color: #746a8c;
+}
+#collection_search .btn_area > button:nth-child(9) {
+    color: #846885;
+    border-color: #846885;
+}
+#collection_search .btn_area > button:nth-child(10) {
+    color: #906272;
+    border-color: #906272;
+}
+#collection_search .btn_area > button:nth-child(11) {
+    color: #9b735f;
+    border-color: #9b735f;
+}
+#collection_search .btn_area > button:nth-child(12) {
+    color: #000;
+    border-color: #000;
+}
+/* 버튼 색상 */
+/* btn_area */
+/* 버튼 */
+
+/* collection_checkbox */
+/* 체크박스를 숨기기 */
+#collection_search .collection_checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* 체크박스 모양을 표시하는 라벨 스타일 */
+#collection_search .collection_checkbox label {
+    display: inline-flex;  
+    align-items: center;   
+    gap: 8px;              
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  /* 체크박스를 대신할 가상 요소로 체크박스 스타일을 표시 */
+#collection_search .collection_checkbox label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;  
+    height: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff; 
+  }
+  
+  /* 체크박스가 체크되었을 때 이미지 적용 */
+#collection_search .collection_checkbox input[type="checkbox"]:checked + label:before {
+    background: url(../collections_search_img/check_on.svg) no-repeat center/cover;
+    border: none;  /* 테두리 없애기 */
+  }
+  /* collection_checkbox */
+
+/* collection_search 탭 메뉴 */
+#collection_search .DetailedSearch_container .DetailedSearch_container_left .DetailedSearch_list .TapTitle.on {
+    border: 2px solid #000;
+    color: #000;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_container_left .Tap {
+    display: none;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_container_left .Tap.on {
+    display: block;
+}
+/* collection_search 탭 메뉴 */
+  /* //collection_search */
+
+
+
+

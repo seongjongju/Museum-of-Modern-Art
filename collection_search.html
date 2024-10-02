@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>소장품 검색 < 소장품 < 국립현대미술관</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/commonness.css">
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/all.min.css">
+            <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="css/commonness.css">
+            <link rel="stylesheet" href="css/collection_search.css">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="index_img/bg_logo.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="index_img/bg_logo.png">
 
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+            <script src="js/jquery-3.7.1.min.js"></script>
+            <script src="js/jquery-ui.min.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <div id="pan"></div>
@@ -134,8 +137,241 @@
             <!-- bottom -->
         </header>
         <!-- //header -->
+
+        <!-- collection_search -->
+        <section id="collection_search" class="inner">
+            <h1 class="collection_search_title">소장품 검색</h1>
+            <input type="text" placeholder="작품명 또는 작가명을 입력해주세요.">
+            <button class="btn1 collection_searchBtn">검색</button>
+            <button class="btn2 collection_DetailedSearch">
+                상세검색
+                <i class="icon_arrow bg1">&ensp;</i>
+            </button>
+
+            <!-- 상세검색 영역 -->
+            <!-- DetailedSearch_container -->
+            <div class="DetailedSearch_container" style="display: none;">
+                <!-- DetailedSearch_container_left -->
+                <div class="DetailedSearch_container_left">
+                    <!-- DetailedSearch_list -->
+                    <div class="DetailedSearch_list section_text">
+                        <a href="#" class="search_term TapTitle on">
+                            검색어
+                        </a>
+                        <a href="#" class="author TapTitle">
+                            작가
+                        </a>
+                        <a href="#" class="production_year TapTitle">
+                            제작연도
+                        </a>
+                        <a href="#" class="collection_year TapTitle">
+                            수집연도
+                        </a>
+                        <a href="#" class="ingredient TapTitle">
+                            재료
+                        </a>
+                        <a href="#" class="exhibition_location TapTitle">
+                            전시장소
+                        </a>
+                        <a href="#" class="sector TapTitle">
+                            부문
+                        </a>
+                    </div>
+                    <!-- DetailedSearch_list -->
+
+                    <!-- DetailedSearch_check -->
+                    <div class="DetailedSearch_check Tap on">
+                        <input type="checkbox" id="all"><label for="all">전체</label>
+                        <input type="checkbox" id="work"><label for="work">작품명</label>
+                        <input type="checkbox" id="authors"><label for="authors">작가</label>
+                        <input type="checkbox" id="explanatory"><label for="explanatory">설명문</label>
+                        <input type="checkbox" id="index"><label for="index">색인어</label>
+                        <input type="checkbox" id="management_number"><label for="management_number">관리번호</label>
+                        <div class="DetailedSearch_check_input">
+                            <input type="text" placeholder="키워드를 입력해주세요.">
+                            <button class="btn1 inputBtn">입력</button>
+                        </div>
+                    </div>
+                    <!-- DetailedSearch_check -->
+
+                    <!-- authors_check -->
+                    <div class="authors_check Tap">
+                        <a href="#">ㄱ</a>
+                        <a href="#">ㄴ</a>
+                        <a href="#">ㄷ</a>
+                        <a href="#">ㄹ</a>
+                        <a href="#">ㅁ</a>
+                        <a href="#">ㅂ</a>
+                        <a href="#">ㅅ</a>
+                        <a href="#">ㅇ</a>
+                        <a href="#">ㅈ</a>
+                        <a href="#">ㅊ</a>
+                        <a href="#">ㅋ</a>
+                        <a href="#">ㅌ</a>
+                        <a href="#">ㅍ</a>
+                        <a href="#">ㅎ</a>
+                    </div>
+                    <!-- authors_check -->
+
+                    <!-- year_check -->
+                    <div class="year_check Tap">
+                        <select name="startYear" id="startYear">
+                            <option value="start">시작연도</option>
+                            <option value="1900">1900</option>
+                            <option value="1910">1910</option>
+                            <option value="1920">1920</option>
+                            <option value="1930">1930</option>
+                            <option value="1940">1940</option>
+                            <option value="1950">1950</option>
+                            <option value="1960">1960</option>
+                            <option value="1970">1970</option>
+                            <option value="1980">1980</option>
+                            <option value="1990">1990</option>
+                            <option value="2000">2000</option>
+                            <option value="2010">2010</option>
+                            <option value="2020">2020</option>
+                        </select>
+                        <span>~</span>
+                        <select name="lastYear" id="lastYear">
+                            <option value="last">종료연도</option>
+                            <option value="1900">1900</option>
+                            <option value="1910">1910</option>
+                            <option value="1920">1920</option>
+                            <option value="1930">1930</option>
+                            <option value="1940">1940</option>
+                            <option value="1950">1950</option>
+                            <option value="1960">1960</option>
+                            <option value="1970">1970</option>
+                            <option value="1980">1980</option>
+                            <option value="1990">1990</option>
+                            <option value="2000">2000</option>
+                            <option value="2010">2010</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    <!-- year_check -->
+
+                    <!-- year_check -->
+                    <div class="year_check Tap">
+                        <select name="startYear" id="startYear">
+                            <option value="start">수집연도</option>
+                            <option value="1900">1900</option>
+                            <option value="1910">1910</option>
+                            <option value="1920">1920</option>
+                            <option value="1930">1930</option>
+                            <option value="1940">1940</option>
+                            <option value="1950">1950</option>
+                            <option value="1960">1960</option>
+                            <option value="1970">1970</option>
+                            <option value="1980">1980</option>
+                            <option value="1990">1990</option>
+                            <option value="2000">2000</option>
+                            <option value="2010">2010</option>
+                            <option value="2020">2020</option>
+                        </select>
+                        <span>~</span>
+                        <select name="lastYear" id="lastYear">
+                            <option value="last">종료연도</option>
+                            <option value="1900">1900</option>
+                            <option value="1910">1910</option>
+                            <option value="1920">1920</option>
+                            <option value="1930">1930</option>
+                            <option value="1940">1940</option>
+                            <option value="1950">1950</option>
+                            <option value="1960">1960</option>
+                            <option value="1970">1970</option>
+                            <option value="1980">1980</option>
+                            <option value="1990">1990</option>
+                            <option value="2000">2000</option>
+                            <option value="2010">2010</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    <!-- year_check -->
+
+                    <!-- ingredient_check -->
+                    <div class="ingredient_check Tap">
+                        <input type="text" placeholder="검색할 재료를 입력해주세요.">
+                        <button class="btn1 inputBtn">입력</button>
+                    </div>
+                    <!-- ingredient_check -->
+
+                    <!-- exhibition_location_check -->
+                    <div class="exhibition_location_check Tap">
+                        <input type="checkbox" id="locationAll"><label for="locationAll">전체</label>
+                        <input type="checkbox" id="seoul"><label for="seoul">서울관</label>
+                        <input type="checkbox" id="Gwacheon"><label for="Gwacheon">과천관</label>
+                        <input type="checkbox" id="deoksugung"><label for="deoksugung">덕수궁관</label>
+                        <input type="checkbox" id="cheongju"><label for="cheongju">청주관</label>
+                    </div>
+                    <!-- exhibition_location_check -->
+
+                    <!-- sector_check -->
+                    <div class="sector_check Tap">
+                        <input type="checkbox" id="locationAll"><label for="locationAll">전체</label>
+                        <input type="checkbox" id="conversation1"><label for="conversation1">회화1</label>
+                        <input type="checkbox" id="conversation2"><label for="conversation2">회화2</label>
+                        <input type="checkbox" id="drawing"><label for="drawing">드로잉</label>
+                        <input type="checkbox" id="print"><label for="print">판화</label>
+                        <input type="checkbox" id="piece"><label for="piece">조각ㆍ설치</label>
+                        <input type="checkbox" id="picture"><label for="picture">사진</label>
+                        <input type="checkbox" id="new_media"><label for="new_media">뉴미디어</label>
+                        <input type="checkbox" id="crafts"><label for="crafts">공예</label>
+                        <input type="checkbox" id="design"><label for="design">디자인</label>
+                        <input type="checkbox" id="building"><label for="building">건축</label>
+                        <input type="checkbox" id="calligraphy"><label for="calligraphy">서예</label>
+                    </div>
+                    <!-- sector_check -->
+                </div>
+                <!-- DetailedSearch_container_left -->
+
+                <!-- DetailedSearch_output -->
+                <div class="DetailedSearch_output">
+                    <p class="section_text">선택한 조건 총(<span>0</span>)건</p>
+                    <div class="DetailedSearch_outputBox">
+                        <!-- 선택조건이 들어오는 영역 -->
+                    </div>
+                    <button class="btn2">검색 초기화</button>
+                    <button class="btn1">적용</button>
+                </div>
+                <!-- DetailedSearch_output -->
+            </div>
+            <!-- DetailedSearch_container -->
+
+            <!-- btn_area -->
+            <div class="btn_area">
+                <button class="btn1 allBtn">전체</button>
+                <button class="btn2">회화I</button>
+                <button class="btn2">회화II</button>
+                <button class="btn2">드로잉</button>
+                <button class="btn2">편화</button>
+                <button class="btn2">조각ㆍ설치</button>
+                <button class="btn2">사진</button>
+                <button class="btn2">뉴미디어</button>
+                <button class="btn2">공예</button>
+                <button class="btn2">디자인</button>
+                <button class="btn2">건축</button>
+                <button class="btn2">서예</button>
+            </div>
+            <!-- btn_area -->
+
+            <!-- collection_checkbox -->
+            <div class="collection_checkbox">
+                <input type="checkbox" id="on_display"><label for="on_display">전시중</label>
+                <input type="checkbox" id="image"><label for="image">이미지</label>
+                <input type="checkbox" id="national_heritage"><label for="national_heritage">국가유산</label>
+                <input type="checkbox" id="donated_work"><label for="donated_work">기증작품</label>
+            </div>
+            <!-- collection_checkbox -->
+        </section>
+        <!-- collection_search -->
+
+        <!--  -->
     </div>
 
+    <script src="js/collection_search.js"></script>
     <script src="js/header_footer.js"></script>
+    <script src="js/tap.js"></script>
 </body>
+
 </html>
