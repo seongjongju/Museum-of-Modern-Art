@@ -162,7 +162,7 @@ i:after {
 
 /* authors_check */
 #collection_search .DetailedSearch_container .authors_check {
-    padding: 1.5rem 0 3.5rem;
+    padding: 1.5rem 0 3.4rem;
 }
 #collection_search .DetailedSearch_container .authors_check > a {
     display: inline-block;
@@ -179,7 +179,7 @@ i:after {
 
 /* year_check */
 #collection_search .DetailedSearch_container .year_check {
-    padding: 1.5rem 0 3.5rem;
+    padding: 1.5rem 0 2.5rem;
 }
 #collection_search .DetailedSearch_container .year_check > select {
     width: 10rem;
@@ -192,7 +192,7 @@ i:after {
 
 /* ingredient_check */
 #collection_search .DetailedSearch_container .ingredient_check {
-    padding: 1.5rem 0 3.5rem;
+    padding: 1.5rem 0 2.5rem;;
 }
 #collection_search .DetailedSearch_container .ingredient_check input {
     width: 58.125rem;
@@ -213,7 +213,7 @@ i:after {
 
 /* exhibition_location_check */
 #collection_search .DetailedSearch_container .exhibition_location_check {
-    padding: 2.5rem 0 4rem;
+    padding: 2.5rem 0 3rem;
 }
 /* 체크박스를 숨기기 */
 #collection_search .DetailedSearch_container .exhibition_location_check input[type="checkbox"] {
@@ -249,7 +249,7 @@ i:after {
 
 /* sector_check */
 #collection_search .DetailedSearch_container .sector_check {
-    padding: 2.5rem 0 4rem;
+    padding: 2.5rem 0 3rem;
 }
 /* 체크박스를 숨기기 */
 #collection_search .DetailedSearch_container .sector_check input[type="checkbox"] {

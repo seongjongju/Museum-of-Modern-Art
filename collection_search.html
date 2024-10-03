@@ -181,12 +181,12 @@
 
                     <!-- DetailedSearch_check -->
                     <div class="DetailedSearch_check Tap on">
-                        <input type="checkbox" id="all"><label for="all">전체</label>
-                        <input type="checkbox" id="work"><label for="work">작품명</label>
-                        <input type="checkbox" id="authors"><label for="authors">작가</label>
-                        <input type="checkbox" id="explanatory"><label for="explanatory">설명문</label>
-                        <input type="checkbox" id="index"><label for="index">색인어</label>
-                        <input type="checkbox" id="management_number"><label for="management_number">관리번호</label>
+                        <input type="checkbox" id="all" onchange="checkAll()"><label for="all">전체</label>
+                        <input type="checkbox" id="work" onchange="checkBoxes()"><label for="work">작품명</label>
+                        <input type="checkbox" id="authors" onchange="checkBoxes()"><label for="authors">작가</label>
+                        <input type="checkbox" id="explanatory" onchange="checkBoxes()"><label for="explanatory">설명문</label>
+                        <input type="checkbox" id="index" onchange="checkBoxes()"><label for="index">색인어</label>
+                        <input type="checkbox" id="management_number" onchange="checkBoxes()"><label for="management_number">관리번호</label>
                         <div class="DetailedSearch_check_input">
                             <input type="text" placeholder="키워드를 입력해주세요.">
                             <button class="btn1 inputBtn">입력</button>
@@ -253,7 +253,7 @@
 
                     <!-- year_check -->
                     <div class="year_check Tap">
-                        <select name="startYear" id="startYear">
+                        <select name="startYear2" id="startYear2">
                             <option value="start">수집연도</option>
                             <option value="1900">1900</option>
                             <option value="1910">1910</option>
@@ -270,7 +270,7 @@
                             <option value="2020">2020</option>
                         </select>
                         <span>~</span>
-                        <select name="lastYear" id="lastYear">
+                        <select name="lastYear2" id="lastYear2">
                             <option value="last">종료연도</option>
                             <option value="1900">1900</option>
                             <option value="1910">1910</option>
@@ -308,7 +308,7 @@
 
                     <!-- sector_check -->
                     <div class="sector_check Tap">
-                        <input type="checkbox" id="locationAll"><label for="locationAll">전체</label>
+                        <input type="checkbox" id="locationAll2"><label for="locationAll2">전체</label>
                         <input type="checkbox" id="conversation1"><label for="conversation1">회화1</label>
                         <input type="checkbox" id="conversation2"><label for="conversation2">회화2</label>
                         <input type="checkbox" id="drawing"><label for="drawing">드로잉</label>
