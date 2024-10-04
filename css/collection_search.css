@@ -175,6 +175,11 @@ i:after {
     margin-right: 0.625rem;
     line-height: 2rem;
 }
+#collection_search .DetailedSearch_container .authors_check > a.active {
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+}
 /* authors_check */
 
 /* year_check */
@@ -301,6 +306,18 @@ i:after {
 #collection_search .DetailedSearch_container .DetailedSearch_output .btn2 {
    margin: 0 0.3rem 0 1rem;
 }
+
+/* 선택한 조건 옵션 */
+#collection_search .DetailedSearch_container .DetailedSearch_output .DetailedSearch_outputBox > span {
+    display: inline-block;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output .DetailedSearch_outputBox > span > img {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+}
+/* 선택한 조건 옵션 */
 /* DetailedSearch_output */
 /* 상세검색 영역 */
 
@@ -409,8 +426,7 @@ i:after {
     display: block;
 }
 /* collection_search 탭 메뉴 */
-  /* //collection_search */
-
+/* //collection_search */
 
 
 

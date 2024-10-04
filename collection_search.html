@@ -189,7 +189,7 @@
                         <input type="checkbox" id="management_number" onchange="checkBoxes()"><label for="management_number">관리번호</label>
                         <div class="DetailedSearch_check_input">
                             <input type="text" placeholder="키워드를 입력해주세요.">
-                            <button class="btn1 inputBtn">입력</button>
+                            <button class="btn1 inputBtn" onclick="input()">입력</button>
                         </div>
                     </div>
                     <!-- DetailedSearch_check -->
@@ -298,28 +298,26 @@
 
                     <!-- exhibition_location_check -->
                     <div class="exhibition_location_check Tap">
-                        <input type="checkbox" id="locationAll"><label for="locationAll" onchange="checkLocationAll()">전체</label>
-                        <input type="checkbox" id="seoul"><label for="seoul">서울관</label>
-                        <input type="checkbox" id="Gwacheon"><label for="Gwacheon">과천관</label>
-                        <input type="checkbox" id="deoksugung"><label for="deoksugung">덕수궁관</label>
-                        <input type="checkbox" id="cheongju"><label for="cheongju">청주관</label>
+                        <input type="checkbox" id="seoul" class="CheckedBoxes"><label for="seoul">서울관</label>
+                        <input type="checkbox" id="Gwacheon" class="CheckedBoxes"><label for="Gwacheon">과천관</label>
+                        <input type="checkbox" id="deoksugung" class="CheckedBoxes"><label for="deoksugung">덕수궁관</label>
+                        <input type="checkbox" id="cheongju" class="CheckedBoxes"><label for="cheongju">청주관</label>
                     </div>
                     <!-- exhibition_location_check -->
 
                     <!-- sector_check -->
                     <div class="sector_check Tap">
-                        <input type="checkbox" id="locationAll2"><label for="locationAll2">전체</label>
-                        <input type="checkbox" id="conversation1"><label for="conversation1">회화1</label>
-                        <input type="checkbox" id="conversation2"><label for="conversation2">회화2</label>
-                        <input type="checkbox" id="drawing"><label for="drawing">드로잉</label>
-                        <input type="checkbox" id="print"><label for="print">판화</label>
-                        <input type="checkbox" id="piece"><label for="piece">조각ㆍ설치</label>
-                        <input type="checkbox" id="picture"><label for="picture">사진</label>
-                        <input type="checkbox" id="new_media"><label for="new_media">뉴미디어</label>
-                        <input type="checkbox" id="crafts"><label for="crafts">공예</label>
-                        <input type="checkbox" id="design"><label for="design">디자인</label>
-                        <input type="checkbox" id="building"><label for="building">건축</label>
-                        <input type="checkbox" id="calligraphy"><label for="calligraphy">서예</label>
+                        <input type="checkbox" id="conversation1" class="CheckedBoxes"><label for="conversation1" >회화1</label>
+                        <input type="checkbox" id="conversation2" class="CheckedBoxes"><label for="conversation2">회화2</label>
+                        <input type="checkbox" id="drawing" class="CheckedBoxes"><label for="drawing">드로잉</label>
+                        <input type="checkbox" id="print" class="CheckedBoxes"><label for="print">판화</label>
+                        <input type="checkbox" id="piece" class="CheckedBoxes"><label for="piece">조각ㆍ설치</label>
+                        <input type="checkbox" id="picture" class="CheckedBoxes"><label for="picture">사진</label>
+                        <input type="checkbox" id="new_media" class="CheckedBoxes"><label for="new_media">뉴미디어</label>
+                        <input type="checkbox" id="crafts" class="CheckedBoxes"><label for="crafts">공예</label>
+                        <input type="checkbox" id="design" class="CheckedBoxes"><label for="design">디자인</label>
+                        <input type="checkbox" id="building" class="CheckedBoxes"><label for="building">건축</label>
+                        <input type="checkbox" id="calligraphy" class="CheckedBoxes"><label for="calligraphy">서예</label>
                     </div>
                     <!-- sector_check -->
                 </div>
@@ -327,11 +325,11 @@
 
                 <!-- DetailedSearch_output -->
                 <div class="DetailedSearch_output">
-                    <p class="section_text">선택한 조건 총(<span>0</span>)건</p>
+                    <p class="section_text">선택한 조건</p>
                     <div class="DetailedSearch_outputBox">
                         <!-- 선택조건이 들어오는 영역 -->
                     </div>
-                    <button class="btn2">검색 초기화</button>
+                    <button class="btn2 resetBtn">검색 초기화</button>
                     <button class="btn1">적용</button>
                 </div>
                 <!-- DetailedSearch_output -->
@@ -366,9 +364,12 @@
         </section>
         <!-- collection_search -->
 
-        <!--  -->
+        <!-- collections -->
+         <section id="collections">
+            
+         </section>
     </div>
-
+    
     <script src="js/collection_search.js"></script>
     <script src="js/header_footer.js"></script>
     <script src="js/tap.js"></script>
