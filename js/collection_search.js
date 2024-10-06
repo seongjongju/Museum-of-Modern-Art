@@ -94,7 +94,7 @@ initials.forEach(function (initial, initialIndex) {
 
 /* 체크박스 선택한 조건에 나타내기 */
 const CheckedBoxes = document.querySelectorAll('.CheckedBoxes')
-console.log(CheckedBoxes)
+/* console.log(CheckedBoxes) */
 
 CheckedBoxes.forEach(function (CheckedBox) {
     CheckedBox.addEventListener('change', function () {
@@ -122,9 +122,91 @@ CheckedBoxes.forEach(function (CheckedBox) {
 /* 선택한 조건 초기화 */
 resetBtn.addEventListener('click', function () {
     outPutBox.innerHTML = ""
-    CheckedBoxes.forEach(function(CheckedBox) {
+    CheckedBoxes.forEach(function (CheckedBox) {
         CheckedBox.checked = false;
     })
 });
 /* 선택한 조건 초기화 */
 /* 상세검색 */
+
+/* 체크박스 옵션에 따른 정렬 */
+const collectionsContainer = document.querySelector('.collections_container');
+const collectionCheckBoxes = document.querySelectorAll('.collection_checkbox > input[type="checkbox"')
+
+let collectionsContainerInner = collectionsContainer.innerHTML //초기화
+
+function collectionsAll () { //전체
+    collectionsContainer.innerHTML = collectionsContainerInner
+
+    let collectionsAllItems = document.querySelectorAll('.collections_item[data-all="all"]');
+
+    collectionsContainer.innerHTML =""
+
+    collectionsAllItems.forEach(function(collectionsAllItem) {
+
+        collectionsContainer.appendChild(collectionsAllItem)
+    });
+}
+
+function display() { //전시중
+    collectionsContainer.innerHTML = collectionsContainerInner
+
+    let displayItems = document.querySelectorAll('.collections_item[data-keyword="display"]');
+
+    collectionsContainer.innerHTML =""
+
+    displayItems.forEach(function(displayItem) {
+
+        collectionsContainer.appendChild(displayItem)
+    });
+}
+
+function image() { //이미지
+    collectionsContainer.innerHTML = collectionsContainerInner
+    let imageItems = document.querySelectorAll('.collections_item[data-keyword2="image"]');
+
+    collectionsContainer.innerHTML =""
+
+    imageItems.forEach(function(imageItem) {
+
+        collectionsContainer.appendChild(imageItem)
+    });
+}
+
+function nationalHeritage() { //국가유산
+    collectionsContainer.innerHTML = collectionsContainerInner
+    let nationalHeritageItems = document.querySelectorAll('.collections_item[data-keyword3="national_heritage"]');
+
+    collectionsContainer.innerHTML =""
+
+    nationalHeritageItems.forEach(function(nationalHeritageItem) {
+
+        collectionsContainer.appendChild(nationalHeritageItem)
+    });
+}
+
+function donatedWork() { //기증작품
+    collectionsContainer.innerHTML = collectionsContainerInner
+    let donatedWorkItems = document.querySelectorAll('.collections_item[data-keyword4="donated_work"]');
+
+    collectionsContainer.innerHTML =""
+
+    donatedWorkItems.forEach(function(donatedWorkItem) {
+
+        collectionsContainer.appendChild(donatedWorkItem)
+    });
+}
+
+collectionCheckBoxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            collectionCheckBoxes.forEach(function(otherCheckbox) {
+                if (otherCheckbox !== checkbox) {
+                    otherCheckbox.checked = false; // 다른 체크박스 해제
+                }
+            });
+        }
+    });
+});
+
+/* 체크박스 옵션에 따른 정렬 */

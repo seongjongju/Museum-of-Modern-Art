@@ -2,34 +2,12 @@
 
 /* 공통 */
 section {
-    padding: 3.75rem 6.5rem;
+    padding: 60px 104px;
     border: none;
 }
 section > h2 {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
-
-/* 섹션 서브 타이틀 */
-.section_sub_title { 
-    font-size: 1.31rem;
-    font-weight: 600;
-}
-/* 섹션 서브 타이틀 */
-
-/* 섹션 서브 텍스트 */
-.section_sub_text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.625rem;
-    letter-spacing: -0.8px;
-}
-/* 섹션 서브 텍스트 */
-
-/* 페이지 번호 */
-.page_num {
-    text-align: center;
-}
-/* 페이지 번호 */
 /* 공통 */
 
 /* -------------------------------------------------------------------- */
@@ -38,7 +16,7 @@ section > h2 {
 #gwanlam_chamyeo_header {
     position: fixed;
     width: 100%;
-    height: 3.75rem;
+    height: 60px;
     z-index: 1000;
     background: #fff;
 }
@@ -48,18 +26,18 @@ section > h2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 3.75rem;
-    line-height: 3.75rem;
+    height: 60px;
+    line-height: 60px;
     align-items: center;
 }
 
 /* 로고 */
 #gwanlam_chamyeo_header_top .logo > a {
     display:inline-block;
-    width: 2.93rem;
-    height: 3rem;
+    width: 46.9px;
+    height: 48px;
     overflow: hidden;
-    padding-top: 1.25rem;
+    padding-top: 20px;
 }
 #gwanlam_chamyeo_header_top .logo > a > img {
     height: 100%;
@@ -69,7 +47,7 @@ section > h2 {
 /* header_top_title */
 #gwanlam_chamyeo_header_top .header_top_title > a {
     display: inline-block;
-    margin-right: 1.5rem;
+    margin-right: 24px;
     opacity: 0.5;
     font-weight: 600;
     transition: opacity 0.5s;
@@ -88,7 +66,7 @@ section > h2 {
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    line-height: 3.75rem;
+    line-height: 60px;
     align-items: center;
     text-align: center;
     background: #fff;
@@ -106,7 +84,7 @@ section > h2 {
 #gwanlam_chamyeo_header_bottom .sub_menu > a {
     display: inline-block;
     font-weight: 600;
-    margin-right: 1.5rem;
+    margin-right: 24px;
 }
 #gwanlam_chamyeo_header_bottom .sub_menu > a:last-child {
     margin-right: 0;
@@ -120,21 +98,20 @@ section > h2 {
 /* 검색창 */
 #gwanlam_chamyeo_header_top .search {
     background: url(../index_img/btn_totalSearch.svg) no-repeat center/ contain;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 25.6px;
+    height: 25.6px;
 }
 #gwanlam_chamyeo_header_top .search_close {
     background: url(../index_img/icon_dialog_closeL.png) no-repeat center/ contain;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 25.6px;
+    height: 25.6px;
     display: none;
 }
 #gwanlam_chamyeo_header_bottom .search_box {
     position: absolute;
-    width: 120rem;
+    width: 1920px;
     background: #fff;
     top: 100%; left: -10%;
-    /* border-top: 1px solid #000; */
     border-bottom: 1px solid #000;
     box-sizing: border-box;
     display: none;
@@ -143,7 +120,7 @@ section > h2 {
     font-size: 0.93rem;
 }
 #gwanlam_chamyeo_header_bottom .search_box input { /* 검색어 텍스트 */
-    padding: 0.62rem;
+    padding: 9.92px;
     width: 86%;
     font-size: 1.867rem;
     font-weight: 600;
@@ -151,8 +128,8 @@ section > h2 {
     outline: none;
 }
 #gwanlam_chamyeo_header_bottom .search_box .search_btn {
-    width: 11.25rem;
-    vertical-align: 0.438rem;
+    width: 180px;
+    vertical-align: 7px;
 }
 /* 검색창 */
 
@@ -177,7 +154,7 @@ section > h2 {
 #intro .intro_text {
     text-align: center;
     margin-top: 12%;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
     font-size: 1.31rem;
 }
 #intro .section_title:nth-of-type(1) {
@@ -194,19 +171,19 @@ section > h2 {
 }
 #intro .guide_box_area .guide_box {
     background: #fff;
-    width: 19.37rem;
+    width: 309.9px;
     border: 1px solid #000;
-    border-radius: 1.5rem;
-    padding: 1.25rem;
+    border-radius: 24px;
+    padding: 20px;
     box-sizing: border-box;
 }
 #intro .guide_box_area .guide_box .guide_title {
     font-size: 1.06rem;
     font-weight: 600;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 #intro .guide_box_area .guide_box p:nth-child(3) {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 #intro .guide_box_area .guide_box .guide_text {
     font-size: 0.81rem;
@@ -215,8 +192,8 @@ section > h2 {
 #intro .guide_box_area .guide_arrow_left { /* 왼쪽 화살표 */
     display: block;
     background: #fff url(../gwanlam_chamyeo_img/seoul/icon_arrow_b.png) no-repeat center / 25% 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 48px;
+    height: 48px;
     border: 1px solid #000;
     border-radius: 50%;
     transform: rotate(180deg);
@@ -224,8 +201,8 @@ section > h2 {
 #intro .guide_box_area .guide_arrow_right { /* 오른쪽 화살표 */
     display: block;
     background: #fff url(../gwanlam_chamyeo_img/seoul/icon_arrow_b.png) no-repeat center / 25% 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 48px;
+    height: 48px;
     border: 1px solid #000;
     border-radius: 50%;
     display: none;
@@ -235,7 +212,7 @@ section > h2 {
 /* guide_header */
 .guide_header {
     width: 100%;
-    height: 3.75rem;
+    height: 60px;
     box-sizing: border-box;
     background: #fff;
     z-index: 1100;
@@ -254,8 +231,8 @@ section > h2 {
 .guide_header .guide_header_nav_box > a {
     display: inline-block;
     text-align: center;
-    padding: 0 1.44rem;
-    line-height: 3.75rem;
+    padding: 0 23px;
+    line-height: 60px;
     color: #949494;
     transition: color 0.5s;
 }
@@ -272,14 +249,14 @@ section > h2 {
 /* 슬라이드 크기 */
 #display .displays_swiper {
     width: 100%;
-    margin-bottom: 6.25rem;
+    margin-bottom: 100px;
 }
 #display .displays_swiper .swiper-wrapper {
     width: 100%;
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide {
-    width: 16.875rem;
-    padding: 0 1.875rem;
+    width: 270px;
+    padding: 0 30px;
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide:first-child {
     padding-left: 0;
@@ -291,8 +268,8 @@ section > h2 {
 /* 이미지 크기 */
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox {
     width: 100%;
-    max-height: 16.969rem;
-    margin-bottom: 1.56rem;
+    max-height: 271.5px;
+    margin-bottom: 24.96px;
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox .display_img {
     width: 100%;
@@ -314,27 +291,27 @@ section > h2 {
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_text,
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_link {
-    margin-bottom: 0.8rem;
+    margin-bottom: 12.8px;
 }
 /* 텍스트 */
 
 /* 스와이퍼 버튼 */
 #display .displays_swiper .swiper-button-next,
 #display .displays_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
 }
 #display .displays_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #display .displays_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* display_swiper */
@@ -345,14 +322,14 @@ section > h2 {
 /* 슬라이드 크기 */
 #education .education_swiper {
     width: 100%;
-    margin-bottom: 6.25rem;
+    margin-bottom: 100px;
 }
 #education .education_swiper .swiper-wrapper {
     width: 100%;
 }
 #education .education_swiper .swiper-wrapper .swiper-slide {
-    width: 17.969rem;
-    padding: 0 1.875rem;
+    width: 287.5px;
+    padding: 0 30px;
 }
 #education .education_swiper .swiper-wrapper .swiper-slide:first-child {
     padding-left: 0;
@@ -364,8 +341,8 @@ section > h2 {
 /* 이미지 크기 */
 #education .education_swiper .swiper-wrapper .swiper-slide .education_item .education_item_imgbox {
     width: 100%;
-    max-height: 18rem;
-    margin-bottom: 1.56rem;
+    max-height: 288px;
+    margin-bottom: 24.96px;
 }
 #education .education_swiper .swiper-wrapper .swiper-slide .education_item .education_item_imgbox .education_img {
     width: 100%;
@@ -385,27 +362,27 @@ section > h2 {
 }
 #education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_text,
 #education .education_swiper .swiper-wrapper .swiper-slide .education_item .section_link {
-    margin-bottom: 0.8rem;
+    margin-bottom: 12.8px;
 }
 /* 텍스트 */
 
 /* 스와이퍼 버튼 */
 #education .education_swiper .swiper-button-next,
 #education .education_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
 }
 #education .education_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #education .education_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* education_swiper */
@@ -414,19 +391,19 @@ section > h2 {
 /* education */
 /* education_swiper */
 #event {
-    margin-bottom: 4.375rem;
+    margin-bottom: 70px;
 }
 /* 슬라이드 크기 */
 #event .event_swiper {
     width: 100%;
-    margin-bottom: 6.25rem;
+    margin-bottom: 100px;
 }
 #event .event_swiper .swiper-wrapper {
     width: 100%;
 }
 #event .event_swiper .swiper-wrapper .swiper-slide {
-    width: 17.969rem;
-    padding: 0 1.875rem;
+    width: 287.5px;
+    padding: 0 30px;
 }
 #event .event_swiper .swiper-wrapper .swiper-slide:first-child {
     padding-left: 0;
@@ -438,8 +415,8 @@ section > h2 {
 /* 이미지 크기 */
 #event .event_swiper .swiper-wrapper .swiper-slide .event_item .event_item_imgbox {
     width: 100%;
-    max-height: 18rem;
-    margin-bottom: 1.56rem;
+    max-height: 288px;
+    margin-bottom: 24.96px;
 }
 #event .event_swiper .swiper-wrapper .swiper-slide .event_item .event_item_imgbox .event_img {
     width: 100%;
@@ -459,27 +436,27 @@ section > h2 {
 }
 #event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_text,
 #event .event_swiper .swiper-wrapper .swiper-slide .event_item .section_link {
-    margin-bottom: 0.8rem;
+    margin-bottom: 12.8px;
 }
 /* 텍스트 */
 
 /* 스와이퍼 버튼 */
 #event .event_swiper .swiper-button-next,
 #event .event_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
 }
 #event .event_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #event .event_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* education_swiper */
@@ -496,7 +473,7 @@ table {
   }
   th, td {
     border: 1px solid #ddd;
-    padding: 0.938rem;
+    padding: 15px;
     text-align: center;
   }
 /* th */
@@ -505,19 +482,19 @@ table {
     color: #fff;
   }
   th:first-child {
-    width: 13.75rem;
+    width: 220px;
   }
 /* th */
 
 /* td */
  tbody tr:nth-child(2) td:nth-child(2) {
-    width: 5rem;
+    width: 80px;
  } 
  .td_inner {
-    width: 37.5rem;
+    width: 600px;
     text-align: left;
     color: #666666;
-    line-height: 1.6;
+    line-height: 25.6px;
  }
 /* td */
 thead > tr > th:first-child {
@@ -538,7 +515,7 @@ tbody > tr > td:last-child {
 /* floor_guide */
 #floor_guide .floor_area {
     width: 100%;
-    height: 35.438rem;
+    height: 567px;
     display: flex;
     justify-content: space-between;
 }
@@ -587,7 +564,7 @@ tbody > tr > td:last-child {
 /* amenities_swiper */
 #amenities .amenities_swiper {
     width: 100%;
-    max-height: 34.938rem;
+    max-height: 559px;
 }
 #amenities .amenities_swiper .swiper-slide {
     width: 30%;
@@ -601,7 +578,7 @@ tbody > tr > td:last-child {
 #amenities .amenities_swiper .swiper-slide .amenities_item .amenities_item_imgbox {
     width: 100%;
     height: 50%;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 #amenities .amenities_swiper .swiper-slide .amenities_item .amenities_item_imgbox .amenities_img {
     width: 100%;
@@ -611,11 +588,11 @@ tbody > tr > td:last-child {
 
 /* 텍스트 */
 #amenities .amenities_swiper .swiper-slide .amenities_item p {
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
 }
 #amenities .amenities_swiper .swiper-slide .amenities_item ul li {
     position: relative;
-    padding-left: 0.625rem;
+    padding-left: 10px;
     color: #666666;
 }
 #amenities .amenities_swiper .swiper-slide .amenities_item ul li:before {
@@ -631,8 +608,8 @@ tbody > tr > td:last-child {
 /* 스와이퍼 버튼 */
 #amenities .amenities_swiper .swiper-button-next,
 #amenities .amenities_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
     
@@ -640,12 +617,12 @@ tbody > tr > td:last-child {
 #amenities .amenities_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #amenities .amenities_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* amenities_swiper */
@@ -655,7 +632,7 @@ tbody > tr > td:last-child {
 /* cultural_swiper */
 #cultural .amenities_swiper {
     width: 100%;
-    max-height: 31.375rem;
+    max-height: 502px;
 }
 #cultural .cultural_swiper .swiper-slide {
     width: 50%;
@@ -682,7 +659,7 @@ tbody > tr > td:last-child {
     width: 39%;
 }
 #cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_textbox p {
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
     word-break: keep-all;
 }
 #cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_textbox p:last-child {
@@ -693,8 +670,8 @@ tbody > tr > td:last-child {
 /* 스와이퍼 버튼 */
 #cultural .cultural_swiper .swiper-button-next,
 #cultural .cultural_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
     
@@ -702,12 +679,12 @@ tbody > tr > td:last-child {
 #cultural .cultural_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #cultural .cultural_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* cultural_swiper */
@@ -715,17 +692,17 @@ tbody > tr > td:last-child {
 
 /* directions */
 #directions {
-    height: 34.563rem;
+    height: 553px;
 }
 #directions .directions_area {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
 }
 /* TapTitle */
 #directions .directions_area ul {
-    width: 21.563rem;
+    width: 345px;
     height: 100%;
 }
 #directions .directions_area ul li {
@@ -736,7 +713,7 @@ tbody > tr > td:last-child {
     display: block;
     width: 100%;
     height: 100%;
-    line-height: 6.875rem;
+    line-height: 110px;
     transition: all 0.3s;
 }
 #directions .directions_area ul li > a:hover {
@@ -744,8 +721,8 @@ tbody > tr > td:last-child {
     color: #fff;
 }
 #directions .directions_area ul li > a > img {
-    vertical-align: -0.75rem;
-    margin: 0 1.875rem 0 3.125rem;
+    vertical-align: -12px;
+    margin: 0 30px 0 50px;
 }
 #directions .directions_area ul li .MapTapTitle.on {
     background: #000;
@@ -755,7 +732,7 @@ tbody > tr > td:last-child {
 
 /* Tap */
 #directions .directions_area .MapTap > img {
-    width: 65.313rem;
+    width: 1045px;
     height: 100%;
 }
 #directions .directions_area .MapTap {
@@ -769,88 +746,92 @@ tbody > tr > td:last-child {
 /* map_link */
 #directions .map_link {
     text-align: right;
-    padding-bottom: 2.5rem;
+    padding-bottom: 40px;
 }
 #directions .map_link > a {
     display: inline-block;
     background: url(../gwanlam_chamyeo_img/seoul/icon_arrow_bold.png)no-repeat right / 5px;
-    padding-right: 0.625rem;
+    padding-right: 10px;
     font-weight: 600;
-    margin-left: 1.875rem;
+    margin-left: 30px;
 }
 #directions .map_link > a > img {
-    width: 1.125rem;
-    height: 0.938rem;
-    padding-right: 0.625rem;
+    width: 18px;
+    height: 15px;
+    padding-right: 10px;
     vertical-align: -1px;
 }
 #directions .map_link > a:nth-child(2) > img {
-    width: 0.7rem;
+    width: 11.2px;
 }
 #directions .map_link > a:nth-child(3) > img {
-    width: 0.9rem;
+    width: 14.4px;
 }
 #directions .map_link > a:nth-child(4) > img {
-    width: 1.5rem;
+    width: 24px;
 }
 /* map_link */
 
 .manners {
     font-weight: 600;
-    margin-left: -6.25rem;
+    margin-left: -100px;
 }
 .manners_btn {
-    margin-left: -6.25rem;
+    margin-left: -100px;
     font-weight: 400;
     font-size: 1rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 200px;
 }
 /* //directions */
 
 /* 모달창 */
 .displayModal .modal_area_box {
-    width: 35rem;
+    width: 560px;
 }
 /* 텍스트 */
 .displayModal .section_sub_text {
-    padding-bottom: 1.25rem;
+    padding-bottom: 20px;
     border-bottom: 1px solid #000;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 /* 텍스트 */
 
 /* 버튼 */
 .displayModal .modal_btn_area {
     text-align: right;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 }
 .displayModal .close {
     position: absolute;
     top: 4%; right: 2%;
     display: block;
     background: url(../index_img/icon_x.png) no-repeat center / 10px;
-    width: 3.12rem;
-    height: 3.12rem;
+    width: 49.92px;
+    height: 49.92px;
 }
 /* 버튼 */
 
 /* "modal_dl_box */
 .displayModal .modal_dl_box {
     display: flex;
+    justify-content: left;
 }
 .displayModal .modal_dl_box > dl:first-child {
-    width: 20%;
+    width: 25%;
+}
+.displayModal .modal_dl_box > dl:last-child {
+    width: 75%;
 }
 .displayModal .modal_dl_box > dl > dt, 
 .displayModal .modal_dl_box > dl > dd {  
-    margin-bottom: 0.938rem;
+    margin-bottom: 15px;
     font-weight: 400;
 }
 .displayModal .modal_dl_box > dl > dt {
     font-weight: 600;
 }
 .displayModal .modal_dl_box > dl > dt:nth-child(3) {
-    margin-bottom: 2.25rem;
+    margin-bottom: 36px;
 }
 /* "modal_dl_box */
 /* 모달창 */

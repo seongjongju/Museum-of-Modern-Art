@@ -355,24 +355,298 @@
 
             <!-- collection_checkbox -->
             <div class="collection_checkbox">
-                <input type="checkbox" id="on_display"><label for="on_display">전시중</label>
-                <input type="checkbox" id="image"><label for="image">이미지</label>
-                <input type="checkbox" id="national_heritage"><label for="national_heritage">국가유산</label>
-                <input type="checkbox" id="donated_work"><label for="donated_work">기증작품</label>
+                <input type="checkbox" id="collectionsAll" onchange="collectionsAll()"><label for="collectionsAll">전체</label>
+                <input type="checkbox" id="on_display" onchange="display()"><label for="on_display">전시중</label>
+                <input type="checkbox" id="image" onchange="image()"><label for="image">이미지</label>
+                <input type="checkbox" id="national_heritage" onchange="nationalHeritage()"><label for="national_heritage">국가유산</label>
+                <input type="checkbox" id="donated_work" onchange="donatedWork()"><label for="donated_work">기증작품</label>
             </div>
             <!-- collection_checkbox -->
         </section>
         <!-- collection_search -->
 
         <!-- collections -->
-         <section id="collections">
-            
+         <section id="collections" class="inner">
+            <div class="collections_container">
+                <!-- 니콜라스 파티-윤슬 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword="display">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_08fa7523-9261-4f21-a3d7-ce803e06e2d5-20240906112341714.jpg" alt="니콜라스 파티_윤슬" style="max-width: 290px; max-height: 259px;">
+                    </figure>
+                    <p class="section_text">
+                        니콜라스 파티 <br>
+                        Nicolas PARTY
+                    </p>
+                    <p class="section_sub_title">윤슬</p>
+                    <p class="section_text">2022</p>
+                </a>
+                <!-- 니콜라스 파티-윤슬 -->
+
+                <!-- 아이웨이웨이-검은샹들리에 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword2="image">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_72ae2738-f01b-49dd-9a74-60bc17f36e54-20240909134141162.jpeg" alt="아이웨이웨이-검은샹들리에" style="max-width: 239.7px; max-height: 290px;">
+                    </figure>
+                    <p class="section_text">
+                        아이웨이웨이 <br>
+                        AI Weiwei
+                    </p>
+                    <p class="section_sub_title">검은 샹들리에</p>
+                    <p class="section_text">2017-2021</p>
+                </a>
+                <!-- 아이웨이웨이-검은샹들리에 -->
+
+                <!-- 양기훈-노안 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword="display">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_4f42d47a-5f3f-4b8c-b64f-8269f49310ef-20240906161502237.jpg" alt="양기훈-노안" style="max-width: 290px; max-height: 124.6px;">
+                    </figure>
+                    <p class="section_text">
+                        양기훈 <br>
+                        YANG Kihoon
+                    </p>
+                    <p class="section_sub_title">노안</p>
+                    <p class="section_text">1903</p>
+                </a>
+                <!-- 양기훈-노안 -->
+
+                <!-- 이도영-기명절지 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword="display">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_5aa3b34b-e416-46db-87ed-50addd5be987-20240906161446351.jpg" alt="이도영-기명절지" style="max-width: 290px; max-height: 167.7px;">
+                    </figure>
+                    <p class="section_text">
+                        이도영 <br>
+                        LEE Doyoung
+                    </p>
+                    <p class="section_sub_title">기명절지</p>
+                    <p class="section_text">연도미상</p>
+                </a>
+                <!-- 이도영-기명절지 -->
+
+                <!-- 이대원a-농원 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword2="image">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_6113a89d-8f9a-4977-b354-d50a777a5cdd-20240906112333407.jpg" alt="이대원a-농원" style="max-width: 290px; max-height: 198.2px;">
+                    </figure>
+                    <p class="section_text">
+                        이대원 a <br>
+                        LEE Daiwon a
+                    </p>
+                    <p class="section_sub_title">농원</p>
+                    <p class="section_text">1981</p>
+                </a>
+                 <!-- 이대원a-농원 -->
+
+                 <!-- 이대원a-산 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword4="donated_work">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_fcef5ff5-de95-44e4-93b5-03f39730e79d-20240906112337297.jpg" alt="이대원a-산" style="max-width: 290px; max-height: 116.3px;">
+                    </figure>
+                    <p class="section_text">
+                        이대원 a <br>
+                        LEE Daiwon a
+                    </p>
+                    <p class="section_sub_title">산(도봉산)</p>
+                    <p class="section_text">1974</p>
+                </a>
+                 <!-- 이대원a-산 -->
+
+                  <!-- 김창열-회귀 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword4="donated_work">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_593c6ba0-444b-44d8-b3e6-4acfe36a4f7c-20240906112327911.jpg" alt="김창열-회귀" style="max-width: 232px; max-height: 290px;">
+                    </figure>
+                    <p class="section_text">
+                        김창열 <br>
+                        KIM Tschang-yeul
+                    </p>
+                    <p class="section_sub_title">회귀</p>
+                    <p class="section_text">2007</p>
+                </a>
+                  <!-- 김창열-회귀 -->
+
+                   <!-- 채용신 외-최전구 초상 및 관련 유물 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword3="national_heritage">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_0db4c7a7-df4f-462b-b908-2cf404269d15-20240906161435911.jpg" alt="채용신 외-최전구 초상 및 관련 유물" style="max-width: 258.4px; max-height: 290px;">
+                    </figure>
+                    <p class="section_text">
+                        채용신 외 <br>
+                        CHAE YoungSin et al.
+                    </p>
+                    <p class="section_sub_title">최전구 초상 및 관련 유물</p>
+                    <p class="section_text">1. 1921, 2. 연도미상, 3. 1914</p>
+                </a>
+                  <!-- 채용신 외-최전구 초상 및 관련 유물 -->
+
+                  <!-- 변관식-외금강삼선암 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword3="national_heritage">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_e346748d-89c7-46d3-9ff6-406890417822-20240906161435783.jpg" alt="변관식-외금강삼선암" style="max-width: 81.2px; max-height: 290px;">
+                    </figure>
+                    <p class="section_text">
+                        변관식 <br>
+                        BYEON Gwansik
+                    </p>
+                    <p class="section_sub_title">외금강삼선암</p>
+                    <p class="section_text">1930</p>
+                </a>
+                  <!-- 변관식-외금강삼선암 -->
+
+                  <!-- 이도영-산수인물 -->
+                <a href="#" class="collections_item" data-all="all" data-keyword2="image">
+                    <figure class="collections_item_imgbox">
+                        <img src="collections_search_img/maxi_91a6876e-9f8d-465e-a87d-5c035285686b-20240906161433655.jpg" alt="이도영-산수인물" style="max-width: 290px; max-height: 206.2px;">
+                    </figure>
+                    <p class="section_text">
+                        이도영 <br>
+                        LEE Doyoung
+                    </p>
+                    <p class="section_sub_title">산수인물</p>
+                    <p class="section_text">1933</p>
+                </a>
+                  <!-- 이도영-산수인물 -->
+            </div>
          </section>
+         <!-- //collections -->
+
+         <!-- footer -->
+        <footer class="inner">
+            <!-- top -->
+            <div id="footer_top">
+                <!-- left -->
+                <div class="footer_top_left">
+                    <h2 class="section_title">
+                        MMCA 뉴스레터 구독 신청
+                    </h2>
+                    <button class="subscribe">구독하기</button>
+                    <a href="#" class="section_title">뉴스레터</a>
+                    <a href="#" class="section_title">MMCA 리서치랩</a>
+                    <a href="#" class="section_title">멤버십</a>
+                    <a href="#" class="section_title">온라인숍</a>
+                </div>
+                <!-- left -->
+
+                <!-- right -->
+                <div class="footer_top_right">
+                    <!-- sns -->
+                    <ul class="sns">
+                        <li><a href="#">인스타그램</a></li>
+                        <li><a href="#">유튜브</a></li>
+                        <li><a href="#">페이스북</a></li>
+                        <li><a href="#">트위터</a></li>
+                        <li><a href="#">네이버</a></li>
+                        <li><a href="#">네이버 포스트</a></li>
+                    </ul>
+                    <!-- sns -->
+
+                    <!-- right01 -->
+                    <ul class="right01">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#">국민신문고</a></li>
+                        <li><a href="#">정보공개</a></li>
+                        <li><a href="#">클린신고센터</a></li>
+                    </ul>
+                    <!-- right01 -->
+
+                    <!-- right02 -->
+                    <ul class="right02">
+                        <li><a href="#">미술관 소개</a></li>
+                        <li><a href="#">새소식</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">후원</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">시설대관·복제신청</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">국립현대미술관 문화재단</a></li>
+                    </ul>
+                    <!-- right02 -->
+                </div>
+            </div>
+
+            <!-- bottom -->
+            <div id="footer_bottom">
+                <!-- left -->
+                <div class="footer_bottom_left">
+                    <div class="address">
+                        <p class="address_inner section_text">
+                            대표자: 김성희, 사업자등록번호: <span>138‒83‒00313</span>
+                        </p>
+                        <p class="address_inner section_text">
+                            대표전화: (서울) <a href="#">02‒3701‒9500</a>,
+                        </p>
+                        <p class="address_inner section_text">
+                            (과천) <a href="#">02‒2188‒6000</a>,
+                        </p>
+                        <p class="address_inner section_text">
+                            (덕수궁) <a href="#">02‒2022‒0600</a>,
+                        </p>
+                        <p class="address_inner section_text">
+                            (청주) <a href="#">043-261-1400</a>
+                        </p>
+                        <p class="address_inner">
+                            © 2021 National Museum of Modern and Contemporary Art, Korea
+                        </p>
+                    </div>
+                    <h3 class="logo">
+                        <a href="#">
+                            <img src="index_img/bg_logo_full.svg" alt="로고 이미지">
+                        </a>
+                    </h3>
+                </div>
+                <!-- left -->
+
+                <!-- right -->
+                <h3 class="wa_logo">
+                    <a href="#">
+                        <img src="index_img/ba.png" alt="WA로고">
+                    </a>
+                </h3>
+                <!-- right -->
+            </div>
+            <!-- bottom -->
+        </footer>
+        <!-- //footer -->
+
+        <!-- top_button -->
+        <a href="#" id="top_button">
+            <img src="index_img/btn_top.png" class="top_button_img" alt="탑 버튼">
+        </a>
+        <!-- top_button -->
+
+        <!-- 모달창 -->
+        <div class="modal_area subscribeModal">
+            <div class="modal_area_box">
+                <p class="section_title">MMCA 뉴스레터 구독 신청</p>
+                <p class="section_text">
+                    뉴스레터 구독은 홈페이지 회원 가입 후 신청 가능하며, 회원 가입 시 뉴스레터 수신여부에 체크해 주세요.<br>
+                    또는 카카오톡 채널을 통해 편리하게 뉴스레터를 받아보세요.
+                </p>
+                <span class="modal_text">
+                    ※ 기존 홈페이지 회원이 뉴스레터 구독 신청을 원할 경우, 미술관 홈페이지 로그인 후 나의 페이지-개인정보수정-뉴스레터 수신여부 <br> 체크하시면 구독하실 수 있습니다.
+                </span>
+                <div class="modal_btn_area">
+                    <button class="btn1 section_text">홈페이지 회원 가입</button>
+                    <button class="btn2 section_text">카카오톡 채널 추가</button>
+                </div>
+                <a href="#" class="close">
+                    <!-- 백그라운드 이미지 icon_dialog_closeL.png -->
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 모달창 -->
     </div>
     
     <script src="js/collection_search.js"></script>
     <script src="js/header_footer.js"></script>
     <script src="js/tap.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

@@ -2,13 +2,13 @@
 
 /* intro */
 #intro {
-    padding-top: 18rem;
+    padding-top: 288px;
 }
 #intro .main_img {
     background: url(../index_img/2024081304560356317128.png) no-repeat center/cover;
     width: 100%;
-    height: 41.5rem;
-    margin-bottom: 2rem;
+    height: 664px;
+    margin-bottom: 32px;
 }
 #intro .intro_text_area {
     display: flex;
@@ -16,7 +16,7 @@
 }
 #intro .intro_text_area .intro_title > h2 {
     font-size: 2.5rem;
-    margin-bottom: 0.68rem;
+    margin-bottom: 10.8px;
 }
 #intro .intro_text_area .intro_title > p {
     font-size: 0.93rem;
@@ -24,11 +24,11 @@
 }
 #intro .intro_text_area .shortcut {
     display: block;
-    height: 3rem;
-    padding: 0 1.87rem;
+    height: 48px;
+    padding: 0 30px;
     border: 1px solid #000;
-    border-radius: 3rem;
-    line-height: 3rem;
+    border-radius: 48px;
+    line-height: 48px;
 }
 /* //intro */
 
@@ -39,7 +39,7 @@
 }
 #art_gallery .art_gallery_area .art_gallery_card {
     width: 23.5%;
-    height: 29.18rem;
+    height: 466.9px;
 }
 /* 이미지 */
 #art_gallery .art_gallery_area .art_gallery_card .art_gallery_img  {
@@ -47,7 +47,7 @@
     background: no-repeat center/cover;
     width: 100%;
     height: 50%;
-    margin: 1.56rem 0 1.25rem;
+    margin: 25px 0 20px;
 }
 #art_gallery .art_gallery_area .art_gallery_card .art_gallery_img01 {
    background-image: url(../index_img/img_place02_off.jpg);
@@ -63,10 +63,10 @@
 }
 /* 이미지 */
 #art_gallery .art_gallery_area .art_gallery_card .section_title {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 #art_gallery .art_gallery_area .art_gallery_card .section_text {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 /* //art_gallery */
 
@@ -82,14 +82,14 @@
 /* 슬라이드 크기 */
 #display .display_swiper {
     width: 100%;
-    max-height: 41.43rem;
+    max-height: 662.9px;
 }
 #display .display_swiper .swiper-wrapper {
     width: 100%;
     height: 100%;
 }
 #display .display_swiper .swiper-wrapper .swiper-slide {
-    width: 25rem;
+    width: 400px;
     height: 100%;
 }
 /* 슬라이드 크기 */
@@ -99,8 +99,8 @@
 /* 이미지 크기 */
 #display .display_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox {
     width: 100%;
-    max-height: 25rem;
-    margin-bottom: 1.56rem;
+    max-height: 400px;
+    margin-bottom: 25px;
 }
 #display .display_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox .display_img {
     width: 100%;
@@ -123,27 +123,27 @@
 }
 #display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_text,
 #display .display_swiper .swiper-wrapper .swiper-slide .display_item .section_link {
-    margin-bottom: 0.8rem;
+    margin-bottom: 12.8px;
 }
 /* 텍스트 */
 
 /* 스와이퍼 버튼 */
 #display .display_swiper .swiper-button-next,
 #display .display_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
 }
 #display .display_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #display .display_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* display_tap_swiper */
@@ -151,7 +151,7 @@
 .title_area { /* section title 정렬 */
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
 }
 .tap_title_area { /* tap메뉴 타이틀 */
     display: flex;
@@ -182,14 +182,14 @@
 /* 슬라이드 크기 */
 #collection .collection_swiper {
     width: 100%;
-    max-height: 30rem;
+    max-height: 480px;
 }
 #collection .collection_swiper .swiper-wrapper {
     width: 100%;
     height: 100%;
 }
 #collection .collection_swiper .swiper-wrapper .swiper-slide {
-    width: 25rem;
+    width: 400px;
     height: 100%;
 }
 /* 슬라이드 크기 */
@@ -201,7 +201,7 @@
 #collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .collection_item_imgbox {
     width: 100%;
     overflow: hidden;
-    margin-bottom: 1.56rem;
+    margin-bottom: 25px;
 }
 #collection .collection_swiper .swiper-wrapper .swiper-slide .collection_item .box01 { /* 국립현대미술관 이건희컬렉션 */
     height: 40%;
@@ -224,20 +224,20 @@
 /* 스와이퍼 버튼 */
 #collection .collection_swiper .swiper-button-next,
 #collection .collection_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
 }
 #collection .collection_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #collection .collection_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* collection_swiper */
@@ -248,14 +248,14 @@
 /* 슬라이드 크기 */
 #newsletter .newsletter_swiper {
     width: 100%;
-    max-height: 27rem;
+    max-height: 432px;
 }
 #newsletter .newsletter_swiper .swiper-wrapper {
     width: 100%;
     height: 100%;
 }
 #newsletter .newsletter_swiper .swiper-wrapper .swiper-slide {
-    width: 25rem;
+    width: 400px;
     height: 100%;
 }
 /* 슬라이드 크기 */
@@ -265,9 +265,9 @@
 /* 이미지크기 */
 #newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item .newsletter_item_imgbox {
     width: 100%;
-    max-height: 23rem;
+    max-height: 368px;
     overflow: hidden;
-    margin-bottom: 1.56rem;
+    margin-bottom: 25px;
 }
 #newsletter .newsletter_swiper .swiper-wrapper .swiper-slide .newsletter_item .newsletter_item_imgbox .newsletter_img {
     width: 100%;
@@ -286,20 +286,20 @@
 /* 스와이퍼 버튼 */
 #newsletter .newsletter_swiper .swiper-button-next,
 #newsletter .newsletter_swiper .swiper-button-prev {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 40px;
+    height: 40px;
     background: #000;
     border-radius: 50%;
 }
 #newsletter .newsletter_swiper .swiper-button-next:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0 0 0.2rem;
+    padding: 1.6px 0 0 3.2px;
 }
 #newsletter .newsletter_swiper .swiper-button-prev:after {
     font-size: 1.1rem;
     color: #fff;
-    padding: 0.1rem 0.2rem 0 0;
+    padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
 /* newsletter_swiper */
@@ -313,10 +313,10 @@
 #learn_more .membership {
     display: block;
     width: 100%;
-    max-height: 11.68rem;
+    max-height: 186.9px;
     border-bottom: 1px solid #000;
     box-sizing: border-box;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     overflow: hidden;
 }
 #learn_more .membership > img {
@@ -325,19 +325,20 @@
 }
 #learn_more .learn_more_area {
     width: 100%;
+    height: 310.9px;
     display: flex;
     justify-content: space-between;
 }
 #learn_more .learn_more_area .learn_more_card {
     width: 23.5%;
-    max-height: 19.43rem;
+    height: 100%;
 }
 /* 이미지 */
 #learn_more .learn_more_area .learn_more_card figure {
     background: no-repeat center/cover;
     width: 100%;
     height: 80%;
-    margin: 1.56rem 0 1.25rem;
+    margin: 25px 0 20px;
 }
 #learn_more .learn_more_area .learn_more_card .learn_more_img01 {
     background-image: url(../index_img/img_link01.jpg);
@@ -372,7 +373,7 @@
 }
 #news .news_banner {
     display: block;
-    padding: 0.62rem 0 0.3rem 0;
+    padding: 9.92px 0 4.8px 0;
     border-bottom: 1px solid #000;
     box-sizing: border-box;
 }
@@ -383,7 +384,7 @@
 #news .news_area {
     display: flex;
     justify-content: space-between;
-    padding: 2.5rem 0;
+    padding: 40px 0;
 }
 #news .news_area .announcement_area {
     width: 50%;
