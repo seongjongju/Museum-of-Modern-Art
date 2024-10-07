@@ -101,6 +101,9 @@ button {
 #responsive_header {
     display: none;
 }
+.gnb_area {
+    display: none;
+}
 header {
     position: fixed;
     width: 100%;

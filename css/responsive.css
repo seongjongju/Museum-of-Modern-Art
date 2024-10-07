@@ -168,9 +168,12 @@ header { /* 데스크탑 헤더 */
 /* 반응형 gnb */
 .gnb_area {
     position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0; right: -100%; bottom: 0;
+    width: 100%;
     background: #fff;
     z-index: 1001;
+    transition: all 0.5s;
+    display: block;
 }
 .gnb_area .gnb .gnb_header {
     width: 100%;
@@ -201,5 +204,95 @@ header { /* 데스크탑 헤더 */
 }
 /* 닫기버튼 */
 
+/* gnb_menu */
+.gnb_area .gnb .gnb_menu {
+    padding: 30px 0 10px;
+    border-bottom: 1px solid #000;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea {
+    width: 100%;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea li {
+    width: 100%;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea li a {
+    display: block;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .dep1 { /* dep1 */
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 0 5px;
+}
+/* +, - 모양 */
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .dep1:before { 
+    position: absolute;
+    content: '';
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+    width: 16px; height: 4px;
+    background: #000;
+    transition: all 0.3s;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .dep1:after {
+    position: absolute;
+    content: '';
+    top: 50%; right: 0.8%;
+    transform: translateY(-50%);
+    width: 4px; height: 16px;
+    background: #000;
+    transition: all 0.3s;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .dep1.active:before {
+    transform: rotate(180deg);
+    top: 45%;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .dep1.active:after {
+    transform: rotate(90deg);
+    top: 28%;
+}
+/* +, - 모양 */
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .depSubMenu { /* depSubMenu */
+    display: none;
+    border-top: 1px solid #000;
+    padding: 3px 0 0;
+}
+.gnb_area .gnb .gnb_menu .gnb_subMenuArea .depSubMenu .dep2 { /* dep2 */
+    padding: 3px 0;
+} 
+/* gnb_menu */
+
+/* gnb_link */
+.gnb_area .gnb .gnb_link {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 15px 0;
+}
+.gnb_area .gnb .gnb_link > li > a {
+    display: inline-block;
+    padding: 3px 0;
+    font-weight: 400;
+}
+/* gnb_link */
+
+/* gnb_util */
+.gnb_area .gnb .gnb_util {
+    width: 100%;
+    padding: 8px 0;
+}
+.gnb_area .gnb .gnb_util > li > a {
+    display: inline-block;
+    padding: 3px 0;
+}
+.gnb_area .gnb .gnb_util > li:nth-of-type(2) > a {
+    font-weight: 400;
+}
+.gnb_area .gnb .gnb_util > li > select {
+    border: none;
+    outline: none;
+    margin-left: -4px;
+}
+/* gnb_util */
 /* 공통 */
 }
+/* //768px */
