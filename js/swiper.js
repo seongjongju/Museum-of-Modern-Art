@@ -8,6 +8,20 @@ var swiper = new Swiper(".display_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1201: { //데스크탑
+            slidesPerView: 4,
+            slidesPerGroup: 4 
+        }, 
+        1025: { //태블릿 가로
+            slidesPerView: 3,
+            slidesPerGroup: 3, 
+        }, 
+        768: { //태블릿 가로
+            slidesPerView: 2,
+            slidesPerGroup: 2, 
+        }, 
+    }
 });
 /* display */
 
@@ -19,6 +33,16 @@ var swiper = new Swiper(".collection_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1201: { //데스크탑
+            slidesPerView: 4,
+            slidesPerGroup: 4 
+        }, 
+        1024: { //태블릿 가로
+            slidesPerView: 3,
+            slidesPerGroup: 3, 
+        }
+    }
 });
 /* collection */
 
@@ -30,6 +54,16 @@ var swiper = new Swiper(".newsletter_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1201: { //데스크탑
+            slidesPerView: 4,
+            slidesPerGroup: 4 
+        }, 
+        1024: { //태블릿 가로
+            slidesPerView: 3,
+            slidesPerGroup: 3, 
+        }
+    }
 });
 /*  newsletter */
 /* index 스와이퍼 */

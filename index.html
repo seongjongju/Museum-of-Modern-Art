@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/commonness.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1600px)">
 
     <link rel="icon" type="image/png" sizes="16x16" href="index_img/bg_logo.png">
 
@@ -139,6 +141,76 @@
             <!-- bottom -->
         </header>
         <!-- //header -->
+
+        <!-- responsive_header -->
+        <div id="responsive_header">
+            <nav class="inner">
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="index_img/bg_logo_full.svg" alt="로고 이미지">
+                    </a>
+                </h1>
+                <!-- 로고 -->
+
+                <!-- 검색버튼과 메뉴 -->
+                <div class="search_menu_box">
+                    <a href="#" class="search">
+                        <!-- 백그라운드 이미지 btn_totalSearch -->
+                    </a>
+                    <a href="#" class="search_close">
+                        <!-- 백그라운드 이미지 icon_dialog_closeL.png -->
+                    </a>
+                    <a href="#" class="menu">
+                        <!-- 백그라운드 이미지 btn_mobOpen.svg -->
+                    </a>
+                </div>
+                <!-- 검색버튼과 메뉴 -->
+            </nav>
+            <!-- 검색창 -->
+            <div class="search_box">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <button class="search_btn btn2 section_text">검색</button>
+            </div>
+            <!-- 검색창 -->
+        </div>
+        <!-- //responsive_header -->
+
+        <!-- gnb -->
+        <div class="gnb_area">
+            <div class="gnb inner">
+                <!-- gnb_header -->
+                <div class="gnb_header">
+                    <!-- 로고 -->
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="index_img/bg_logo_full.svg" alt="로고 이미지">
+                        </a>
+                    </h1>
+                    <!-- 로고 -->
+
+                    <!-- 닫기버튼 -->
+                    <a href="#" class="gnb_close">
+                        <!-- 백그라운드 이미지 x_button.png -->
+                    </a>
+                    <!-- 닫기버튼 -->
+                </div>
+                <!-- gnb_header -->
+
+                <!-- gnb_menu -->
+                 <div class="gnb_menu">
+                    <ul class="gnb_subMenuArea">
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">관람·참여</a>
+                        </li>
+                        <ul class="gnb_subMenu">
+                            <li class="depSubMenu"><a href="#">서울</a></li>
+                        </ul>
+                    </ul>
+                 </div>
+
+            </div>
+        </div>
 
         <!-- intro -->
         <section id="intro" class="inner">
@@ -1049,4 +1121,5 @@
     <script src="js/modal.js"></script>
     <script src="js/swiper.js"></script>
 </body>
+
 </html>

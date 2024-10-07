@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* 1600px */
+/* 공통 */
+.inner {
+    max-width: 96%;
+    margin: 0 auto;
+}
+/* 공통 */
+/* //1600px */
+
+/* 1200px */
+@media screen and (max-width: 1200px) {
+    /* 공통 */
+    .section_title { /* 섹션 타이틀 */
+        font-size: 1.625rem;
+    }  
+    /* header */
+    #header_bottom {
+        font-size: 1.5rem;
+    }
+    #header_bottom .search_box input { /* 검색어 텍스트 */
+        width: 81%;
+    }
+    /* header */
+    /* 공통 */
+    
+    /* index.html ---------------------------------------------------------------------- */
+    /* intro */
+    #intro .main_img {
+        height: 393.6px;
+    }
+    #intro .intro_text_area .intro_title > h2 {
+        font-size: 1.375rem;
+    }
+    /* intro */
+    
+    /* art_gallery */
+    #art_gallery .art_gallery_area .art_gallery_card {
+        height: 470px;
+    }
+    /* 이미지 */
+    #art_gallery .art_gallery_area .art_gallery_card .art_gallery_img  {
+        height: 48%;
+    }
+    /* 이미지 */
+    /* art_gallery */
+    
+    /* display */
+    .tap_title_area { /* tap메뉴 타이틀 */
+        width: 60%;
+    }
+    /* display */
+    
+    /* learn_more */
+    #learn_more .learn_more_area {
+        height: 741px;
+        flex-wrap: wrap;
+    }
+    #learn_more .learn_more_area .learn_more_card {
+        width: 49%;
+        height: 49%;
+    }
+    /* learn_more */
+    
+    /* news */
+    #news .news_area .announcement_area {
+        width: 65%;
+    }
+    /* news */
+    /* index.html ----------------------------------------------------------------------*/
+}
+/* //1200px */
+
+/* 768px */
+@media screen and (max-width: 768px) {
+/* 공통 */
+/* header */
+header { /* 데스크탑 헤더 */
+    display: none;
+}
+/* 반응형 헤더  */
+#responsive_header { 
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+    z-index: 1000;
+}
+#responsive_header nav {
+    display: flex;
+    justify-content: space-between;
+}
+/* 로고 */
+#responsive_header nav .logo > a {
+    display: block;
+    width: 175px;
+    height: 40px;
+}
+#responsive_header nav .logo > a > img {
+    width: 100%;
+    height: 100%;
+}
+/* 로고 */
+
+/* 검색버튼과 메뉴 */
+#responsive_header nav .search_menu_box {
+    width: 10%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#responsive_header nav .search_menu_box .search {
+    display: block;
+    background: url(../index_img/btn_totalSearch.svg) no-repeat center/ contain;
+    width: 26px;
+    height: 26px;
+}
+#responsive_header nav .search_menu_box .menu {
+    display: block;
+    background: url(../index_img/btn_mobOpen.svg) no-repeat center/ contain;
+    width: 26px;
+    height: 26px;
+}
+#responsive_header nav .search_menu_box .search_close {
+    display: block;
+    background: url(../index_img/icon_dialog_closeL.png) no-repeat center/ contain;
+    width: 26px;
+    height: 26px;
+    display: none;
+}
+/* 검색버튼과 베뉴 */
+
+/* 검색창 */
+#responsive_header .search_box {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 100%;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    display: none;
+}
+#responsive_header .search_box input::placeholder { /* 플레이스홀더 텍스트 */
+    font-size: 0.938rem;
+}
+#responsive_header .search_box input { /* 검색어 텍스트 */
+    padding: 10px;
+    width: 82%;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+#responsive_header .search_box .search_btn {
+    width: 100px;
+    height: 40px;
+    vertical-align: 7px;
+}
+/* 검색창 */
+/* 반응형 헤더  */
+/* header */
+
+/* 반응형 gnb */
+.gnb_area {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #fff;
+    z-index: 1001;
+}
+.gnb_area .gnb .gnb_header {
+    width: 100%;
+    height: 40px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 로고 */
+.gnb_area .gnb .gnb_header .logo > a {
+    display: block;
+    width: 175px;
+    height: 40px;
+}
+.gnb_area .gnb .gnb_header .logo > a > img {
+    width: 100%;
+    height: 100%;
+}
+/* 로고 */
+
+/* 닫기버튼 */
+.gnb_area .gnb .gnb_header .gnb_close {
+    display: block;
+    background: url(../index_img/x_button.png) no-repeat center/ 70px;
+    width: 26px;
+    height: 26px;
+}
+/* 닫기버튼 */
+
+/* 공통 */
+}
