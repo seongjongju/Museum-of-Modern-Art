@@ -134,5 +134,43 @@ window.addEventListener('scroll', function() {
 });
 /* guide_header 스크롤 이벤트 */
 
+/* 반응형 gnb */
+/* gnb 서브메뉴 열고 닫기 */
+const deps1 = document.querySelectorAll('.dep1');
+const depSubMenus = document.querySelectorAll('.depSubMenu');
+
+deps1.forEach(function(dep1, dep1Index) {
+  dep1.addEventListener('click', function(e) {
+      e.preventDefault();
+      $(depSubMenus[dep1Index]).slideToggle();
+      dep1.classList.toggle('active');
+
+     depSubMenus.forEach(function(depSubMenu, depSubMenuIndex) {
+      if(depSubMenuIndex !== dep1Index) {
+          $(depSubMenu).slideUp();
+          deps1[depSubMenuIndex].classList.remove('active');
+      }
+     });
+  });
+});
+/* gnb 서브메뉴 열고 닫기 */
+
+/* gnb열고 닫기 */
+const menuBtn = document.querySelector('.menu');
+const gnbCloseBtn = document.querySelector('.gnb_close');
+const gnbArea = document.querySelector('.gnb_area');
+
+menuBtn.addEventListener('click', function(e) { //gnb 열기
+  e.preventDefault();
+  gnbArea.style.right = "0"
+});
+
+gnbCloseBtn.addEventListener('click', function(e) { //gnb 닫기
+  e.preventDefault();
+  gnbArea.style.right = "-100%"
+});
+/* gnb열고 닫기 */
+/* 반응형 gnb */
+
 
 

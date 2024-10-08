@@ -63,7 +63,6 @@ section > h2 {
 
 /* gwanlam_chamyeo_header_bottom */
 #gwanlam_chamyeo_header_bottom {
-    position: relative;
     width: 100%;
     box-sizing: border-box;
     line-height: 60px;
@@ -109,9 +108,9 @@ section > h2 {
 }
 #gwanlam_chamyeo_header_bottom .search_box {
     position: absolute;
-    width: 1920px;
+    width: 100%;
     background: #fff;
-    top: 100%; left: -10%;
+    top: 100%; left: 0;
     border-bottom: 1px solid #000;
     box-sizing: border-box;
     display: none;
@@ -515,7 +514,7 @@ tbody > tr > td:last-child {
 /* floor_guide */
 #floor_guide .floor_area {
     width: 100%;
-    height: 567px;
+    max-height: 567px;
     display: flex;
     justify-content: space-between;
 }
@@ -547,11 +546,20 @@ tbody > tr > td:last-child {
 
 /* Tap */
 #floor_guide .floor_area .floor_img {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
+/* 이미지 */
+#floor_guide .floor_area .floor_img > img:first-child {
+    width: 70%;
+}
+#floor_guide .floor_area .floor_img > img:last-child {
+    width: 30%;
+}
+/* 이미지 */
 #floor_guide .floor_area .Tap {
+    width: 90%;
     display: none;
 }
 #floor_guide .floor_area .Tap.on {
@@ -692,17 +700,17 @@ tbody > tr > td:last-child {
 
 /* directions */
 #directions {
-    height: 553px;
+    max-height: 553px;  
 }
 #directions .directions_area {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     height: 100%;
     margin-bottom: 40px;
 }
 /* TapTitle */
 #directions .directions_area ul {
-    width: 345px;
+    width: 25%;
     height: 100%;
 }
 #directions .directions_area ul li {
@@ -715,6 +723,7 @@ tbody > tr > td:last-child {
     height: 100%;
     line-height: 110px;
     transition: all 0.3s;
+    text-align: center;
 }
 #directions .directions_area ul li > a:hover {
     background: #000;
@@ -722,7 +731,6 @@ tbody > tr > td:last-child {
 }
 #directions .directions_area ul li > a > img {
     vertical-align: -12px;
-    margin: 0 30px 0 50px;
 }
 #directions .directions_area ul li .MapTapTitle.on {
     background: #000;
@@ -732,10 +740,11 @@ tbody > tr > td:last-child {
 
 /* Tap */
 #directions .directions_area .MapTap > img {
-    width: 1045px;
+    width: 100%;
     height: 100%;
 }
 #directions .directions_area .MapTap {
+    width: 75%;
     display: none;
 }
 #directions .directions_area .MapTap.on {

@@ -21,6 +21,10 @@ var swiper = new Swiper(".display_swiper", {
             slidesPerView: 2,
             slidesPerGroup: 2, 
         }, 
+        375: { //모바일
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
     }
 });
 /* display */
@@ -38,10 +42,18 @@ var swiper = new Swiper(".collection_swiper", {
             slidesPerView: 4,
             slidesPerGroup: 4 
         }, 
-        1024: { //태블릿 가로
+        1025: { //태블릿 가로
             slidesPerView: 3,
             slidesPerGroup: 3, 
-        }
+        },
+        768: { //태블릿 가로
+            slidesPerView: 2,
+            slidesPerGroup: 2, 
+        }, 
+        375: { //모바일
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
     }
 });
 /* collection */
@@ -59,10 +71,18 @@ var swiper = new Swiper(".newsletter_swiper", {
             slidesPerView: 4,
             slidesPerGroup: 4 
         }, 
-        1024: { //태블릿 가로
+        1025: { //태블릿 가로
             slidesPerView: 3,
             slidesPerGroup: 3, 
-        }
+        },
+        768: { //태블릿 가로
+            slidesPerView: 2,
+            slidesPerGroup: 2, 
+        }, 
+        375: { //모바일
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
     }
 });
 /*  newsletter */
@@ -77,6 +97,20 @@ var swiper = new Swiper(".displays_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1201: { //데스크탑
+            slidesPerView: 5,
+        }, 
+        1025: { //태블릿 가로
+            slidesPerView: 4,
+        },
+        768: { //태블릿 가로
+            slidesPerView: 3,
+        }, 
+        375: { //모바일
+            slidesPerView: 2,
+        },
+    }
 });
 /* display */
 
@@ -87,6 +121,17 @@ var swiper = new Swiper(".education_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1025: { //태블릿 가로
+            slidesPerView: 5,
+        },
+        768: { //태블릿 가로
+            slidesPerView: 3,
+        }, 
+        375: { //모바일
+            slidesPerView: 2,
+        },
+    }
 });
 /* education */
 
@@ -97,6 +142,17 @@ var swiper = new Swiper(".event_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1025: { //태블릿 가로
+            slidesPerView: 5,
+        },
+        768: { //태블릿 가로
+            slidesPerView: 3,
+        }, 
+        375: { //모바일
+            slidesPerView: 2,
+        },
+    }
 });
 /* event */
 

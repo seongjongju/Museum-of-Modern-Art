@@ -82,7 +82,8 @@ $(document).ready(function () {
   const depSubMenus = document.querySelectorAll('.depSubMenu');
 
   deps1.forEach(function(dep1, dep1Index) {
-    dep1.addEventListener('click', function() {
+    dep1.addEventListener('click', function(e) {
+        e.preventDefault();
         $(depSubMenus[dep1Index]).slideToggle();
         dep1.classList.toggle('active');
 
