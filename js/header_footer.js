@@ -40,7 +40,7 @@ const header = document.querySelector("header");
 
 window.addEventListener('scroll', function () {
     let windowScrollHeight = window.scrollY
-    console.log(windowScrollHeight)
+    /* console.log(windowScrollHeight) */
 
     if (windowScrollHeight > 121) {
         header.style.top = "-139.59px"

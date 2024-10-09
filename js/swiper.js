@@ -93,6 +93,7 @@ var swiper = new Swiper(".newsletter_swiper", {
 /* display */
 var swiper = new Swiper(".displays_swiper", {
     slidesPerView: 5,
+    spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -117,19 +118,23 @@ var swiper = new Swiper(".displays_swiper", {
 /* education */
 var swiper = new Swiper(".education_swiper", {
     slidesPerView: 5,
+    spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        1025: { //태블릿 가로
+        1201: { //데스크탑
             slidesPerView: 5,
+        }, 
+        1025: { //태블릿 가로
+            slidesPerView: 4,
         },
         768: { //태블릿 가로
             slidesPerView: 3,
         }, 
         375: { //모바일
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
     }
 });
@@ -138,6 +143,7 @@ var swiper = new Swiper(".education_swiper", {
 /* event */
 var swiper = new Swiper(".event_swiper", {
     slidesPerView: 5,
+    spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -150,7 +156,7 @@ var swiper = new Swiper(".event_swiper", {
             slidesPerView: 3,
         }, 
         375: { //모바일
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
     }
 });
@@ -164,6 +170,17 @@ var swiper = new Swiper(".amenities_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1025: { //태블릿 가로
+            slidesPerView: 3,
+        },
+        768: { //태블릿 가로
+            slidesPerView: 2,
+        }, 
+        375: { //모바일
+            slidesPerView: 1,
+        },
+    }
 });
 /* amenities */
 
@@ -176,6 +193,17 @@ var swiper = new Swiper(".cultural_swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        1025: { //태블릿 가로
+            slidesPerView: 2,
+        },
+        768: { //태블릿 가로
+            slidesPerView: 1,
+        }, 
+        375: { //모바일
+            slidesPerView: 1,
+        },
+    }
 });
 /* cultural */
 /* swiper */

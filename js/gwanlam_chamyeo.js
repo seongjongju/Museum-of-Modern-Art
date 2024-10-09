@@ -92,11 +92,11 @@ $(document).ready(function () {
 const guide_header = document.querySelector(".guide_header");
 const guide_header_titles = document.querySelectorAll(".guide_header_nav_box > a");
 
-console.log(guide_header_titles)
+/* console.log(guide_header_titles) */
 
 window.addEventListener('scroll', function () {
     let windowScrollY = window.scrollY;
-    console.log(windowScrollY)
+    /* console.log(windowScrollY) */
     if (windowScrollY > 880) {
         guide_header.classList.add('fixed');
     } else {
@@ -170,6 +170,21 @@ gnbCloseBtn.addEventListener('click', function(e) { //gnb 닫기
   gnbArea.style.right = "-100%"
 });
 /* gnb열고 닫기 */
+
+/* 반응형 헤더 스크롤 이벤트 */
+const responsiveHeader = document.querySelector('#responsive_header');
+
+window.addEventListener('scroll', function() {
+    let windowScrollY = window.scrollY;
+    /* console.log(windowScrollY) */
+
+    if(windowScrollY > 861) {
+        responsiveHeader.style.top = "-100%"
+    } else {
+        responsiveHeader.style.top = "0"
+    }
+})
+/* 반응형 헤더 스크롤 이벤트 */
 /* 반응형 gnb */
 
 

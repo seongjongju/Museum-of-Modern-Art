@@ -46,3 +46,42 @@ MapTapTitles.forEach(function(MapTapTitle, MapTapTitleIndex) {
     });
 }); 
 /* 관람참여 -> 오시는 길 */
+
+/* 반응형 관람참여 -> 오시는 길 */
+const TapTitleMTitle = document.querySelector('.TapTitleM_title');
+const TapTitleMInventory = document.querySelector('.TapTitleM_inventory');
+const TapTitleMs = document.querySelectorAll('.TapTitleM > a');
+const TapMs = document.querySelectorAll('.TapM');
+/* console.log(TapMs) */
+
+TapTitleMTitle.addEventListener('click', function() {
+    $(TapTitleMInventory).slideToggle(100);
+});
+
+TapTitleMs.forEach(function(TapTitleM, TapTitleMIndex) {
+    TapTitleM.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let TapTitleMInner = TapTitleMs[TapTitleMIndex].innerHTML //각 인덱스 번호에 맞는 탭의 요소를 저장
+
+        TapTitleMTitle.innerHTML = "" //기존 탭 비우기
+
+        TapTitleMTitle.innerHTML = TapTitleMInner //현재 선택한 탭 넣기
+
+        /* 현재 선택한 탭의 하위탭 요소 */
+        TapMs.forEach(function(TapM, TapMIndex) {
+            TapMs[TapTitleMIndex].classList.add('on');
+
+            if(TapMIndex !== TapTitleMIndex) {
+                TapM.classList.remove('on');
+            }
+        });
+        /* 현재 선택한 탭의 하위탭 요소 */
+
+        $(TapTitleMInventory).slideUp(100);
+    });
+});
+/* 반응형 관람참여 -> 오시는 길 */
+
+
+

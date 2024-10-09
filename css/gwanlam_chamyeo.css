@@ -255,7 +255,6 @@ section > h2 {
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide {
     width: 270px;
-    padding: 0 30px;
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide:first-child {
     padding-left: 0;
@@ -328,7 +327,6 @@ section > h2 {
 }
 #education .education_swiper .swiper-wrapper .swiper-slide {
     width: 287.5px;
-    padding: 0 30px;
 }
 #education .education_swiper .swiper-wrapper .swiper-slide:first-child {
     padding-left: 0;
@@ -387,8 +385,8 @@ section > h2 {
 /* education_swiper */
 /* //education */
 
-/* education */
-/* education_swiper */
+/* event */
+/* event_swiper */
 #event {
     margin-bottom: 70px;
 }
@@ -402,7 +400,6 @@ section > h2 {
 }
 #event .event_swiper .swiper-wrapper .swiper-slide {
     width: 287.5px;
-    padding: 0 30px;
 }
 #event .event_swiper .swiper-wrapper .swiper-slide:first-child {
     padding-left: 0;
@@ -458,7 +455,7 @@ section > h2 {
     padding: 1.6px 3.2px 0 0;
 }
 /* 스와이퍼 버튼 */
-/* education_swiper */
+/* event_swiper */
 /* //event */
 
 /* viewing */
@@ -514,7 +511,6 @@ tbody > tr > td:last-child {
 /* floor_guide */
 #floor_guide .floor_area {
     width: 100%;
-    max-height: 567px;
     display: flex;
     justify-content: space-between;
 }
@@ -554,8 +550,11 @@ tbody > tr > td:last-child {
 #floor_guide .floor_area .floor_img > img:first-child {
     width: 70%;
 }
-#floor_guide .floor_area .floor_img > img:last-child {
+#floor_guide .floor_area .floor_img > img:nth-of-type(2) {
     width: 30%;
+}
+#floor_guide .floor_area .floor_img > img:last-child {
+    display: none;
 }
 /* 이미지 */
 #floor_guide .floor_area .Tap {
@@ -572,7 +571,6 @@ tbody > tr > td:last-child {
 /* amenities_swiper */
 #amenities .amenities_swiper {
     width: 100%;
-    max-height: 559px;
 }
 #amenities .amenities_swiper .swiper-slide {
     width: 30%;
@@ -640,7 +638,6 @@ tbody > tr > td:last-child {
 /* cultural_swiper */
 #cultural .amenities_swiper {
     width: 100%;
-    max-height: 502px;
 }
 #cultural .cultural_swiper .swiper-slide {
     width: 50%;
@@ -699,8 +696,8 @@ tbody > tr > td:last-child {
 /* //cultural */
 
 /* directions */
-#directions {
-    max-height: 553px;  
+#directions .directions_m_area {
+    display: none;
 }
 #directions .directions_area {
     display: flex;
@@ -711,7 +708,7 @@ tbody > tr > td:last-child {
 /* TapTitle */
 #directions .directions_area ul {
     width: 25%;
-    height: 100%;
+    height: 481.63px;
 }
 #directions .directions_area ul li {
     width: 100%;
@@ -721,9 +718,8 @@ tbody > tr > td:last-child {
     display: block;
     width: 100%;
     height: 100%;
-    line-height: 110px;
+    line-height: 120px;
     transition: all 0.3s;
-    text-align: center;
 }
 #directions .directions_area ul li > a:hover {
     background: #000;
@@ -731,6 +727,7 @@ tbody > tr > td:last-child {
 }
 #directions .directions_area ul li > a > img {
     vertical-align: -12px;
+    padding: 0 5% 0 15%;
 }
 #directions .directions_area ul li .MapTapTitle.on {
     background: #000;
@@ -739,13 +736,13 @@ tbody > tr > td:last-child {
 /* TapTitle */
 
 /* Tap */
-#directions .directions_area .MapTap > img {
-    width: 100%;
-    height: 100%;
-}
 #directions .directions_area .MapTap {
     width: 75%;
     display: none;
+}
+#directions .directions_area .MapTap > img {
+    width: 100%;
+    height: 100%;
 }
 #directions .directions_area .MapTap.on {
     display: block;

@@ -57,6 +57,9 @@ section {
 .guide_header .guide_header_nav_box {
     width: 100%;
 }
+#gwanlam_chamyeo_header_bottom {
+    line-height: 61px;
+}
 /* guide_header */
 
 /* 검색창 */
@@ -77,12 +80,21 @@ section {
 }
 table {
     width: 120%;
-    border-collapse: collapse;
   }
   /* viewing */
 
   /* directions */
-  .manners {
+  /* TapTitle */
+#directions .directions_area ul {
+    width: 35%;
+    height: 381.63px;
+}
+#directions .directions_area ul li > a {
+    line-height: 95.4px;
+}
+/* TapTitle */
+
+.manners {
     margin-left: -40px;
 }
 .manners_btn {
@@ -162,13 +174,185 @@ table {
 /* news */
 /* index.html------------------------------------------------------------------------- */
 
-/* gwanlam_chamyeo */
+/* gwanlam_chamyeo ----------------------------------------------- */
 /* guide_header */
 .guide_header .guide_header_nav_box > a {
    font-size: 1.063rem;
    padding: 0 10px;
 }
 /* guide_header */
+
+/* section */
+#display, #education {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#event {
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+/* section */
+
+/* 페이지 번호와의 간격 */
+#display .displays_swiper,
+#education .education_swiper,
+#event .event_swiper {
+    margin-bottom: 30px;
+}
+/* 페이지 번호와의 간격 */
+
+/* viewing */
+table {
+    font-size: 0.813rem;
+  }
+th, td {
+    padding: 5px;
+  }
+  /* th */
+  th:first-child {
+    width: 150px;
+  }
+  /* th */
+  /* td */
+ tbody > tr > td:last-child {
+    width: 500px;
+}
+ /* td */
+/* viewing */
+
+/* floor_guide */
+#floor_guide .floor_area {
+    display: block;
+    overflow: hidden;
+}
+/* TapTitle */
+#floor_guide .floor_area ul {
+    width: 30%;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#floor_guide .floor_area ul li {
+    width: 100%;
+    height: 100%;
+    border-bottom: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+#floor_guide .floor_area ul li:last-child {
+    border-right: none;
+}
+#floor_guide .floor_area ul li > a {
+    display: block;
+    line-height: 26px;
+    font-size: 1.125rem;
+}
+/* TapTitle */
+
+/* Tap */
+#floor_guide .floor_area .floor_img {
+   display: block;
+}
+/* 이미지 */
+#floor_guide .floor_area .floor_img > img:first-child {
+    width: 100%;
+}
+#floor_guide .floor_area .floor_img > img:nth-of-type(2) {
+    display: none;
+}
+#floor_guide .floor_area .floor_img > img:last-child {
+    display: block;
+    width: 100%;
+}
+/* 이미지 */
+#floor_guide .floor_area .Tap {
+    width: 100%;
+}
+/* floor_guide */
+
+/* directions_m_area */
+#directions .directions_area {
+    display: none;
+}
+#directions .directions_m_area {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+/* TapTitleM */
+#directions .directions_m_area .TapTitleM_box {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+}
+#directions .directions_m_area .TapTitleM_box .TapTitleM_title {
+    background: #000 url(../gwanlam_chamyeo_img/seoul/icon_arrow_bottom_w.png) no-repeat 96%/15px;
+    color: #fff;
+    cursor: pointer;
+}
+#directions .directions_m_area .TapTitleM_box .TapTitleM_title,
+#directions .directions_m_area .TapTitleM_box .TapTitleM_inventory .TapTitleM > a {
+    display: block;
+    width: 100%;
+    height: calc(100%/5);
+    line-height: 60px;
+}
+#directions .directions_m_area .TapTitleM_box .TapTitleM_inventory .TapTitleM > a {
+    background: #fff;
+}
+#directions .directions_m_area .TapTitleM_box .TapTitleM_inventory .TapTitleM > a:hover {
+    font-weight: 600;
+}
+#directions .directions_m_area .TapTitleM_box .TapTitleM_title > img,
+#directions .directions_m_area .TapTitleM_box .TapTitleM_inventory .TapTitleM > a > img {
+    vertical-align: -12px;
+    padding: 0 2%;
+}
+#directions .directions_m_area .TapTitleM_box .TapTitleM_inventory {
+    display: none;
+}
+/* TapTitleM */
+
+/* TapM */
+#directions .directions_m_area .TapM {
+    width: 100%;
+    max-height: 475px;
+    padding-top: 60px;
+    text-align: center;
+    display: none;
+}
+#directions .directions_m_area .TapM > img {
+    width: 80%;
+    height: auto;
+}
+#directions .directions_m_area .TapM.on {
+   display: block;
+}
+/* TapM */
+
+/* map_link */
+#directions .map_link > a {
+    display: block;
+    margin-bottom: 10px;
+}
+/* map_link */
+
+.manners {
+    font-size: 0.813rem;
+    margin-left: -20px;
+}
+.manners_btn {
+    width: 142px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin-left: -20px;
+    font-size: 0.813rem;
+    margin-bottom: 50px;
+}
+/* directions_m_area */
+
 
 }
 /* //768px */
