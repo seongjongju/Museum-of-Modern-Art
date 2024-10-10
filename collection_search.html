@@ -8,11 +8,17 @@
 
             <link rel="stylesheet" href="css/reset.css">
             <link rel="stylesheet" href="css/all.min.css">
-            <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+            <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet'
+                type='text/css'>
             <link rel="stylesheet" href="css/commonness.css">
             <link rel="stylesheet" href="css/collection_search.css">
+            <link rel="stylesheet" href="css/commonness_responsive.css" media="screen and (max-width: 1600px)">
+            <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1600px)">
 
             <link rel="icon" type="image/png" sizes="16x16" href="index_img/bg_logo.png">
+
+            <!-- Link Swiper's CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
             <script src="js/jquery-3.7.1.min.js"></script>
             <script src="js/jquery-ui.min.js"></script>
@@ -138,6 +144,175 @@
         </header>
         <!-- //header -->
 
+        <!-- responsive_header -->
+        <div id="responsive_header">
+            <nav class="inner">
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="index_img/bg_logo_full.svg" alt="로고 이미지">
+                    </a>
+                </h1>
+                <!-- 로고 -->
+
+                <!-- 검색버튼과 메뉴 -->
+                <div class="search_menu_box">
+                    <a href="#" class="search">
+                        <!-- 백그라운드 이미지 btn_totalSearch -->
+                    </a>
+                    <a href="#" class="search_close">
+                        <!-- 백그라운드 이미지 icon_dialog_closeL.png -->
+                    </a>
+                    <a href="#" class="menu">
+                        <!-- 백그라운드 이미지 btn_mobOpen.svg -->
+                    </a>
+                </div>
+                <!-- 검색버튼과 메뉴 -->
+            </nav>
+            <!-- 검색창 -->
+            <div class="search_box">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <button class="search_btn btn2 section_text">검색</button>
+            </div>
+            <!-- 검색창 -->
+        </div>
+        <!-- //responsive_header -->
+
+        <!-- gnb -->
+        <div class="gnb_area">
+            <div class="gnb inner">
+                <!-- gnb_header -->
+                <div class="gnb_header">
+                    <!-- 로고 -->
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="index_img/bg_logo_full.svg" alt="로고 이미지">
+                        </a>
+                    </h1>
+                    <!-- 로고 -->
+
+                    <!-- 닫기버튼 -->
+                    <a href="#" class="gnb_close">
+                        <!-- 백그라운드 이미지 x_button.png -->
+                    </a>
+                    <!-- 닫기버튼 -->
+                </div>
+                <!-- gnb_header -->
+
+                <!-- gnb_menu -->
+                <div class="gnb_menu">
+                    <!-- gnb_subMenuArea -->
+                    <ul class="gnb_subMenuArea">
+                        <!-- 관람·참여 -->
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">관람·참여</a>
+                        </li>
+                        <ul class="depSubMenu section_m_text">
+                            <li class="dep2"><a href="gwanlam_chamyeo_seoul.html">서울</a></li>
+                            <li class="dep2"><a href="gwanlam_chamyeo_gwachun.html">과천</a></li>
+                            <li class="dep2"><a href="#">덕수궁</a></li>
+                            <li class="dep2"><a href="#">청주</a></li>
+                            <li class="dep2"><a href="#">어린이미술관</a></li>
+                            <li class="dep2"><a href="#">이벤트</a></li>
+                            <li class="dep2"><a href="#">통합예약</a></li>
+                            <li class="dep2"><a href="#" style="font-weight: 400;">전시해설</a></li>
+                            <li class="dep2"><a href="#" style="font-weight: 400;">레지던시</a></li>
+                            <li class="dep2"><a href="#" style="font-weight: 400;">미술은행</a></li>
+                        </ul>
+                        <!-- 관람·참여 -->
+
+                        <!-- 전시 -->
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">전시</a>
+                        </li>
+                        <ul class="depSubMenu section_m_text">
+                            <li class="dep2"><a href="#">현재전시</a></li>
+                            <li class="dep2"><a href="#">예정전시</a></li>
+                            <li class="dep2"><a href="#">과거전시</a></li>
+                        </ul>
+                        <!-- 전시 -->
+
+                        <!-- 교육 -->
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">교육</a>
+                        </li>
+                        <ul class="depSubMenu section_m_text">
+                            <li class="dep2"><a href="#">미술관교육소개</a></li>
+                            <li class="dep2"><a href="#">어린이</a></li>
+                            <li class="dep2"><a href="#">청소년</a></li>
+                            <li class="dep2"><a href="#">교사</a></li>
+                            <li class="dep2"><a href="#">성인</a></li>
+                            <li class="dep2"><a href="#">교육자료실</a></li>
+                            <li class="dep2"><a href="#">참여신청</a></li>
+                        </ul>
+                        <!-- 교육 -->
+
+                        <!-- 소장품 -->
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">소장품</a>
+                        </li>
+                        <ul class="depSubMenu section_m_text">
+                            <li class="dep2"><a href="collection_search.html">소장품 검색</a></li>
+                            <li class="dep2"><a href="#">소장품 탐색</a></li>
+                            <li class="dep2"><a href="#">소장품 대여</a></li>
+                            <li class="dep2"><a href="#">보존과학</a></li>
+                        </ul>
+                        <!-- 소장품 -->
+
+                        <!-- 미술연구 -->
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">미술연구</a>
+                        </li>
+                        <ul class="depSubMenu section_m_text">
+                            <li class="dep2"><a href="#">도서와 아카이브</a></li>
+                            <li class="dep2"><a href="#">연구</a></li>
+                            <li class="dep2"><a href="#">발간자료</a></li>
+                            <li class="dep2"><a href="#">MMCA 리서치랩</a></li>
+                        </ul>
+                        <!-- 미술연구 -->
+
+                        <!-- 디지털 미술관 -->
+                        <li class="depTitleMenu">
+                            <a href="#" class="dep1">디저털미술관</a>
+                        </li>
+                        <ul class="depSubMenu section_m_text">
+                            <li class="dep2"><a href="#">메인</a></li>
+                            <li class="dep2"><a href="#">맞춤검색</a></li>
+                            <li class="dep2"><a href="#">오디오가이드</a></li>
+                            <li class="dep2"><a href="#">이용자갤러리</a></li>
+                        </ul>
+                        <!-- 디지털 미술관 -->
+                    </ul>
+                    <!-- gnb_subMenuArea -->
+                </div>
+                <!-- gnb_menu -->
+
+                <!-- gnb_link -->
+                <ul class="gnb_link section_m_text">
+                    <li><a href="#">뉴스레터</a></li>
+                    <li><a href="#">MMCA 리서치랩</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">온라인숍</a></li>
+                </ul>
+                <!-- gnb_link -->
+
+                <!-- gnb_util -->
+                <ul class="gnb_util section_m_text">
+                    <li><a href="#">MMCA 회원가입</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li>
+                        <select name="language2" id="language2" class="section_m_text">
+                            <option value="ko">KO: 한국어</option>
+                            <option value="EN">EN: English</option>
+                            <option value="ZH">ZH: 中文</option>
+                            <option value="JA">JA: 日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- gnb -->
+
         <!-- collection_search -->
         <section id="collection_search" class="inner">
             <h1 class="collection_search_title">소장품 검색</h1>
@@ -184,9 +359,11 @@
                         <input type="checkbox" id="all" onchange="checkAll()"><label for="all">전체</label>
                         <input type="checkbox" id="work" onchange="checkBoxes()"><label for="work">작품명</label>
                         <input type="checkbox" id="authors" onchange="checkBoxes()"><label for="authors">작가</label>
-                        <input type="checkbox" id="explanatory" onchange="checkBoxes()"><label for="explanatory">설명문</label>
+                        <input type="checkbox" id="explanatory" onchange="checkBoxes()"><label
+                            for="explanatory">설명문</label>
                         <input type="checkbox" id="index" onchange="checkBoxes()"><label for="index">색인어</label>
-                        <input type="checkbox" id="management_number" onchange="checkBoxes()"><label for="management_number">관리번호</label>
+                        <input type="checkbox" id="management_number" onchange="checkBoxes()"><label
+                            for="management_number">관리번호</label>
                         <div class="DetailedSearch_check_input">
                             <input type="text" placeholder="키워드를 입력해주세요.">
                             <button class="btn1 inputBtn" onclick="input()">입력</button>
@@ -307,8 +484,10 @@
 
                     <!-- sector_check -->
                     <div class="sector_check Tap">
-                        <input type="checkbox" id="conversation1" class="CheckedBoxes"><label for="conversation1" >회화1</label>
-                        <input type="checkbox" id="conversation2" class="CheckedBoxes"><label for="conversation2">회화2</label>
+                        <input type="checkbox" id="conversation1" class="CheckedBoxes"><label
+                            for="conversation1">회화1</label>
+                        <input type="checkbox" id="conversation2" class="CheckedBoxes"><label
+                            for="conversation2">회화2</label>
                         <input type="checkbox" id="drawing" class="CheckedBoxes"><label for="drawing">드로잉</label>
                         <input type="checkbox" id="print" class="CheckedBoxes"><label for="print">판화</label>
                         <input type="checkbox" id="piece" class="CheckedBoxes"><label for="piece">조각ㆍ설치</label>
@@ -337,28 +516,58 @@
             <!-- DetailedSearch_container -->
 
             <!-- btn_area -->
-            <div class="btn_area">
-                <button class="btn1 allBtn">전체</button>
-                <button class="btn2">회화I</button>
-                <button class="btn2">회화II</button>
-                <button class="btn2">드로잉</button>
-                <button class="btn2">편화</button>
-                <button class="btn2">조각ㆍ설치</button>
-                <button class="btn2">사진</button>
-                <button class="btn2">뉴미디어</button>
-                <button class="btn2">공예</button>
-                <button class="btn2">디자인</button>
-                <button class="btn2">건축</button>
-                <button class="btn2">서예</button>
+            <!-- Swiper -->
+            <div class="swiper btnArea_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <button class="btn1 allBtn">전체</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">회화I</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">회화II</button>   
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">드로잉</button>
+                    </div>  
+                    <div class="swiper-slide">
+                        <button class="btn2">편화</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">조각ㆍ설치</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">사진</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">뉴미디어</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">공예</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">디자인</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">건축</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <button class="btn2">서예</button>
+                    </div>
+                </div>
             </div>
+            <!-- Swiper -->
             <!-- btn_area -->
 
             <!-- collection_checkbox -->
             <div class="collection_checkbox">
-                <input type="checkbox" id="collectionsAll" onchange="collectionsAll()"><label for="collectionsAll">전체</label>
+                <input type="checkbox" id="collectionsAll" onchange="collectionsAll()"><label
+                    for="collectionsAll">전체</label>
                 <input type="checkbox" id="on_display" onchange="display()"><label for="on_display">전시중</label>
                 <input type="checkbox" id="image" onchange="image()"><label for="image">이미지</label>
-                <input type="checkbox" id="national_heritage" onchange="nationalHeritage()"><label for="national_heritage">국가유산</label>
+                <input type="checkbox" id="national_heritage" onchange="nationalHeritage()"><label
+                    for="national_heritage">국가유산</label>
                 <input type="checkbox" id="donated_work" onchange="donatedWork()"><label for="donated_work">기증작품</label>
             </div>
             <!-- collection_checkbox -->
@@ -366,17 +575,18 @@
         <!-- collection_search -->
 
         <!-- collections -->
-         <section id="collections" class="inner">
+        <section id="collections" class="inner">
             <div class="collections_container">
                 <!-- 니콜라스 파티-윤슬 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword="display">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_08fa7523-9261-4f21-a3d7-ce803e06e2d5-20240906112341714.jpg" alt="니콜라스 파티_윤슬" style="max-width: 290px; max-height: 259px;">
+                        <img src="collections_search_img/maxi_08fa7523-9261-4f21-a3d7-ce803e06e2d5-20240906112341714.jpg"
+                            alt="니콜라스 파티_윤슬" style="max-width: 290px; max-height: 259px;">
                     </figure>
                     <p class="section_text">
                         니콜라스 파티 <br>
                         Nicolas PARTY
-                    </p>
+                    </p>    
                     <p class="section_sub_title">윤슬</p>
                     <p class="section_text">2022</p>
                 </a>
@@ -385,7 +595,8 @@
                 <!-- 아이웨이웨이-검은샹들리에 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword2="image">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_72ae2738-f01b-49dd-9a74-60bc17f36e54-20240909134141162.jpeg" alt="아이웨이웨이-검은샹들리에" style="max-width: 239.7px; max-height: 290px;">
+                        <img src="collections_search_img/maxi_72ae2738-f01b-49dd-9a74-60bc17f36e54-20240909134141162.jpeg"
+                            alt="아이웨이웨이-검은샹들리에" style="max-width: 239.7px; max-height: 290px;">
                     </figure>
                     <p class="section_text">
                         아이웨이웨이 <br>
@@ -399,7 +610,8 @@
                 <!-- 양기훈-노안 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword="display">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_4f42d47a-5f3f-4b8c-b64f-8269f49310ef-20240906161502237.jpg" alt="양기훈-노안" style="max-width: 290px; max-height: 124.6px;">
+                        <img src="collections_search_img/maxi_4f42d47a-5f3f-4b8c-b64f-8269f49310ef-20240906161502237.jpg"
+                            alt="양기훈-노안" style="max-width: 290px; max-height: 124.6px;">
                     </figure>
                     <p class="section_text">
                         양기훈 <br>
@@ -413,7 +625,8 @@
                 <!-- 이도영-기명절지 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword="display">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_5aa3b34b-e416-46db-87ed-50addd5be987-20240906161446351.jpg" alt="이도영-기명절지" style="max-width: 290px; max-height: 167.7px;">
+                        <img src="collections_search_img/maxi_5aa3b34b-e416-46db-87ed-50addd5be987-20240906161446351.jpg"
+                            alt="이도영-기명절지" style="max-width: 290px; max-height: 167.7px;">
                     </figure>
                     <p class="section_text">
                         이도영 <br>
@@ -427,7 +640,8 @@
                 <!-- 이대원a-농원 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword2="image">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_6113a89d-8f9a-4977-b354-d50a777a5cdd-20240906112333407.jpg" alt="이대원a-농원" style="max-width: 290px; max-height: 198.2px;">
+                        <img src="collections_search_img/maxi_6113a89d-8f9a-4977-b354-d50a777a5cdd-20240906112333407.jpg"
+                            alt="이대원a-농원" style="max-width: 290px; max-height: 198.2px;">
                     </figure>
                     <p class="section_text">
                         이대원 a <br>
@@ -436,12 +650,13 @@
                     <p class="section_sub_title">농원</p>
                     <p class="section_text">1981</p>
                 </a>
-                 <!-- 이대원a-농원 -->
+                <!-- 이대원a-농원 -->
 
-                 <!-- 이대원a-산 -->
+                <!-- 이대원a-산 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword4="donated_work">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_fcef5ff5-de95-44e4-93b5-03f39730e79d-20240906112337297.jpg" alt="이대원a-산" style="max-width: 290px; max-height: 116.3px;">
+                        <img src="collections_search_img/maxi_fcef5ff5-de95-44e4-93b5-03f39730e79d-20240906112337297.jpg"
+                            alt="이대원a-산" style="max-width: 290px; max-height: 116.3px;">
                     </figure>
                     <p class="section_text">
                         이대원 a <br>
@@ -450,12 +665,13 @@
                     <p class="section_sub_title">산(도봉산)</p>
                     <p class="section_text">1974</p>
                 </a>
-                 <!-- 이대원a-산 -->
+                <!-- 이대원a-산 -->
 
-                  <!-- 김창열-회귀 -->
+                <!-- 김창열-회귀 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword4="donated_work">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_593c6ba0-444b-44d8-b3e6-4acfe36a4f7c-20240906112327911.jpg" alt="김창열-회귀" style="max-width: 232px; max-height: 290px;">
+                        <img src="collections_search_img/maxi_593c6ba0-444b-44d8-b3e6-4acfe36a4f7c-20240906112327911.jpg"
+                            alt="김창열-회귀" style="max-width: 232px; max-height: 290px;">
                     </figure>
                     <p class="section_text">
                         김창열 <br>
@@ -464,12 +680,13 @@
                     <p class="section_sub_title">회귀</p>
                     <p class="section_text">2007</p>
                 </a>
-                  <!-- 김창열-회귀 -->
+                <!-- 김창열-회귀 -->
 
-                   <!-- 채용신 외-최전구 초상 및 관련 유물 -->
+                <!-- 채용신 외-최전구 초상 및 관련 유물 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword3="national_heritage">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_0db4c7a7-df4f-462b-b908-2cf404269d15-20240906161435911.jpg" alt="채용신 외-최전구 초상 및 관련 유물" style="max-width: 258.4px; max-height: 290px;">
+                        <img src="collections_search_img/maxi_0db4c7a7-df4f-462b-b908-2cf404269d15-20240906161435911.jpg"
+                            alt="채용신 외-최전구 초상 및 관련 유물" style="max-width: 258.4px; max-height: 290px;">
                     </figure>
                     <p class="section_text">
                         채용신 외 <br>
@@ -478,12 +695,13 @@
                     <p class="section_sub_title">최전구 초상 및 관련 유물</p>
                     <p class="section_text">1. 1921, 2. 연도미상, 3. 1914</p>
                 </a>
-                  <!-- 채용신 외-최전구 초상 및 관련 유물 -->
+                <!-- 채용신 외-최전구 초상 및 관련 유물 -->
 
-                  <!-- 변관식-외금강삼선암 -->
+                <!-- 변관식-외금강삼선암 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword3="national_heritage">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_e346748d-89c7-46d3-9ff6-406890417822-20240906161435783.jpg" alt="변관식-외금강삼선암" style="max-width: 81.2px; max-height: 290px;">
+                        <img src="collections_search_img/maxi_e346748d-89c7-46d3-9ff6-406890417822-20240906161435783.jpg"
+                            alt="변관식-외금강삼선암" style="max-width: 81.2px; max-height: 290px;">
                     </figure>
                     <p class="section_text">
                         변관식 <br>
@@ -492,12 +710,13 @@
                     <p class="section_sub_title">외금강삼선암</p>
                     <p class="section_text">1930</p>
                 </a>
-                  <!-- 변관식-외금강삼선암 -->
+                <!-- 변관식-외금강삼선암 -->
 
-                  <!-- 이도영-산수인물 -->
+                <!-- 이도영-산수인물 -->
                 <a href="#" class="collections_item" data-all="all" data-keyword2="image">
                     <figure class="collections_item_imgbox">
-                        <img src="collections_search_img/maxi_91a6876e-9f8d-465e-a87d-5c035285686b-20240906161433655.jpg" alt="이도영-산수인물" style="max-width: 290px; max-height: 206.2px;">
+                        <img src="collections_search_img/maxi_91a6876e-9f8d-465e-a87d-5c035285686b-20240906161433655.jpg"
+                            alt="이도영-산수인물" style="max-width: 290px; max-height: 206.2px;">
                     </figure>
                     <p class="section_text">
                         이도영 <br>
@@ -506,12 +725,12 @@
                     <p class="section_sub_title">산수인물</p>
                     <p class="section_text">1933</p>
                 </a>
-                  <!-- 이도영-산수인물 -->
+                <!-- 이도영-산수인물 -->
             </div>
-         </section>
-         <!-- //collections -->
+        </section>
+        <!-- //collections -->
 
-         <!-- footer -->
+        <!-- footer -->
         <footer class="inner">
             <!-- top -->
             <div id="footer_top">
@@ -642,9 +861,13 @@
     </div>
     <!-- 모달창 -->
     </div>
-    
+
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/collection_search.js"></script>
     <script src="js/header_footer.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/tap.js"></script>
     <script src="js/modal.js"></script>
 </body>

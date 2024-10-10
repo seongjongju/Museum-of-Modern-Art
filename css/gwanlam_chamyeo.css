@@ -209,6 +209,9 @@ section > h2 {
 /* 안내창 */
 
 /* guide_header */
+.guide_header .guide_header_swiper { /* 모바일 가이드 헤더 */
+    display: none;
+}
 .guide_header {
     width: 100%;
     height: 60px;
@@ -266,8 +269,7 @@ section > h2 {
 /* 이미지 크기 */
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox {
     width: 100%;
-    max-height: 271.5px;
-    margin-bottom: 24.96px;
+    margin-bottom: 20px;
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .display_item_imgbox .display_img {
     width: 100%;
@@ -278,8 +280,8 @@ section > h2 {
 /* 이미지 크기 */
 
 /* 텍스트 */
-#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_title {
-    letter-spacing: -0.8px;
+#display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_sub_text {
+    letter-spacing: -1.5px;
 }
 #display .displays_swiper .swiper-wrapper .swiper-slide .display_item .section_text:nth-of-type(1) {
     font-weight: 600;
@@ -338,8 +340,7 @@ section > h2 {
 /* 이미지 크기 */
 #education .education_swiper .swiper-wrapper .swiper-slide .education_item .education_item_imgbox {
     width: 100%;
-    max-height: 288px;
-    margin-bottom: 24.96px;
+    margin-bottom: 20px;
 }
 #education .education_swiper .swiper-wrapper .swiper-slide .education_item .education_item_imgbox .education_img {
     width: 100%;
@@ -411,8 +412,7 @@ section > h2 {
 /* 이미지 크기 */
 #event .event_swiper .swiper-wrapper .swiper-slide .event_item .event_item_imgbox {
     width: 100%;
-    max-height: 288px;
-    margin-bottom: 24.96px;
+    margin-bottom: 20px;
 }
 #event .event_swiper .swiper-wrapper .swiper-slide .event_item .event_item_imgbox .event_img {
     width: 100%;

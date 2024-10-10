@@ -109,7 +109,7 @@ var swiper = new Swiper(".displays_swiper", {
             slidesPerView: 3,
         }, 
         375: { //모바일
-            slidesPerView: 2,
+            slidesPerView: 1,
         },
     }
 });
@@ -206,6 +206,38 @@ var swiper = new Swiper(".cultural_swiper", {
     }
 });
 /* cultural */
+
+/* 모바일 guide_header */
+var swiper = new Swiper(".guide_header_swiper", {
+    slidesPerView: 5,
+    spaceBetween: 0,
+  });
+/* 모바일 guide_header */
 /* swiper */
 /* 관람 참여 스와이퍼 */
+
+/* 소장품 검색 스와이퍼 */
+var swiper = new Swiper(".btnArea_swiper", {
+    slidesPerView: 12,
+    spaceBetween: 10,
+    breakpoints: {
+        1600: {
+            slidesPerView: 12,
+        },
+        1025: { //태블릿 가로
+            slidesPerView: 9,
+        },
+        768: { //태블릿 가로
+            slidesPerView: 6,
+        },
+        414: { //모바일
+            slidesPerView: 4,
+        }, 
+        375: { //모바일
+            slidesPerView: 3,
+            spaceBetween: 0
+        },
+    }
+  });
+  /* 소장품 검색 스와이퍼 */
 

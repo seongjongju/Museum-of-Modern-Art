@@ -46,7 +46,7 @@
     /* news */
     /* index.html ----------------------------------------------------------------------*/
 
-    /* gwanlam_chamyeo ----------------------------------------------------------------- */
+    /* gwanlam_chamyeo.html ----------------------------------------------------------------- */
 /* 공통 */
 section {
     padding: 60px 22px;
@@ -101,7 +101,59 @@ table {
     margin-left: -40px;
 }
 /* //directions */
-/* gwanlam_chamyeo ----------------------------------------------------------------- */
+/* gwanlam_chamyeo.html ----------------------------------------------------------------- */
+
+/* collection_search.html --------------------------------------------------------------- */
+/* 상세검색 영역 */
+#collection_search .DetailedSearch_container {
+    display: block  ;
+}
+/* DetailedSearch_container_left */
+#collection_search .DetailedSearch_container .DetailedSearch_container_left {
+    width: 100%;
+}
+/* DetailedSearch_check_input */
+#collection_search .DetailedSearch_container .DetailedSearch_check_input {
+    margin-bottom: 20px;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_check_input > input {
+    width: 78%;
+}
+/* DetailedSearch_check_input */
+/* ingredient_check */
+#collection_search .DetailedSearch_container .ingredient_check input {
+    width: 78%;
+}
+/* ingredient_check */
+/* DetailedSearch_container_left */
+
+/* DetailedSearch_output */
+#collection_search .DetailedSearch_container .DetailedSearch_output {
+    width: 100%;
+    border-left: none;
+    padding: 20px 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output .DetailedSearch_outputBox {
+    height: 100px;
+}
+/* DetailedSearch_output */
+/* 상세검색 영역 */
+
+/* collections */
+#collections .collections_container {
+    gap: 10px;
+}
+#collections .collections_container .collections_item {
+    height: 410px;
+}
+/* 이미지 */
+#collections .collections_container .collections_item .collections_item_imgbox {
+    padding-bottom: 15px;
+}
+/* 이미지 */
+/* collections */
+/* collection_search.html --------------------------------------------------------------- */
 }
 /* //1200px */
 
@@ -174,7 +226,7 @@ table {
 /* news */
 /* index.html------------------------------------------------------------------------- */
 
-/* gwanlam_chamyeo ----------------------------------------------- */
+/* gwanlam_chamyeo.html ----------------------------------------------- */
 /* guide_header */
 .guide_header .guide_header_nav_box > a {
    font-size: 1.063rem;
@@ -352,8 +404,100 @@ th, td {
     margin-bottom: 50px;
 }
 /* directions_m_area */
+/* gwanlam_chamyeo.html ----------------------------------------------- */
 
+/* collection_search.html --------------------------------------------------------------- */
+/* collection_search */
+#collection_search {
+    padding: 105px 0 50px;
+}
+#collection_search .collection_search_title {
+    font-size: 1.75rem;
+}
+#collection_search > input {
+    width: 80%;
+    height: 40px;
+}
+#collection_search .collection_searchBtn {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+}
+#collection_search .collection_DetailedSearch {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+/* collection_search */
 
+/* 상세검색 영역 */
+/* 상세검색 버튼 */
+#collection_search .DetailedSearch_container .DetailedSearch_list > a {
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 5px;
+}
+/* 상세검색 버튼 */
+
+/* DetailedSearch_check_input */
+#collection_search .DetailedSearch_container .DetailedSearch_check_input > input {
+    height: 40px;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_check_input .inputBtn {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+}
+/* DetailedSearch_check_input */
+
+/* ingredient_check */
+#collection_search .DetailedSearch_container .ingredient_check input {
+    height: 40px;
+}
+#collection_search .DetailedSearch_container .ingredient_check .inputBtn {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+}
+/* ingredient_check */
+
+/* sector_check */
+#collection_search .DetailedSearch_container .sector_check label {
+    margin-bottom: 10px;
+  }
+/* sector_check */
+
+/* DetailedSearch_output */
+#collection_search .DetailedSearch_container .DetailedSearch_output {
+    text-align: center;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output > p {
+    text-align: left;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output .DetailedSearch_outputBox {
+    text-align: left;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_output > button {
+    width: 45%;
+    height: 40px;
+}
+/* DetailedSearch_output */
+
+/* btn_area */
+#collection_search .btnArea_swiper .swiper-slide > button {
+    width: 101px;
+    height: 40px;
+    padding: 0;
+}
+/* btn_area */
+
+/* collections */
+#collections .collections_container .collections_item {
+    display: block;
+    width: 49%;
+}
+/* collections */
+/* collection_search.html --------------------------------------------------------------- */
 }
 /* //768px */
 
@@ -400,4 +544,282 @@ th, td {
 }
 /* learn_more */
 /* index.html------------------------------------------------------------------------- */
+
+/* gwanlam_chamyeo --------------------------------------------------------------------- */
+.guide_header .guide_header_nav_box { /* 데스크탑 - 태블릿 가이드 헤더 */
+    display: none;
 }
+
+ /* 모바일 가이드 헤더 */
+.guide_header .guide_header_swiper {
+    display: block;
+    height: 100%;
+    border-bottom: 1px solid #000;
+}
+.guide_header .guide_header_swiper .swiper-slide > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.063rem;
+    font-weight: 600;
+    color: #949494;
+    transition: color 0.5s;
+}
+.guide_header .guide_header_swiper .swiper-slide > a:hover {
+    color: #000;
+}
+.guide_header .guide_header_swiper .swiper-slide > a.on {
+    color: #000;
+}
+ /* 모바일 가이드 헤더 */
+
+/* viewing */
+table {
+    width: 250%;
+  }
+  /* viewing */
+
+/* floor_guide */
+/* TapTitle */
+#floor_guide .floor_area ul {
+    width: 70%;
+}
+/* TapTitle */
+/* floor_guide */
+
+/* cultural */
+/* cultural_swiper */
+#cultural .cultural_swiper .swiper-slide .cultural_item {
+    display: block;
+}
+/* 이미지 사이즈 */
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_imgbox {
+    width: 100%;
+    margin-bottom: 20px
+}
+/* 이미지 사이즈 */
+/* 텍스트 */
+#cultural .cultural_swiper .swiper-slide .cultural_item .cultural_item_textbox {
+    width: 100%;
+}
+/* 텍스트 */
+/* cultural_swiper */
+/* cultural */
+
+/* directions_m_area */
+#directions .directions_m_area .TapM > img {
+    width: 100%;
+    height: auto;
+}
+/* directions_m_area */
+
+/* 모달창 */
+.displayModal .modal_dl_box > dl > dt:nth-child(3) {
+    margin-bottom: 59px;
+}
+/* 모달창 */
+/* gwanlam_chamyeo --------------------------------------------------------------------- */
+
+/* collection_search.html --------------------------------------------------------------- */
+/* collection_search */
+#collection_search > input {
+    width: 70.5%;
+    margin-right: 7px;
+}
+#collection_search .collection_searchBtn {
+    margin-right: 0;
+}
+/* collection_search */
+
+/* 상세검색 버튼 */
+#collection_search .DetailedSearch_container .DetailedSearch_list {
+    padding-left: 11%;
+}
+/* 상세검색 버튼 */
+
+/* DetailedSearch_check */
+#collection_search .DetailedSearch_container .DetailedSearch_check {
+    padding-left: 11%;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_check label {
+    margin-bottom: 10px;
+}
+/* DetailedSearch_check_input */
+#collection_search .DetailedSearch_container .DetailedSearch_check_input > input {
+    width: 55%;
+   margin-right: 7px;
+}
+/* DetailedSearch_check_input */
+/* DetailedSearch_check */
+
+/* year_check */
+#collection_search .DetailedSearch_container .year_check {
+    padding-left: 11%;
+}
+#collection_search .DetailedSearch_container .year_check > select {
+    width: 145px;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 1rem;
+    outline: none;
+}
+/* year_check */
+
+/* ingredient_check */
+#collection_search .DetailedSearch_container .ingredient_check {
+    padding-left: 11%;
+}
+#collection_search .DetailedSearch_container .ingredient_check input {
+    width: 55%;
+    margin-right: 7px;
+}
+/* ingredient_check */
+
+/* sector_check */
+#collection_search .DetailedSearch_container .sector_check {
+    padding-left: 11%;
+}
+/* sector_check */
+
+/* authors_check */
+#collection_search .DetailedSearch_container .authors_check {
+    padding-left: 11%;
+}
+#collection_search .DetailedSearch_container .authors_check > a {
+    margin-bottom: 10px;
+}
+/* authors_check */
+
+/* exhibition_location_check */
+#collection_search .DetailedSearch_container .exhibition_location_check {
+    padding-left: 11%;
+}
+#collection_search .DetailedSearch_container .exhibition_location_check label {
+    margin-bottom: 10px;
+  }
+  /* exhibition_location_check */
+/* 상세검색 영역 */
+
+/* btn_area */
+#collection_search .btnArea_swiper .swiper-slide > button {
+    width: 95px;
+    padding: 0 20px;
+    font-size: 0.813rem;
+}
+#collection_search .btnArea_swiper .swiper-slide:nth-child(6) > button {
+    color: #657983;
+    border-color: #657983;
+    letter-spacing: -1.5px;
+}
+/* btn_area */
+
+/* collection_checkbox */
+#collection_search .collection_checkbox label {
+    margin-bottom: 10px;
+  }
+/* collection_checkbox */
+
+/* collections */
+#collections {
+    padding-top: 10px;
+}
+#collections .collections_container {
+    display: block;
+}
+#collections .collections_container .collections_item {
+   width: 100%;
+}
+/* collections */
+/* collection_search.html --------------------------------------------------------------- */
+}
+/* 430px */
+
+/* 390px */
+@media screen and (max-width: 390px) {
+/* collection_search.html --------------------------------------------------------------- */
+/* collection_search */
+/* 상세검색 영역 */
+#collection_search > input {
+    width: 65.5%;
+    margin-right: 7px;
+}
+#collection_search > input::placeholder {
+    font-size: 0.8rem;
+}
+/* collection_search */
+
+/* 상세검색 버튼 */
+#collection_search .DetailedSearch_container .DetailedSearch_list {
+    padding-left: 5%;
+}
+/* 상세검색 버튼 */
+
+/* DetailedSearch_check */
+#collection_search .DetailedSearch_container .DetailedSearch_check {
+    padding-left: 5%;
+}
+/* DetailedSearch_check_input */
+#collection_search .DetailedSearch_container .DetailedSearch_check_input > input {
+    width: 57%;
+}
+#collection_search .DetailedSearch_container .DetailedSearch_check_input > input::placeholder {
+    font-size: 0.8rem;
+}
+/* DetailedSearch_check */
+
+/* year_check */
+#collection_search .DetailedSearch_container .year_check {
+    padding-left: 5%;
+}
+/* year_check */
+
+/* ingredient_check */
+#collection_search .DetailedSearch_container .ingredient_check {
+    padding-left: 5%;
+}
+#collection_search .DetailedSearch_container .ingredient_check input {
+    width: 57%;
+}
+#collection_search .DetailedSearch_container .ingredient_check input::placeholder {
+    font-size: 0.8rem;
+}
+/* ingredient_check */
+
+/* sector_check */
+#collection_search .DetailedSearch_container .sector_check {
+    padding-left: 5%;
+}
+/* sector_check */
+
+/* authors_check */
+#collection_search .DetailedSearch_container .authors_check {
+    padding-left: 5%;
+}
+/* authors_check */
+
+/* exhibition_location_check */
+#collection_search .DetailedSearch_container .exhibition_location_check {
+    padding-left: 5%;
+}
+/* exhibition_location_check */
+
+/* DetailedSearch_output */
+#collection_search .DetailedSearch_container .DetailedSearch_output > button {
+    width: 40%;
+    font-size: 0.8rem;
+}
+/* DetailedSearch_output */
+/* 상세검색 영역 */
+
+/* btn_area */
+#collection_search .btnArea_swiper .swiper-slide > button {
+    width: 110px;
+    padding: 0 20px;
+    font-size: 0.813rem;    
+}
+/* btn_area */
+/* collection_search.html --------------------------------------------------------------- */
+}
+/* 400px */

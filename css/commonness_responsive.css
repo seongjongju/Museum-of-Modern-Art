@@ -327,11 +327,6 @@ section {
 /* 430px */
 @media screen and (max-width:430px) {
     /* 공통 */
-    .inner {
-        max-width: 93%;
-        margin: 0 auto;
-    }
-
 /* 검색창 */
 #responsive_header .search_box input { /* 검색어 텍스트 */
     width: 65%;
@@ -372,7 +367,7 @@ section {
 }
 .modal_area .close {
     position: absolute;
-    top: 1%; right: 2%;
+    top: 0; right: 0;
     display: block;
 }
 /* 버튼 */

@@ -90,7 +90,8 @@ $(document).ready(function () {
 
 /* guide_header 스크롤 이벤트 */
 const guide_header = document.querySelector(".guide_header");
-const guide_header_titles = document.querySelectorAll(".guide_header_nav_box > a");
+const guide_header_titles = document.querySelectorAll(".guide_header_nav_box a"); //데스크탑 - 태블릿 가이드 헤더
+const guide_headerM_titles = document.querySelectorAll(".guide_header_swiper .swiper-slide > a"); //모바일 가이드 헤더
 
 /* console.log(guide_header_titles) */
 
@@ -102,34 +103,60 @@ window.addEventListener('scroll', function () {
     } else {
         guide_header.classList.remove('fixed');
     }
-});
 
-window.addEventListener('scroll', function() {
-    let windowScrollY = window.scrollY;
     let activeIndex = -1;
+    let activeIndexM = -1;
 
-    if(windowScrollY > 880 && windowScrollY < 1600) { //전시
+    /* 데스크탑 - 태블릿 */
+    if(windowScrollY > 891 && windowScrollY <= 1491) { //전시
         activeIndex = 1;
-    } else if (windowScrollY > 1570 && windowScrollY < 2330) { //교육
+    } else if (windowScrollY > 1491 && windowScrollY <= 2191) { //교육
         activeIndex = 2;
-    } else if (windowScrollY > 2330 && windowScrollY < 3172) { //이벤트
+    } else if (windowScrollY > 2191 && windowScrollY <= 3041) { //이벤트
         activeIndex = 3
-    } else if (windowScrollY > 3172 && windowScrollY < 4172) { //관람정보
+    } else if (windowScrollY > 3041 && windowScrollY <= 4043) { //관람정보
         activeIndex = 4
-    } else if (windowScrollY > 4172 && windowScrollY < 4922) { //층별안내
+    } else if (windowScrollY > 4043 && windowScrollY <= 4843) { //층별안내
         activeIndex = 5
-    } else if (windowScrollY > 4922 && windowScrollY < 5622) { //편의시설
+    } else if (windowScrollY > 4843 && windowScrollY <= 5557) { //편의시설
         activeIndex = 6
-    } else if (windowScrollY > 5622 && windowScrollY < 6248) { //문화시설
+    } else if (windowScrollY > 5557 && windowScrollY <= 6157) { //문화시설
         activeIndex = 7
-    } else if (windowScrollY > 6248) { //오시는 길
+    } else if (windowScrollY > 6157) { //오시는 길
         activeIndex = 8
     } else { //메인
         activeIndex = 0
     }
+    /* 데스크탑 - 태블릿 */
+
+     /* 모바일 */
+     if(windowScrollY > 891 && windowScrollY <= 1491) { //전시
+        activeIndexM = 1;
+    } else if (windowScrollY > 1491 && windowScrollY <= 2139) { //교육
+        activeIndexM = 2;
+    } else if (windowScrollY > 2139 && windowScrollY <= 2879) { //이벤트
+        activeIndexM = 3
+    } else if (windowScrollY > 2879 && windowScrollY <= 3779) { //관람정보
+        activeIndexM = 4
+    } else if (windowScrollY > 3779 && windowScrollY <= 4600) { //층별안내
+        activeIndexM = 5
+    } else if (windowScrollY > 4600 && windowScrollY <= 5224) { //편의시설
+        activeIndexM = 6
+    } else if (windowScrollY > 5224 && windowScrollY <= 6058) { //문화시설
+        activeIndexM = 7
+    } else if (windowScrollY > 6058) { //오시는 길
+        activeIndexM = 8
+    } else { //메인
+        activeIndexM = 0
+    }
+    /* 모바일 */
  
-    guide_header_titles.forEach((title, index) => { //해당하는 인덱스값과 같을 경우에만 실행
+    guide_header_titles.forEach((title, index) => { //데스크탑 - 태블릿
         title.classList.toggle('on', index === activeIndex);
+    });
+
+    guide_headerM_titles.forEach((titleM, indexM) => { //모바일
+        titleM.classList.toggle('on', indexM === activeIndexM);
     });
 });
 /* guide_header 스크롤 이벤트 */

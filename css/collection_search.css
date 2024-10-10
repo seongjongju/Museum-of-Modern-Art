@@ -41,7 +41,7 @@ i:after {
     padding: 240px 0 40px;
 }
 #collection_search .collection_search_title {
-    font-size: 40px;
+    font-size: 2.5rem;
     padding-bottom: 24px;
 }
 #collection_search > input {
@@ -96,10 +96,8 @@ i:after {
     box-sizing: border-box;
     margin-right: 15px;
 }
-#collection_search .DetailedSearch_container .DetailedSearch_list > a > i {
-    position: absolute;
-    top: 50%; right: 10%;
-    transform: translateY(-50%);
+#collection_search .DetailedSearch_container .DetailedSearch_list > a:last-child {
+    margin-right: 0;
 }
 /* 상세검색 버튼 */
 
@@ -322,64 +320,66 @@ i:after {
 /* 상세검색 영역 */
 
 /* btn_area */
-#collection_search .btn_area {
+/* btnArea_swiper */
+#collection_search .btnArea_swiper {
     margin: 24px 0;
 }
-#collection_search .btn_area > button {
-    margin-right: 15px;
-    width: 110px;
+#collection_search .btnArea_swiper .swiper-slide {
+    width: calc(100% / 12);
+}
+#collection_search .btnArea_swiper .swiper-slide > button {
+    width: 120px;
     padding: 0 20px;
     font-size: 1rem;
 }
 /* 버튼 색상 */
-#collection_search .btn_area > button:nth-child(2) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(2) button {
     color: #827554;
     border-color: #827554;
 }
-#collection_search .btn_area > button:nth-child(3) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(3) > button {
     color: #707859;
     border-color: #707859;
 }
-#collection_search .btn_area > button:nth-child(4) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(4) > button {
     color: #5b766a;
     border-color: #5b766a;
 }
-#collection_search .btn_area > button:nth-child(5) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(5) > button {
     color: #5a807c;
     border-color: #5a807c;
 }
-#collection_search .btn_area > button:nth-child(6) {
-    width: 7.5rem;
+#collection_search .btnArea_swiper .swiper-slide:nth-child(6) > button {
     color: #657983;
     border-color: #657983;
 }
-#collection_search .btn_area > button:nth-child(7) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(7) > button {
     color: #67783c;
     border-color: #67783c;
 }
-#collection_search .btn_area > button:nth-child(8) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(8) > button {
     color: #746a8c;
     border-color: #746a8c;
 }
-#collection_search .btn_area > button:nth-child(9) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(9) > button {
     color: #846885;
     border-color: #846885;
 }
-#collection_search .btn_area > button:nth-child(10) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(10) > button {
     color: #906272;
     border-color: #906272;
 }
-#collection_search .btn_area > button:nth-child(11) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(11) > button {
     color: #9b735f;
     border-color: #9b735f;
 }
-#collection_search .btn_area > button:nth-child(12) {
+#collection_search .btnArea_swiper .swiper-slide:nth-child(12) > button {
     color: #000;
     border-color: #000;
 }
 /* 버튼 색상 */
+/* btnArea_swiper */
 /* btn_area */
-/* 버튼 */
 
 /* collection_checkbox */
 /* 체크박스를 숨기기 */
@@ -439,7 +439,7 @@ i:after {
 #collections .collections_container .collections_item {
     display: block;
     width: 19%;
-    max-height: 426px;
+    height: 426px;
     padding-bottom: 100px;
     margin-bottom: 20px;
 }
@@ -447,12 +447,14 @@ i:after {
 #collections .collections_container .collections_item .collections_item_imgbox {
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     height: 80%;
     padding-bottom: 20px;
 }
 #collections .collections_container .collections_item .collections_item_imgbox > img {
     margin: 0 auto;
+    width: 90%; 
+    height: auto;
 }
 /* 이미지 */
 
