@@ -1,31 +1,6 @@
 @charset "utf-8";
 
 /* 폰트 */
-/* @font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    src: url(../webfonts/SpoqaHanSansNeo-Thin.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    src: url(../webfonts/SpoqaHanSansNeo-Light.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    src: url(../webfonts/SpoqaHanSansNeo-Regular.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    src: url(../webfonts/SpoqaHanSansNeo-Medium.otf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Spoqa Han Sans Neo';
-    src: url(../webfonts/SpoqaHanSansNeo-Bold.otf) format('opentype');
-}
- */
 * {
     font-family: 'Spoqa Han Sans Neo', sans-serif;
 }
