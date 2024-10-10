@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 폰트 */
-@font-face {
+/* @font-face {
     font-family: 'Spoqa Han Sans Neo';
     src: url(../webfonts/SpoqaHanSansNeo-Thin.otf) format('opentype');
 }
@@ -25,7 +25,7 @@
     font-family: 'Spoqa Han Sans Neo';
     src: url(../webfonts/SpoqaHanSansNeo-Bold.otf) format('opentype');
 }
-
+ */
 * {
     font-family: 'Spoqa Han Sans Neo', sans-serif;
 }
