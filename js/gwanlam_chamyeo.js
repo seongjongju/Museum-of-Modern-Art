@@ -97,8 +97,8 @@ const guide_headerM_titles = document.querySelectorAll(".guide_header_swiper .sw
 
 window.addEventListener('scroll', function () {
     let windowScrollY = window.scrollY;
-    /* console.log(windowScrollY) */
-    if (windowScrollY > 880) {
+    console.log(windowScrollY)
+    if (windowScrollY > 860) {
         guide_header.classList.add('fixed');
     } else {
         guide_header.classList.remove('fixed');
@@ -108,21 +108,21 @@ window.addEventListener('scroll', function () {
     let activeIndexM = -1;
 
     /* 데스크탑 - 태블릿 */
-    if(windowScrollY > 891 && windowScrollY <= 1491) { //전시
+    if(windowScrollY > 860 && windowScrollY <= 1400) { //전시
         activeIndex = 1;
-    } else if (windowScrollY > 1491 && windowScrollY <= 2191) { //교육
+    } else if (windowScrollY > 1400 && windowScrollY <= 2000) { //교육
         activeIndex = 2;
-    } else if (windowScrollY > 2191 && windowScrollY <= 3041) { //이벤트
+    } else if (windowScrollY > 2000 && windowScrollY <= 2700) { //이벤트
         activeIndex = 3
-    } else if (windowScrollY > 3041 && windowScrollY <= 4043) { //관람정보
+    } else if (windowScrollY > 2700 && windowScrollY <= 3620) { //관람정보
         activeIndex = 4
-    } else if (windowScrollY > 4043 && windowScrollY <= 4843) { //층별안내
+    } else if (windowScrollY > 3620 && windowScrollY <= 4350) { //층별안내
         activeIndex = 5
-    } else if (windowScrollY > 4843 && windowScrollY <= 5557) { //편의시설
+    } else if (windowScrollY > 4350 && windowScrollY <= 4950) { //편의시설
         activeIndex = 6
-    } else if (windowScrollY > 5557 && windowScrollY <= 6157) { //문화시설
+    } else if (windowScrollY > 4950 && windowScrollY <= 5750) { //문화시설
         activeIndex = 7
-    } else if (windowScrollY > 6157) { //오시는 길
+    } else if (windowScrollY > 5750) { //오시는 길
         activeIndex = 8
     } else { //메인
         activeIndex = 0
