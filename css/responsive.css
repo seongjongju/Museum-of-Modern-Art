@@ -235,7 +235,7 @@ table {
 /* guide_header */
 
 /* section */
-#display, #education {
+.display, #education {
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -535,6 +535,15 @@ th, td {
 }
 /* collection */
 
+/* newsletter */
+#newsletter .title_area {
+    display: block;
+}
+#newsletter .title_area .section_title {
+    margin-bottom: 10px;
+}
+/* newsletter */
+
 /* learn_more */
 #learn_more .learn_more_area {
     display: block;
@@ -738,6 +747,14 @@ table {
 
 /* 390px */
 @media screen and (max-width: 390px) {
+/* gwanlam_chamyeo.html-------------------------------------------------------------------- */
+/* 모달창 */
+.displayModal .modal_dl_box > dl > dt:nth-child(3) {
+    margin-bottom: 57px;
+}
+/* 모달창 */
+/* gwanlam_chamyeo.html-------------------------------------------------------------------- */
+
 /* collection_search.html --------------------------------------------------------------- */
 /* collection_search */
 /* 상세검색 영역 */

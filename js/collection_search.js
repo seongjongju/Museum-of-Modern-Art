@@ -135,14 +135,14 @@ const collectionCheckBoxes = document.querySelectorAll('.collection_checkbox > i
 
 let collectionsContainerInner = collectionsContainer.innerHTML //초기화
 
-function collectionsAll () { //전체
+function collectionsAll() { //전체
     collectionsContainer.innerHTML = collectionsContainerInner
 
     let collectionsAllItems = document.querySelectorAll('.collections_item[data-all="all"]');
 
-    collectionsContainer.innerHTML =""
+    collectionsContainer.innerHTML = ""
 
-    collectionsAllItems.forEach(function(collectionsAllItem) {
+    collectionsAllItems.forEach(function (collectionsAllItem) {
 
         collectionsContainer.appendChild(collectionsAllItem)
     });
@@ -153,9 +153,9 @@ function display() { //전시중
 
     let displayItems = document.querySelectorAll('.collections_item[data-keyword="display"]');
 
-    collectionsContainer.innerHTML =""
+    collectionsContainer.innerHTML = ""
 
-    displayItems.forEach(function(displayItem) {
+    displayItems.forEach(function (displayItem) {
 
         collectionsContainer.appendChild(displayItem)
     });
@@ -165,9 +165,9 @@ function image() { //이미지
     collectionsContainer.innerHTML = collectionsContainerInner
     let imageItems = document.querySelectorAll('.collections_item[data-keyword2="image"]');
 
-    collectionsContainer.innerHTML =""
+    collectionsContainer.innerHTML = ""
 
-    imageItems.forEach(function(imageItem) {
+    imageItems.forEach(function (imageItem) {
 
         collectionsContainer.appendChild(imageItem)
     });
@@ -177,9 +177,9 @@ function nationalHeritage() { //국가유산
     collectionsContainer.innerHTML = collectionsContainerInner
     let nationalHeritageItems = document.querySelectorAll('.collections_item[data-keyword3="national_heritage"]');
 
-    collectionsContainer.innerHTML =""
+    collectionsContainer.innerHTML = ""
 
-    nationalHeritageItems.forEach(function(nationalHeritageItem) {
+    nationalHeritageItems.forEach(function (nationalHeritageItem) {
 
         collectionsContainer.appendChild(nationalHeritageItem)
     });
@@ -189,18 +189,18 @@ function donatedWork() { //기증작품
     collectionsContainer.innerHTML = collectionsContainerInner
     let donatedWorkItems = document.querySelectorAll('.collections_item[data-keyword4="donated_work"]');
 
-    collectionsContainer.innerHTML =""
+    collectionsContainer.innerHTML = ""
 
-    donatedWorkItems.forEach(function(donatedWorkItem) {
+    donatedWorkItems.forEach(function (donatedWorkItem) {
 
         collectionsContainer.appendChild(donatedWorkItem)
     });
 }
 
-collectionCheckBoxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
+collectionCheckBoxes.forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
         if (this.checked) {
-            collectionCheckBoxes.forEach(function(otherCheckbox) {
+            collectionCheckBoxes.forEach(function (otherCheckbox) {
                 if (otherCheckbox !== checkbox) {
                     otherCheckbox.checked = false; // 다른 체크박스 해제
                 }
@@ -210,3 +210,13 @@ collectionCheckBoxes.forEach(function(checkbox) {
 });
 
 /* 체크박스 옵션에 따른 정렬 */
+
+/* 윈도우가 로드 하면 전체 체크박스에 체크되어있음 */
+window.addEventListener('load', function () {
+    const collectionAll = document.querySelector('#collectionsAll');
+
+    if (!collectionAll.checked) {
+        collectionAll.checked = true
+    }
+});
+/* 윈도우가 로드 하면 전체 체크박스에 체크되어있음 */

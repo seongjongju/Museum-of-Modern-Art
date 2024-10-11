@@ -73,7 +73,7 @@ TapTitleMs.forEach(function(TapTitleM, TapTitleMIndex) {
             TapMs[TapTitleMIndex].classList.add('on');
 
             if(TapMIndex !== TapTitleMIndex) {
-                //TapM.classList.remove('on');
+                TapM.classList.remove('on');
             }
         });
         /* 현재 선택한 탭의 하위탭 요소 */
