@@ -142,9 +142,9 @@ window.addEventListener('scroll', function () {
         activeIndexM = 5
     } else if (windowScrollY > 4350 && windowScrollY <= 4950) { //편의시설
         activeIndexM = 6
-    } else if (windowScrollY > 4950 && windowScrollY <= 5750) { //문화시설
+    } else if (windowScrollY > 4950 && windowScrollY <= 5500) { //문화시설
         activeIndexM = 7
-    } else if (windowScrollY > 5750) { //오시는 길
+    } else if (windowScrollY > 5500) { //오시는 길
         activeIndexM = 8
     } else { //메인
         activeIndexM = 0
