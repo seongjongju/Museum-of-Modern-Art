@@ -205,7 +205,7 @@ window.addEventListener('scroll', function() {
     let windowScrollY = window.scrollY;
     /* console.log(windowScrollY) */
 
-    if(windowScrollY > 861) {
+    if(windowScrollY > 800) {
         responsiveHeader.style.top = "-100%"
     } else {
         responsiveHeader.style.top = "0"
