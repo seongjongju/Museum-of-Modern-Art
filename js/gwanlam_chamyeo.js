@@ -90,14 +90,17 @@ $(document).ready(function () {
 
 /* guide_header 스크롤 이벤트 */
 const guide_header = document.querySelector(".guide_header");
-const guide_header_titles = document.querySelectorAll(".guide_header_nav_box a"); //데스크탑 - 태블릿 가이드 헤더
-const guide_headerM_titles = document.querySelectorAll(".guide_header_swiper .swiper-slide > a"); //모바일 가이드 헤더
+const guide_header_titles = document.querySelectorAll(".guide_header_nav_box a"); // 데스크탑 - 태블릿 가이드 헤더
+const guide_headerM_titles = document.querySelectorAll(".guide_header_swiper .swiper-slide > a"); // 모바일 가이드 헤더
 
-/* console.log(guide_header_titles) */
+const sections = document.querySelectorAll('section'); // 섹션 태그로 바로 불러옴
 
 window.addEventListener('scroll', function () {
     let windowScrollY = window.scrollY;
-    console.log(windowScrollY)
+    const documentHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
+
+    // 헤더 고정 처리
     if (windowScrollY > 860) {
         guide_header.classList.add('fixed');
     } else {
@@ -107,55 +110,30 @@ window.addEventListener('scroll', function () {
     let activeIndex = -1;
     let activeIndexM = -1;
 
-    /* 데스크탑 - 태블릿 */
-    if(windowScrollY > 891 && windowScrollY <= 1491) { //전시
-        activeIndex = 1;
-    } else if (windowScrollY > 1491 && windowScrollY <= 2191) { //교육
-        activeIndex = 2;
-    } else if (windowScrollY > 2191 && windowScrollY <= 3041) { //이벤트
-        activeIndex = 3
-    } else if (windowScrollY > 3041 && windowScrollY <= 4043) { //관람정보
-        activeIndex = 4
-    } else if (windowScrollY > 4043 && windowScrollY <= 4843) { //층별안내
-        activeIndex = 5
-    } else if (windowScrollY > 4843 && windowScrollY <= 5557) { //편의시설
-        activeIndex = 6
-    } else if (windowScrollY > 5557 && windowScrollY <= 6157) { //문화시설
-        activeIndex = 7
-    } else if (windowScrollY > 6157) { //오시는 길
-        activeIndex = 8
-    } else { //메인
-        activeIndex = 0
-    }
-    /* 데스크탑 - 태블릿 */
+    // 각 섹션에 대해 스크롤 위치에 따라 클래스 적용
+    sections.forEach((section, index) => {
+        const sectionTop = section.getBoundingClientRect().top + windowScrollY;
+        const sectionBottom = sectionTop + section.offsetHeight;
 
-     /* 모바일 */
-     if(windowScrollY > 860 && windowScrollY <= 1400) { //전시
-        activeIndexM = 1;
-    } else if (windowScrollY > 1400 && windowScrollY <= 2000) { //교육
-        activeIndexM = 2;
-    } else if (windowScrollY > 2000 && windowScrollY <= 2700) { //이벤트
-        activeIndexM = 3
-    } else if (windowScrollY > 2700 && windowScrollY <= 3620) { //관람정보
-        activeIndexM = 4
-    } else if (windowScrollY > 3620 && windowScrollY <= 4350) { //층별안내
-        activeIndexM = 5
-    } else if (windowScrollY > 4350 && windowScrollY <= 4950) { //편의시설
-        activeIndexM = 6
-    } else if (windowScrollY > 4950 && windowScrollY <= 5500) { //문화시설
-        activeIndexM = 7
-    } else if (windowScrollY > 5500) { //오시는 길
-        activeIndexM = 8
-    } else { //메인
-        activeIndexM = 0
-    }
-    /* 모바일 */
- 
-    guide_header_titles.forEach((title, index) => { //데스크탑 - 태블릿
+        if (windowScrollY >= sectionTop && windowScrollY < sectionBottom) {
+            activeIndex = index;
+            activeIndexM = index;
+        }
+
+        // 마지막 섹션이거나 페이지 끝에 도달한 경우 마지막 섹션으로 처리
+        if (windowScrollY + windowHeight >= documentHeight) {
+            activeIndex = sections.length - 1; // 마지막 섹션 인덱스로 설정
+            activeIndexM = sections.length - 1;
+        }
+    });
+
+    // 데스크탑 - 태블릿
+    guide_header_titles.forEach((title, index) => {
         title.classList.toggle('on', index === activeIndex);
     });
 
-    guide_headerM_titles.forEach((titleM, indexM) => { //모바일
+    // 모바일
+    guide_headerM_titles.forEach((titleM, indexM) => {
         titleM.classList.toggle('on', indexM === activeIndexM);
     });
 });
