@@ -584,6 +584,25 @@ th, td {
 }
  /* 모바일 가이드 헤더 */
 
+/* intro */
+/* 메인 타이틀 */
+#intro .intro_text {
+    font-size: 1.25rem;
+}
+/* 메인 타이틀 */
+/* intro */
+
+/* 안내창 */
+#intro .guide_box_area .guide_arrow_left { /* 왼쪽 화살표 */
+    width: 35px;
+    height: 35px;
+}
+#intro .guide_box_area .guide_arrow_right { /* 오른쪽 화살표 */
+    width: 35px;
+    height: 35px;
+}
+/* 안내창 */
+
 /* viewing */
 table {
     width: 250%;
